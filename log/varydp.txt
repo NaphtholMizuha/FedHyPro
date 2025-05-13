@@ -1,0 +1,296 @@
+None
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'varydp', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir0.5', 'save_path': './res', 'dp': {'eps': 3, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': {'conv1.weight': 4.181984794139862, 'bn1.weight': 8.085697889328003, 'bn1.bias': 0.22725230641663074, 'bn1.running_mean': 0.928035831451416, 'bn1.running_var': 23.39664297103882, 'bn1.num_batches_tracked': 948.45, 'layer1.0.conv1.weight': 11.553188705444336, 'layer1.0.bn1.weight': 8.001431083679199, 'layer1.0.bn1.bias': 0.12198688723146915, 'layer1.0.bn1.running_mean': 9.957211875915528, 'layer1.0.bn1.running_var': 21.437686443328857, 'layer1.0.bn1.num_batches_tracked': 948.45, 'layer1.0.conv2.weight': 11.49886326789856, 'layer1.0.bn2.weight': 7.955541610717773, 'layer1.0.bn2.bias': 0.08299417328089476, 'layer1.0.bn2.running_mean': 6.568105173110962, 'layer1.0.bn2.running_var': 10.674507570266723, 'layer1.0.bn2.num_batches_tracked': 948.45, 'layer1.1.conv1.weight': 11.408628129959107, 'layer1.1.bn1.weight': 8.00065312385559, 'layer1.1.bn1.bias': 0.0794845481403172, 'layer1.1.bn1.running_mean': 10.903985643386841, 'layer1.1.bn1.running_var': 29.371485233306885, 'layer1.1.bn1.num_batches_tracked': 948.45, 'layer1.1.conv2.weight': 11.396786642074584, 'layer1.1.bn2.weight': 7.961781620979309, 'layer1.1.bn2.bias': 0.051205734629184006, 'layer1.1.bn2.running_mean': 4.988979530334473, 'layer1.1.bn2.running_var': 9.960107946395874, 'layer1.1.bn2.num_batches_tracked': 948.45, 'layer2.0.conv1.weight': 11.471849250793458, 'layer2.0.bn1.weight': 11.314029693603516, 'layer2.0.bn1.bias': 0.07692573871463537, 'layer2.0.bn1.running_mean': 15.89602222442627, 'layer2.0.bn1.running_var': 34.54496097564697, 'layer2.0.bn1.num_batches_tracked': 948.45, 'layer2.0.conv2.weight': 16.10927734375, 'layer2.0.bn2.weight': 11.296163606643677, 'layer2.0.bn2.bias': 0.07544297482818366, 'layer2.0.bn2.running_mean': 7.026301050186158, 'layer2.0.bn2.running_var': 13.906872034072876, 'layer2.0.bn2.num_batches_tracked': 948.45, 'layer2.0.downsample.0.weight': 11.267029619216919, 'layer2.0.downsample.1.weight': 11.349491548538207, 'layer2.0.downsample.1.bias': 0.07544297482818366, 'layer2.0.downsample.1.running_mean': 11.45429835319519, 'layer2.0.downsample.1.running_var': 22.135292053222656, 'layer2.0.downsample.1.num_batches_tracked': 948.45, 'layer2.1.conv1.weight': 16.1131609916687, 'layer2.1.bn1.weight': 11.313955354690552, 'layer2.1.bn1.bias': 0.0657136982306838, 'layer2.1.bn1.running_mean': 9.463627004623413, 'layer2.1.bn1.running_var': 27.911805057525633, 'layer2.1.bn1.num_batches_tracked': 948.45, 'layer2.1.conv2.weight': 16.073034048080444, 'layer2.1.bn2.weight': 11.296633291244508, 'layer2.1.bn2.bias': 0.04723547864705324, 'layer2.1.bn2.running_mean': 6.619246625900269, 'layer2.1.bn2.running_var': 13.078615045547485, 'layer2.1.bn2.num_batches_tracked': 948.45, 'layer3.0.conv1.weight': 16.100053691864012, 'layer3.0.bn1.weight': 16.000131034851073, 'layer3.0.bn1.bias': 0.05660345200449228, 'layer3.0.bn1.running_mean': 15.48650403022766, 'layer3.0.bn1.running_var': 36.36982908248901, 'layer3.0.bn1.num_batches_tracked': 948.45, 'layer3.0.conv2.weight': 22.712170696258546, 'layer3.0.bn2.weight': 16.000376224517822, 'layer3.0.bn2.bias': 0.06445518573746085, 'layer3.0.bn2.running_mean': 9.797925901412963, 'layer3.0.bn2.running_var': 20.095711517333985, 'layer3.0.bn2.num_batches_tracked': 948.45, 'layer3.0.downsample.0.weight': 16.045401668548585, 'layer3.0.downsample.1.weight': 15.991445159912109, 'layer3.0.downsample.1.bias': 0.06445518573746085, 'layer3.0.downsample.1.running_mean': 12.925026178359985, 'layer3.0.downsample.1.running_var': 26.70232629776001, 'layer3.0.downsample.1.num_batches_tracked': 948.45, 'layer3.1.conv1.weight': 22.692408561706543, 'layer3.1.bn1.weight': 16.000113677978515, 'layer3.1.bn1.bias': 0.04843625472858548, 'layer3.1.bn1.running_mean': 14.136521768569946, 'layer3.1.bn1.running_var': 42.91485424041748, 'layer3.1.bn1.num_batches_tracked': 948.45, 'layer3.1.conv2.weight': 22.696173095703124, 'layer3.1.bn2.weight': 16.008739137649535, 'layer3.1.bn2.bias': 0.04918956938199699, 'layer3.1.bn2.running_mean': 11.282309865951538, 'layer3.1.bn2.running_var': 25.04137134552002, 'layer3.1.bn2.num_batches_tracked': 948.45, 'layer4.0.conv1.weight': 22.71857271194458, 'layer4.0.bn1.weight': 22.62747268676758, 'layer4.0.bn1.bias': 0.04758210023865104, 'layer4.0.bn1.running_mean': 25.725024890899657, 'layer4.0.bn1.running_var': 74.89567260742187, 'layer4.0.bn1.num_batches_tracked': 948.45, 'layer4.0.conv2.weight': 32.0731107711792, 'layer4.0.bn2.weight': 22.399503993988038, 'layer4.0.bn2.bias': 0.5314272738993168, 'layer4.0.bn2.running_mean': 21.141964054107667, 'layer4.0.bn2.running_var': 64.82737131118775, 'layer4.0.bn2.num_batches_tracked': 948.45, 'layer4.0.downsample.0.weight': 22.623112201690674, 'layer4.0.downsample.1.weight': 22.4127179145813, 'layer4.0.downsample.1.bias': 0.5314272738993168, 'layer4.0.downsample.1.running_mean': 23.23727035522461, 'layer4.0.downsample.1.running_var': 63.886111640930174, 'layer4.0.downsample.1.num_batches_tracked': 948.45, 'layer4.1.conv1.weight': 32.076686477661134, 'layer4.1.bn1.weight': 22.627466201782227, 'layer4.1.bn1.bias': 0.06572004253976046, 'layer4.1.bn1.running_mean': 11.550013160705566, 'layer4.1.bn1.running_var': 24.157433795928956, 'layer4.1.bn1.num_batches_tracked': 948.45, 'layer4.1.conv2.weight': 32.069811534881595, 'layer4.1.bn2.weight': 22.221644401550293, 'layer4.1.bn2.bias': 0.9417458564043045, 'layer4.1.bn2.running_mean': 15.613087224960328, 'layer4.1.bn2.running_var': 42.65533618927002, 'layer4.1.bn2.num_batches_tracked': 948.45, 'fc.weight': 3.112790638208389, 'fc.bias': 0.08526732362806796}}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-varydp-dir0.5-0
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir0.5.npy
+Loading partition from ./temp/imagenette-c10-dir0.5.npy
+Data splitted
+varydp
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: nan, Acc: 0.0986
+Round 9 Loss: nan, Acc: 0.0986
+Round 10 Loss: nan, Acc: 0.0986
+Round 11 Loss: nan, Acc: 0.0986
+Round 12 Loss: nan, Acc: 0.0986
+Round 13 Loss: nan, Acc: 0.0986
+Round 14 Loss: nan, Acc: 0.0986
+Round 15 Loss: nan, Acc: 0.0986
+Round 16 Loss: nan, Acc: 0.0986
+Round 17 Loss: nan, Acc: 0.0986
+Round 18 Loss: nan, Acc: 0.0986
+Round 19 Loss: nan, Acc: 0.0986
+Round 20 Loss: nan, Acc: 0.0986
+Round 21 Loss: nan, Acc: 0.0986
+Round 22 Loss: nan, Acc: 0.0986
+Round 23 Loss: nan, Acc: 0.0986
+Round 24 Loss: nan, Acc: 0.0986
+Round 25 Loss: nan, Acc: 0.0986
+Round 26 Loss: nan, Acc: 0.0986
+Round 27 Loss: nan, Acc: 0.0986
+Round 28 Loss: nan, Acc: 0.0986
+Round 29 Loss: nan, Acc: 0.0986
+Round 30 Loss: nan, Acc: 0.0986
+Round 31 Loss: nan, Acc: 0.0986
+Round 32 Loss: nan, Acc: 0.0986
+Round 33 Loss: nan, Acc: 0.0986
+Round 34 Loss: nan, Acc: 0.0986
+Round 35 Loss: 4946.0779, Acc: 0.1549
+Round 36 Loss: 5228.5395, Acc: 0.1692
+Round 37 Loss: 4825.8855, Acc: 0.1766
+Round 38 Loss: 3621.8728, Acc: 0.2066
+Round 39 Loss: 3306.4010, Acc: 0.2023
+Round 40 Loss: 3404.9973, Acc: 0.1834
+Round 41 Loss: 3410.0690, Acc: 0.2000
+Round 42 Loss: 3155.3377, Acc: 0.1875
+Round 43 Loss: 3125.8537, Acc: 0.1878
+Round 44 Loss: 2789.6195, Acc: 0.1781
+Round 45 Loss: 2609.2284, Acc: 0.1911
+Round 46 Loss: 3237.1917, Acc: 0.1544
+Round 47 Loss: 2943.8890, Acc: 0.1656
+Round 48 Loss: 3326.4801, Acc: 0.1651
+Round 49 Loss: 2213.5782, Acc: 0.2008
+Round 50 Loss: 3050.7307, Acc: 0.1521
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'varydp', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir0.5', 'save_path': './res', 'dp': {'eps': 3, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': {'conv1.weight': 4.181984794139862, 'bn1.weight': 8.085697889328003, 'bn1.bias': 0.22725230641663074, 'bn1.running_mean': 0.928035831451416, 'bn1.running_var': 23.39664297103882, 'bn1.num_batches_tracked': 948.45, 'layer1.0.conv1.weight': 11.553188705444336, 'layer1.0.bn1.weight': 8.001431083679199, 'layer1.0.bn1.bias': 0.12198688723146915, 'layer1.0.bn1.running_mean': 9.957211875915528, 'layer1.0.bn1.running_var': 21.437686443328857, 'layer1.0.bn1.num_batches_tracked': 948.45, 'layer1.0.conv2.weight': 11.49886326789856, 'layer1.0.bn2.weight': 7.955541610717773, 'layer1.0.bn2.bias': 0.08299417328089476, 'layer1.0.bn2.running_mean': 6.568105173110962, 'layer1.0.bn2.running_var': 10.674507570266723, 'layer1.0.bn2.num_batches_tracked': 948.45, 'layer1.1.conv1.weight': 11.408628129959107, 'layer1.1.bn1.weight': 8.00065312385559, 'layer1.1.bn1.bias': 0.0794845481403172, 'layer1.1.bn1.running_mean': 10.903985643386841, 'layer1.1.bn1.running_var': 29.371485233306885, 'layer1.1.bn1.num_batches_tracked': 948.45, 'layer1.1.conv2.weight': 11.396786642074584, 'layer1.1.bn2.weight': 7.961781620979309, 'layer1.1.bn2.bias': 0.051205734629184006, 'layer1.1.bn2.running_mean': 4.988979530334473, 'layer1.1.bn2.running_var': 9.960107946395874, 'layer1.1.bn2.num_batches_tracked': 948.45, 'layer2.0.conv1.weight': 11.471849250793458, 'layer2.0.bn1.weight': 11.314029693603516, 'layer2.0.bn1.bias': 0.07692573871463537, 'layer2.0.bn1.running_mean': 15.89602222442627, 'layer2.0.bn1.running_var': 34.54496097564697, 'layer2.0.bn1.num_batches_tracked': 948.45, 'layer2.0.conv2.weight': 16.10927734375, 'layer2.0.bn2.weight': 11.296163606643677, 'layer2.0.bn2.bias': 0.07544297482818366, 'layer2.0.bn2.running_mean': 7.026301050186158, 'layer2.0.bn2.running_var': 13.906872034072876, 'layer2.0.bn2.num_batches_tracked': 948.45, 'layer2.0.downsample.0.weight': 11.267029619216919, 'layer2.0.downsample.1.weight': 11.349491548538207, 'layer2.0.downsample.1.bias': 0.07544297482818366, 'layer2.0.downsample.1.running_mean': 11.45429835319519, 'layer2.0.downsample.1.running_var': 22.135292053222656, 'layer2.0.downsample.1.num_batches_tracked': 948.45, 'layer2.1.conv1.weight': 16.1131609916687, 'layer2.1.bn1.weight': 11.313955354690552, 'layer2.1.bn1.bias': 0.0657136982306838, 'layer2.1.bn1.running_mean': 9.463627004623413, 'layer2.1.bn1.running_var': 27.911805057525633, 'layer2.1.bn1.num_batches_tracked': 948.45, 'layer2.1.conv2.weight': 16.073034048080444, 'layer2.1.bn2.weight': 11.296633291244508, 'layer2.1.bn2.bias': 0.04723547864705324, 'layer2.1.bn2.running_mean': 6.619246625900269, 'layer2.1.bn2.running_var': 13.078615045547485, 'layer2.1.bn2.num_batches_tracked': 948.45, 'layer3.0.conv1.weight': 16.100053691864012, 'layer3.0.bn1.weight': 16.000131034851073, 'layer3.0.bn1.bias': 0.05660345200449228, 'layer3.0.bn1.running_mean': 15.48650403022766, 'layer3.0.bn1.running_var': 36.36982908248901, 'layer3.0.bn1.num_batches_tracked': 948.45, 'layer3.0.conv2.weight': 22.712170696258546, 'layer3.0.bn2.weight': 16.000376224517822, 'layer3.0.bn2.bias': 0.06445518573746085, 'layer3.0.bn2.running_mean': 9.797925901412963, 'layer3.0.bn2.running_var': 20.095711517333985, 'layer3.0.bn2.num_batches_tracked': 948.45, 'layer3.0.downsample.0.weight': 16.045401668548585, 'layer3.0.downsample.1.weight': 15.991445159912109, 'layer3.0.downsample.1.bias': 0.06445518573746085, 'layer3.0.downsample.1.running_mean': 12.925026178359985, 'layer3.0.downsample.1.running_var': 26.70232629776001, 'layer3.0.downsample.1.num_batches_tracked': 948.45, 'layer3.1.conv1.weight': 22.692408561706543, 'layer3.1.bn1.weight': 16.000113677978515, 'layer3.1.bn1.bias': 0.04843625472858548, 'layer3.1.bn1.running_mean': 14.136521768569946, 'layer3.1.bn1.running_var': 42.91485424041748, 'layer3.1.bn1.num_batches_tracked': 948.45, 'layer3.1.conv2.weight': 22.696173095703124, 'layer3.1.bn2.weight': 16.008739137649535, 'layer3.1.bn2.bias': 0.04918956938199699, 'layer3.1.bn2.running_mean': 11.282309865951538, 'layer3.1.bn2.running_var': 25.04137134552002, 'layer3.1.bn2.num_batches_tracked': 948.45, 'layer4.0.conv1.weight': 22.71857271194458, 'layer4.0.bn1.weight': 22.62747268676758, 'layer4.0.bn1.bias': 0.04758210023865104, 'layer4.0.bn1.running_mean': 25.725024890899657, 'layer4.0.bn1.running_var': 74.89567260742187, 'layer4.0.bn1.num_batches_tracked': 948.45, 'layer4.0.conv2.weight': 32.0731107711792, 'layer4.0.bn2.weight': 22.399503993988038, 'layer4.0.bn2.bias': 0.5314272738993168, 'layer4.0.bn2.running_mean': 21.141964054107667, 'layer4.0.bn2.running_var': 64.82737131118775, 'layer4.0.bn2.num_batches_tracked': 948.45, 'layer4.0.downsample.0.weight': 22.623112201690674, 'layer4.0.downsample.1.weight': 22.4127179145813, 'layer4.0.downsample.1.bias': 0.5314272738993168, 'layer4.0.downsample.1.running_mean': 23.23727035522461, 'layer4.0.downsample.1.running_var': 63.886111640930174, 'layer4.0.downsample.1.num_batches_tracked': 948.45, 'layer4.1.conv1.weight': 32.076686477661134, 'layer4.1.bn1.weight': 22.627466201782227, 'layer4.1.bn1.bias': 0.06572004253976046, 'layer4.1.bn1.running_mean': 11.550013160705566, 'layer4.1.bn1.running_var': 24.157433795928956, 'layer4.1.bn1.num_batches_tracked': 948.45, 'layer4.1.conv2.weight': 32.069811534881595, 'layer4.1.bn2.weight': 22.221644401550293, 'layer4.1.bn2.bias': 0.9417458564043045, 'layer4.1.bn2.running_mean': 15.613087224960328, 'layer4.1.bn2.running_var': 42.65533618927002, 'layer4.1.bn2.num_batches_tracked': 948.45, 'fc.weight': 3.112790638208389, 'fc.bias': 0.08526732362806796}}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-varydp-dir0.5-1
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir0.5.npy
+Loading partition from ./temp/imagenette-c10-dir0.5.npy
+Data splitted
+varydp
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: nan, Acc: 0.0986
+Round 9 Loss: nan, Acc: 0.0986
+Round 10 Loss: nan, Acc: 0.0986
+Round 11 Loss: nan, Acc: 0.0986
+Round 12 Loss: nan, Acc: 0.0986
+Round 13 Loss: nan, Acc: 0.0986
+Round 14 Loss: nan, Acc: 0.0986
+Round 15 Loss: nan, Acc: 0.0986
+Round 16 Loss: nan, Acc: 0.0986
+Round 17 Loss: nan, Acc: 0.0986
+Round 18 Loss: nan, Acc: 0.0986
+Round 19 Loss: nan, Acc: 0.0986
+Round 20 Loss: nan, Acc: 0.0986
+Round 21 Loss: nan, Acc: 0.0986
+Round 22 Loss: nan, Acc: 0.0986
+Round 23 Loss: nan, Acc: 0.0986
+Round 24 Loss: nan, Acc: 0.0986
+Round 25 Loss: nan, Acc: 0.0986
+Round 26 Loss: nan, Acc: 0.0986
+Round 27 Loss: nan, Acc: 0.0986
+Round 28 Loss: nan, Acc: 0.0986
+Round 29 Loss: nan, Acc: 0.0986
+Round 30 Loss: nan, Acc: 0.0986
+Round 31 Loss: nan, Acc: 0.0986
+Round 32 Loss: nan, Acc: 0.0986
+Round 33 Loss: nan, Acc: 0.0986
+Round 34 Loss: nan, Acc: 0.0986
+Round 35 Loss: nan, Acc: 0.0986
+Round 36 Loss: nan, Acc: 0.0986
+Round 37 Loss: 22804.2710, Acc: 0.1159
+Round 38 Loss: 8770.3662, Acc: 0.1271
+Round 39 Loss: 7274.1374, Acc: 0.1373
+Round 40 Loss: 8120.1089, Acc: 0.1394
+Round 41 Loss: 7820.2569, Acc: 0.1493
+Round 42 Loss: 8013.1923, Acc: 0.1254
+Round 43 Loss: 7319.8676, Acc: 0.1254
+Round 44 Loss: 7802.6149, Acc: 0.1180
+Round 45 Loss: 5981.2111, Acc: 0.1404
+Round 46 Loss: 5739.3238, Acc: 0.1429
+Round 47 Loss: 6165.2891, Acc: 0.1422
+Round 48 Loss: 5547.6703, Acc: 0.1366
+Round 49 Loss: 5416.5684, Acc: 0.1406
+Round 50 Loss: 4570.8149, Acc: 0.1562
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'varydp', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir0.5', 'save_path': './res', 'dp': {'eps': 3, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': {'conv1.weight': 4.181984794139862, 'bn1.weight': 8.085697889328003, 'bn1.bias': 0.22725230641663074, 'bn1.running_mean': 0.928035831451416, 'bn1.running_var': 23.39664297103882, 'bn1.num_batches_tracked': 948.45, 'layer1.0.conv1.weight': 11.553188705444336, 'layer1.0.bn1.weight': 8.001431083679199, 'layer1.0.bn1.bias': 0.12198688723146915, 'layer1.0.bn1.running_mean': 9.957211875915528, 'layer1.0.bn1.running_var': 21.437686443328857, 'layer1.0.bn1.num_batches_tracked': 948.45, 'layer1.0.conv2.weight': 11.49886326789856, 'layer1.0.bn2.weight': 7.955541610717773, 'layer1.0.bn2.bias': 0.08299417328089476, 'layer1.0.bn2.running_mean': 6.568105173110962, 'layer1.0.bn2.running_var': 10.674507570266723, 'layer1.0.bn2.num_batches_tracked': 948.45, 'layer1.1.conv1.weight': 11.408628129959107, 'layer1.1.bn1.weight': 8.00065312385559, 'layer1.1.bn1.bias': 0.0794845481403172, 'layer1.1.bn1.running_mean': 10.903985643386841, 'layer1.1.bn1.running_var': 29.371485233306885, 'layer1.1.bn1.num_batches_tracked': 948.45, 'layer1.1.conv2.weight': 11.396786642074584, 'layer1.1.bn2.weight': 7.961781620979309, 'layer1.1.bn2.bias': 0.051205734629184006, 'layer1.1.bn2.running_mean': 4.988979530334473, 'layer1.1.bn2.running_var': 9.960107946395874, 'layer1.1.bn2.num_batches_tracked': 948.45, 'layer2.0.conv1.weight': 11.471849250793458, 'layer2.0.bn1.weight': 11.314029693603516, 'layer2.0.bn1.bias': 0.07692573871463537, 'layer2.0.bn1.running_mean': 15.89602222442627, 'layer2.0.bn1.running_var': 34.54496097564697, 'layer2.0.bn1.num_batches_tracked': 948.45, 'layer2.0.conv2.weight': 16.10927734375, 'layer2.0.bn2.weight': 11.296163606643677, 'layer2.0.bn2.bias': 0.07544297482818366, 'layer2.0.bn2.running_mean': 7.026301050186158, 'layer2.0.bn2.running_var': 13.906872034072876, 'layer2.0.bn2.num_batches_tracked': 948.45, 'layer2.0.downsample.0.weight': 11.267029619216919, 'layer2.0.downsample.1.weight': 11.349491548538207, 'layer2.0.downsample.1.bias': 0.07544297482818366, 'layer2.0.downsample.1.running_mean': 11.45429835319519, 'layer2.0.downsample.1.running_var': 22.135292053222656, 'layer2.0.downsample.1.num_batches_tracked': 948.45, 'layer2.1.conv1.weight': 16.1131609916687, 'layer2.1.bn1.weight': 11.313955354690552, 'layer2.1.bn1.bias': 0.0657136982306838, 'layer2.1.bn1.running_mean': 9.463627004623413, 'layer2.1.bn1.running_var': 27.911805057525633, 'layer2.1.bn1.num_batches_tracked': 948.45, 'layer2.1.conv2.weight': 16.073034048080444, 'layer2.1.bn2.weight': 11.296633291244508, 'layer2.1.bn2.bias': 0.04723547864705324, 'layer2.1.bn2.running_mean': 6.619246625900269, 'layer2.1.bn2.running_var': 13.078615045547485, 'layer2.1.bn2.num_batches_tracked': 948.45, 'layer3.0.conv1.weight': 16.100053691864012, 'layer3.0.bn1.weight': 16.000131034851073, 'layer3.0.bn1.bias': 0.05660345200449228, 'layer3.0.bn1.running_mean': 15.48650403022766, 'layer3.0.bn1.running_var': 36.36982908248901, 'layer3.0.bn1.num_batches_tracked': 948.45, 'layer3.0.conv2.weight': 22.712170696258546, 'layer3.0.bn2.weight': 16.000376224517822, 'layer3.0.bn2.bias': 0.06445518573746085, 'layer3.0.bn2.running_mean': 9.797925901412963, 'layer3.0.bn2.running_var': 20.095711517333985, 'layer3.0.bn2.num_batches_tracked': 948.45, 'layer3.0.downsample.0.weight': 16.045401668548585, 'layer3.0.downsample.1.weight': 15.991445159912109, 'layer3.0.downsample.1.bias': 0.06445518573746085, 'layer3.0.downsample.1.running_mean': 12.925026178359985, 'layer3.0.downsample.1.running_var': 26.70232629776001, 'layer3.0.downsample.1.num_batches_tracked': 948.45, 'layer3.1.conv1.weight': 22.692408561706543, 'layer3.1.bn1.weight': 16.000113677978515, 'layer3.1.bn1.bias': 0.04843625472858548, 'layer3.1.bn1.running_mean': 14.136521768569946, 'layer3.1.bn1.running_var': 42.91485424041748, 'layer3.1.bn1.num_batches_tracked': 948.45, 'layer3.1.conv2.weight': 22.696173095703124, 'layer3.1.bn2.weight': 16.008739137649535, 'layer3.1.bn2.bias': 0.04918956938199699, 'layer3.1.bn2.running_mean': 11.282309865951538, 'layer3.1.bn2.running_var': 25.04137134552002, 'layer3.1.bn2.num_batches_tracked': 948.45, 'layer4.0.conv1.weight': 22.71857271194458, 'layer4.0.bn1.weight': 22.62747268676758, 'layer4.0.bn1.bias': 0.04758210023865104, 'layer4.0.bn1.running_mean': 25.725024890899657, 'layer4.0.bn1.running_var': 74.89567260742187, 'layer4.0.bn1.num_batches_tracked': 948.45, 'layer4.0.conv2.weight': 32.0731107711792, 'layer4.0.bn2.weight': 22.399503993988038, 'layer4.0.bn2.bias': 0.5314272738993168, 'layer4.0.bn2.running_mean': 21.141964054107667, 'layer4.0.bn2.running_var': 64.82737131118775, 'layer4.0.bn2.num_batches_tracked': 948.45, 'layer4.0.downsample.0.weight': 22.623112201690674, 'layer4.0.downsample.1.weight': 22.4127179145813, 'layer4.0.downsample.1.bias': 0.5314272738993168, 'layer4.0.downsample.1.running_mean': 23.23727035522461, 'layer4.0.downsample.1.running_var': 63.886111640930174, 'layer4.0.downsample.1.num_batches_tracked': 948.45, 'layer4.1.conv1.weight': 32.076686477661134, 'layer4.1.bn1.weight': 22.627466201782227, 'layer4.1.bn1.bias': 0.06572004253976046, 'layer4.1.bn1.running_mean': 11.550013160705566, 'layer4.1.bn1.running_var': 24.157433795928956, 'layer4.1.bn1.num_batches_tracked': 948.45, 'layer4.1.conv2.weight': 32.069811534881595, 'layer4.1.bn2.weight': 22.221644401550293, 'layer4.1.bn2.bias': 0.9417458564043045, 'layer4.1.bn2.running_mean': 15.613087224960328, 'layer4.1.bn2.running_var': 42.65533618927002, 'layer4.1.bn2.num_batches_tracked': 948.45, 'fc.weight': 3.112790638208389, 'fc.bias': 0.08526732362806796}}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-varydp-dir0.5-2
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir0.5.npy
+Loading partition from ./temp/imagenette-c10-dir0.5.npy
+Data splitted
+varydp
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: nan, Acc: 0.0986
+Round 9 Loss: nan, Acc: 0.0986
+Round 10 Loss: nan, Acc: 0.0986
+Round 11 Loss: nan, Acc: 0.0986
+Round 12 Loss: nan, Acc: 0.0986
+Round 13 Loss: nan, Acc: 0.0986
+Round 14 Loss: nan, Acc: 0.0986
+Round 15 Loss: nan, Acc: 0.0986
+Round 16 Loss: nan, Acc: 0.0986
+Round 17 Loss: nan, Acc: 0.0986
+Round 18 Loss: nan, Acc: 0.0986
+Round 19 Loss: nan, Acc: 0.0986
+Round 20 Loss: nan, Acc: 0.0986
+Round 21 Loss: nan, Acc: 0.0986
+Round 22 Loss: nan, Acc: 0.0986
+Round 23 Loss: nan, Acc: 0.0986
+Round 24 Loss: nan, Acc: 0.0986
+Round 25 Loss: nan, Acc: 0.0986
+Round 26 Loss: nan, Acc: 0.0986
+Round 27 Loss: nan, Acc: 0.0986
+Round 28 Loss: nan, Acc: 0.0986
+Round 29 Loss: nan, Acc: 0.0986
+Round 30 Loss: 8530.2049, Acc: 0.1936
+Round 31 Loss: 6877.4612, Acc: 0.1824
+Round 32 Loss: 6394.4828, Acc: 0.1671
+Round 33 Loss: 7496.9521, Acc: 0.1320
+Round 34 Loss: 6340.6228, Acc: 0.1763
+Round 35 Loss: 6338.5085, Acc: 0.1929
+Round 36 Loss: 5489.0096, Acc: 0.1720
+Round 37 Loss: 4989.2621, Acc: 0.1651
+Round 38 Loss: 5327.1749, Acc: 0.1743
+Round 39 Loss: 5225.5278, Acc: 0.1638
+Round 40 Loss: 5666.3406, Acc: 0.1297
+Round 41 Loss: 4962.2705, Acc: 0.1439
+Round 42 Loss: 3790.3487, Acc: 0.1508
+Round 43 Loss: 4524.5555, Acc: 0.1827
+Round 44 Loss: 4433.4726, Acc: 0.1406
+Round 45 Loss: 3756.0386, Acc: 0.1592
+Round 46 Loss: 3927.4925, Acc: 0.1496
+Round 47 Loss: 3790.2199, Acc: 0.1620
+Round 48 Loss: 3138.0717, Acc: 0.1679
+Round 49 Loss: 3337.6919, Acc: 0.1501
+Round 50 Loss: 3427.8500, Acc: 0.1417
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'varydp', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir0.5', 'save_path': './res', 'dp': {'eps': 3, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': {'conv1.weight': 4.181984794139862, 'bn1.weight': 8.085697889328003, 'bn1.bias': 0.22725230641663074, 'bn1.running_mean': 0.928035831451416, 'bn1.running_var': 23.39664297103882, 'bn1.num_batches_tracked': 948.45, 'layer1.0.conv1.weight': 11.553188705444336, 'layer1.0.bn1.weight': 8.001431083679199, 'layer1.0.bn1.bias': 0.12198688723146915, 'layer1.0.bn1.running_mean': 9.957211875915528, 'layer1.0.bn1.running_var': 21.437686443328857, 'layer1.0.bn1.num_batches_tracked': 948.45, 'layer1.0.conv2.weight': 11.49886326789856, 'layer1.0.bn2.weight': 7.955541610717773, 'layer1.0.bn2.bias': 0.08299417328089476, 'layer1.0.bn2.running_mean': 6.568105173110962, 'layer1.0.bn2.running_var': 10.674507570266723, 'layer1.0.bn2.num_batches_tracked': 948.45, 'layer1.1.conv1.weight': 11.408628129959107, 'layer1.1.bn1.weight': 8.00065312385559, 'layer1.1.bn1.bias': 0.0794845481403172, 'layer1.1.bn1.running_mean': 10.903985643386841, 'layer1.1.bn1.running_var': 29.371485233306885, 'layer1.1.bn1.num_batches_tracked': 948.45, 'layer1.1.conv2.weight': 11.396786642074584, 'layer1.1.bn2.weight': 7.961781620979309, 'layer1.1.bn2.bias': 0.051205734629184006, 'layer1.1.bn2.running_mean': 4.988979530334473, 'layer1.1.bn2.running_var': 9.960107946395874, 'layer1.1.bn2.num_batches_tracked': 948.45, 'layer2.0.conv1.weight': 11.471849250793458, 'layer2.0.bn1.weight': 11.314029693603516, 'layer2.0.bn1.bias': 0.07692573871463537, 'layer2.0.bn1.running_mean': 15.89602222442627, 'layer2.0.bn1.running_var': 34.54496097564697, 'layer2.0.bn1.num_batches_tracked': 948.45, 'layer2.0.conv2.weight': 16.10927734375, 'layer2.0.bn2.weight': 11.296163606643677, 'layer2.0.bn2.bias': 0.07544297482818366, 'layer2.0.bn2.running_mean': 7.026301050186158, 'layer2.0.bn2.running_var': 13.906872034072876, 'layer2.0.bn2.num_batches_tracked': 948.45, 'layer2.0.downsample.0.weight': 11.267029619216919, 'layer2.0.downsample.1.weight': 11.349491548538207, 'layer2.0.downsample.1.bias': 0.07544297482818366, 'layer2.0.downsample.1.running_mean': 11.45429835319519, 'layer2.0.downsample.1.running_var': 22.135292053222656, 'layer2.0.downsample.1.num_batches_tracked': 948.45, 'layer2.1.conv1.weight': 16.1131609916687, 'layer2.1.bn1.weight': 11.313955354690552, 'layer2.1.bn1.bias': 0.0657136982306838, 'layer2.1.bn1.running_mean': 9.463627004623413, 'layer2.1.bn1.running_var': 27.911805057525633, 'layer2.1.bn1.num_batches_tracked': 948.45, 'layer2.1.conv2.weight': 16.073034048080444, 'layer2.1.bn2.weight': 11.296633291244508, 'layer2.1.bn2.bias': 0.04723547864705324, 'layer2.1.bn2.running_mean': 6.619246625900269, 'layer2.1.bn2.running_var': 13.078615045547485, 'layer2.1.bn2.num_batches_tracked': 948.45, 'layer3.0.conv1.weight': 16.100053691864012, 'layer3.0.bn1.weight': 16.000131034851073, 'layer3.0.bn1.bias': 0.05660345200449228, 'layer3.0.bn1.running_mean': 15.48650403022766, 'layer3.0.bn1.running_var': 36.36982908248901, 'layer3.0.bn1.num_batches_tracked': 948.45, 'layer3.0.conv2.weight': 22.712170696258546, 'layer3.0.bn2.weight': 16.000376224517822, 'layer3.0.bn2.bias': 0.06445518573746085, 'layer3.0.bn2.running_mean': 9.797925901412963, 'layer3.0.bn2.running_var': 20.095711517333985, 'layer3.0.bn2.num_batches_tracked': 948.45, 'layer3.0.downsample.0.weight': 16.045401668548585, 'layer3.0.downsample.1.weight': 15.991445159912109, 'layer3.0.downsample.1.bias': 0.06445518573746085, 'layer3.0.downsample.1.running_mean': 12.925026178359985, 'layer3.0.downsample.1.running_var': 26.70232629776001, 'layer3.0.downsample.1.num_batches_tracked': 948.45, 'layer3.1.conv1.weight': 22.692408561706543, 'layer3.1.bn1.weight': 16.000113677978515, 'layer3.1.bn1.bias': 0.04843625472858548, 'layer3.1.bn1.running_mean': 14.136521768569946, 'layer3.1.bn1.running_var': 42.91485424041748, 'layer3.1.bn1.num_batches_tracked': 948.45, 'layer3.1.conv2.weight': 22.696173095703124, 'layer3.1.bn2.weight': 16.008739137649535, 'layer3.1.bn2.bias': 0.04918956938199699, 'layer3.1.bn2.running_mean': 11.282309865951538, 'layer3.1.bn2.running_var': 25.04137134552002, 'layer3.1.bn2.num_batches_tracked': 948.45, 'layer4.0.conv1.weight': 22.71857271194458, 'layer4.0.bn1.weight': 22.62747268676758, 'layer4.0.bn1.bias': 0.04758210023865104, 'layer4.0.bn1.running_mean': 25.725024890899657, 'layer4.0.bn1.running_var': 74.89567260742187, 'layer4.0.bn1.num_batches_tracked': 948.45, 'layer4.0.conv2.weight': 32.0731107711792, 'layer4.0.bn2.weight': 22.399503993988038, 'layer4.0.bn2.bias': 0.5314272738993168, 'layer4.0.bn2.running_mean': 21.141964054107667, 'layer4.0.bn2.running_var': 64.82737131118775, 'layer4.0.bn2.num_batches_tracked': 948.45, 'layer4.0.downsample.0.weight': 22.623112201690674, 'layer4.0.downsample.1.weight': 22.4127179145813, 'layer4.0.downsample.1.bias': 0.5314272738993168, 'layer4.0.downsample.1.running_mean': 23.23727035522461, 'layer4.0.downsample.1.running_var': 63.886111640930174, 'layer4.0.downsample.1.num_batches_tracked': 948.45, 'layer4.1.conv1.weight': 32.076686477661134, 'layer4.1.bn1.weight': 22.627466201782227, 'layer4.1.bn1.bias': 0.06572004253976046, 'layer4.1.bn1.running_mean': 11.550013160705566, 'layer4.1.bn1.running_var': 24.157433795928956, 'layer4.1.bn1.num_batches_tracked': 948.45, 'layer4.1.conv2.weight': 32.069811534881595, 'layer4.1.bn2.weight': 22.221644401550293, 'layer4.1.bn2.bias': 0.9417458564043045, 'layer4.1.bn2.running_mean': 15.613087224960328, 'layer4.1.bn2.running_var': 42.65533618927002, 'layer4.1.bn2.num_batches_tracked': 948.45, 'fc.weight': 3.112790638208389, 'fc.bias': 0.08526732362806796}}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-varydp-dir0.5-3
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir0.5.npy
+Loading partition from ./temp/imagenette-c10-dir0.5.npy
+Data splitted
+varydp
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: nan, Acc: 0.0986
+Round 9 Loss: nan, Acc: 0.0986
+Round 10 Loss: nan, Acc: 0.0986
+Round 11 Loss: nan, Acc: 0.0986
+Round 12 Loss: nan, Acc: 0.0986
+Round 13 Loss: nan, Acc: 0.0986
+Round 14 Loss: nan, Acc: 0.0986
+Round 15 Loss: nan, Acc: 0.0986
+Round 16 Loss: nan, Acc: 0.0986
+Round 17 Loss: nan, Acc: 0.0986
+Round 18 Loss: nan, Acc: 0.0986
+Round 19 Loss: nan, Acc: 0.0986
+Round 20 Loss: 166948.5738, Acc: 0.0948
+Round 21 Loss: 35511.5981, Acc: 0.1197
+Round 22 Loss: 30314.6387, Acc: 0.1073
+Round 23 Loss: 18846.8934, Acc: 0.1121
+Round 24 Loss: 19805.1719, Acc: 0.1205
+Round 25 Loss: 24154.7263, Acc: 0.1001
+Round 26 Loss: 15232.3814, Acc: 0.1101
+Round 27 Loss: 12129.1163, Acc: 0.1320
+Round 28 Loss: 12962.7452, Acc: 0.1141
+Round 29 Loss: 13905.5912, Acc: 0.1330
+Round 30 Loss: 11099.9061, Acc: 0.1417
+Round 31 Loss: 8542.6110, Acc: 0.1503
+Round 32 Loss: 9178.4827, Acc: 0.1325
+Round 33 Loss: 9081.5816, Acc: 0.1554
+Round 34 Loss: 8226.2061, Acc: 0.1592
+Round 35 Loss: 8528.1892, Acc: 0.1480
+Round 36 Loss: 8774.6554, Acc: 0.1419
+Round 37 Loss: 6250.5295, Acc: 0.1582
+Round 38 Loss: 6473.0716, Acc: 0.1740
+Round 39 Loss: 6737.2047, Acc: 0.1475
+Round 40 Loss: 5917.4782, Acc: 0.1722
+Round 41 Loss: 7060.5176, Acc: 0.1791
+Round 42 Loss: 3482.9563, Acc: 0.2005
+Round 43 Loss: 5375.6004, Acc: 0.1676
+Round 44 Loss: 5551.8924, Acc: 0.1468
+Round 45 Loss: 4462.3894, Acc: 0.1699
+Round 46 Loss: 4157.3999, Acc: 0.1758
+Round 47 Loss: 3918.1467, Acc: 0.1529
+Round 48 Loss: 3214.7903, Acc: 0.1911
+Round 49 Loss: 3828.8104, Acc: 0.1804
+Round 50 Loss: 3979.2929, Acc: 0.1743
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'varydp', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir0.5', 'save_path': './res', 'dp': {'eps': 3, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': {'conv1.weight': 4.181984794139862, 'bn1.weight': 8.085697889328003, 'bn1.bias': 0.22725230641663074, 'bn1.running_mean': 0.928035831451416, 'bn1.running_var': 23.39664297103882, 'bn1.num_batches_tracked': 948.45, 'layer1.0.conv1.weight': 11.553188705444336, 'layer1.0.bn1.weight': 8.001431083679199, 'layer1.0.bn1.bias': 0.12198688723146915, 'layer1.0.bn1.running_mean': 9.957211875915528, 'layer1.0.bn1.running_var': 21.437686443328857, 'layer1.0.bn1.num_batches_tracked': 948.45, 'layer1.0.conv2.weight': 11.49886326789856, 'layer1.0.bn2.weight': 7.955541610717773, 'layer1.0.bn2.bias': 0.08299417328089476, 'layer1.0.bn2.running_mean': 6.568105173110962, 'layer1.0.bn2.running_var': 10.674507570266723, 'layer1.0.bn2.num_batches_tracked': 948.45, 'layer1.1.conv1.weight': 11.408628129959107, 'layer1.1.bn1.weight': 8.00065312385559, 'layer1.1.bn1.bias': 0.0794845481403172, 'layer1.1.bn1.running_mean': 10.903985643386841, 'layer1.1.bn1.running_var': 29.371485233306885, 'layer1.1.bn1.num_batches_tracked': 948.45, 'layer1.1.conv2.weight': 11.396786642074584, 'layer1.1.bn2.weight': 7.961781620979309, 'layer1.1.bn2.bias': 0.051205734629184006, 'layer1.1.bn2.running_mean': 4.988979530334473, 'layer1.1.bn2.running_var': 9.960107946395874, 'layer1.1.bn2.num_batches_tracked': 948.45, 'layer2.0.conv1.weight': 11.471849250793458, 'layer2.0.bn1.weight': 11.314029693603516, 'layer2.0.bn1.bias': 0.07692573871463537, 'layer2.0.bn1.running_mean': 15.89602222442627, 'layer2.0.bn1.running_var': 34.54496097564697, 'layer2.0.bn1.num_batches_tracked': 948.45, 'layer2.0.conv2.weight': 16.10927734375, 'layer2.0.bn2.weight': 11.296163606643677, 'layer2.0.bn2.bias': 0.07544297482818366, 'layer2.0.bn2.running_mean': 7.026301050186158, 'layer2.0.bn2.running_var': 13.906872034072876, 'layer2.0.bn2.num_batches_tracked': 948.45, 'layer2.0.downsample.0.weight': 11.267029619216919, 'layer2.0.downsample.1.weight': 11.349491548538207, 'layer2.0.downsample.1.bias': 0.07544297482818366, 'layer2.0.downsample.1.running_mean': 11.45429835319519, 'layer2.0.downsample.1.running_var': 22.135292053222656, 'layer2.0.downsample.1.num_batches_tracked': 948.45, 'layer2.1.conv1.weight': 16.1131609916687, 'layer2.1.bn1.weight': 11.313955354690552, 'layer2.1.bn1.bias': 0.0657136982306838, 'layer2.1.bn1.running_mean': 9.463627004623413, 'layer2.1.bn1.running_var': 27.911805057525633, 'layer2.1.bn1.num_batches_tracked': 948.45, 'layer2.1.conv2.weight': 16.073034048080444, 'layer2.1.bn2.weight': 11.296633291244508, 'layer2.1.bn2.bias': 0.04723547864705324, 'layer2.1.bn2.running_mean': 6.619246625900269, 'layer2.1.bn2.running_var': 13.078615045547485, 'layer2.1.bn2.num_batches_tracked': 948.45, 'layer3.0.conv1.weight': 16.100053691864012, 'layer3.0.bn1.weight': 16.000131034851073, 'layer3.0.bn1.bias': 0.05660345200449228, 'layer3.0.bn1.running_mean': 15.48650403022766, 'layer3.0.bn1.running_var': 36.36982908248901, 'layer3.0.bn1.num_batches_tracked': 948.45, 'layer3.0.conv2.weight': 22.712170696258546, 'layer3.0.bn2.weight': 16.000376224517822, 'layer3.0.bn2.bias': 0.06445518573746085, 'layer3.0.bn2.running_mean': 9.797925901412963, 'layer3.0.bn2.running_var': 20.095711517333985, 'layer3.0.bn2.num_batches_tracked': 948.45, 'layer3.0.downsample.0.weight': 16.045401668548585, 'layer3.0.downsample.1.weight': 15.991445159912109, 'layer3.0.downsample.1.bias': 0.06445518573746085, 'layer3.0.downsample.1.running_mean': 12.925026178359985, 'layer3.0.downsample.1.running_var': 26.70232629776001, 'layer3.0.downsample.1.num_batches_tracked': 948.45, 'layer3.1.conv1.weight': 22.692408561706543, 'layer3.1.bn1.weight': 16.000113677978515, 'layer3.1.bn1.bias': 0.04843625472858548, 'layer3.1.bn1.running_mean': 14.136521768569946, 'layer3.1.bn1.running_var': 42.91485424041748, 'layer3.1.bn1.num_batches_tracked': 948.45, 'layer3.1.conv2.weight': 22.696173095703124, 'layer3.1.bn2.weight': 16.008739137649535, 'layer3.1.bn2.bias': 0.04918956938199699, 'layer3.1.bn2.running_mean': 11.282309865951538, 'layer3.1.bn2.running_var': 25.04137134552002, 'layer3.1.bn2.num_batches_tracked': 948.45, 'layer4.0.conv1.weight': 22.71857271194458, 'layer4.0.bn1.weight': 22.62747268676758, 'layer4.0.bn1.bias': 0.04758210023865104, 'layer4.0.bn1.running_mean': 25.725024890899657, 'layer4.0.bn1.running_var': 74.89567260742187, 'layer4.0.bn1.num_batches_tracked': 948.45, 'layer4.0.conv2.weight': 32.0731107711792, 'layer4.0.bn2.weight': 22.399503993988038, 'layer4.0.bn2.bias': 0.5314272738993168, 'layer4.0.bn2.running_mean': 21.141964054107667, 'layer4.0.bn2.running_var': 64.82737131118775, 'layer4.0.bn2.num_batches_tracked': 948.45, 'layer4.0.downsample.0.weight': 22.623112201690674, 'layer4.0.downsample.1.weight': 22.4127179145813, 'layer4.0.downsample.1.bias': 0.5314272738993168, 'layer4.0.downsample.1.running_mean': 23.23727035522461, 'layer4.0.downsample.1.running_var': 63.886111640930174, 'layer4.0.downsample.1.num_batches_tracked': 948.45, 'layer4.1.conv1.weight': 32.076686477661134, 'layer4.1.bn1.weight': 22.627466201782227, 'layer4.1.bn1.bias': 0.06572004253976046, 'layer4.1.bn1.running_mean': 11.550013160705566, 'layer4.1.bn1.running_var': 24.157433795928956, 'layer4.1.bn1.num_batches_tracked': 948.45, 'layer4.1.conv2.weight': 32.069811534881595, 'layer4.1.bn2.weight': 22.221644401550293, 'layer4.1.bn2.bias': 0.9417458564043045, 'layer4.1.bn2.running_mean': 15.613087224960328, 'layer4.1.bn2.running_var': 42.65533618927002, 'layer4.1.bn2.num_batches_tracked': 948.45, 'fc.weight': 3.112790638208389, 'fc.bias': 0.08526732362806796}}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-varydp-dir0.5-4
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir0.5.npy
+Loading partition from ./temp/imagenette-c10-dir0.5.npy
+Data splitted
+varydp
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: nan, Acc: 0.0986
+Round 9 Loss: nan, Acc: 0.0986
+Round 10 Loss: nan, Acc: 0.0986
+Round 11 Loss: nan, Acc: 0.0986
+Round 12 Loss: nan, Acc: 0.0986
+Round 13 Loss: nan, Acc: 0.0986
+Round 14 Loss: nan, Acc: 0.0986
+Round 15 Loss: nan, Acc: 0.0986
+Round 16 Loss: nan, Acc: 0.0986
+Round 17 Loss: nan, Acc: 0.0986
+Round 18 Loss: nan, Acc: 0.0986
+Round 19 Loss: nan, Acc: 0.0986
+Round 20 Loss: nan, Acc: 0.0986
+Round 21 Loss: nan, Acc: 0.0986
+Round 22 Loss: nan, Acc: 0.0986
+Round 23 Loss: nan, Acc: 0.0986
+Round 24 Loss: nan, Acc: 0.0986
+Round 25 Loss: nan, Acc: 0.0986
+Round 26 Loss: 14186.9492, Acc: 0.1613
+Round 27 Loss: 9340.7821, Acc: 0.1508
+Round 28 Loss: 9443.9374, Acc: 0.1371
+Round 29 Loss: 8241.4313, Acc: 0.1524
+Round 30 Loss: 7072.8278, Acc: 0.1411
+Round 31 Loss: 7365.5258, Acc: 0.1248
+Round 32 Loss: 5757.6327, Acc: 0.1636
+Round 33 Loss: 4632.2030, Acc: 0.1850
+Round 34 Loss: 4152.4031, Acc: 0.1827
+Round 35 Loss: 4435.5269, Acc: 0.1366
+Round 36 Loss: 4049.1552, Acc: 0.1608
+Round 37 Loss: 4583.2004, Acc: 0.1355
+Round 38 Loss: 4492.9790, Acc: 0.1697
+Round 39 Loss: 4281.1057, Acc: 0.1796
+Round 40 Loss: 4600.5133, Acc: 0.1633
+Round 41 Loss: 3715.8898, Acc: 0.1552
+Round 42 Loss: 4008.6542, Acc: 0.1694
+Round 43 Loss: 4595.5159, Acc: 0.1654
+Round 44 Loss: 4242.8972, Acc: 0.1546
+Round 45 Loss: 3680.2997, Acc: 0.2033
+Round 46 Loss: 3935.4678, Acc: 0.1931
+Round 47 Loss: 3414.8333, Acc: 0.2010
+Round 48 Loss: 3119.2025, Acc: 0.2079
+Round 49 Loss: 3332.7295, Acc: 0.1949
+Round 50 Loss: 2489.3573, Acc: 0.2357

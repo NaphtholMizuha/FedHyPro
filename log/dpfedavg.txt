@@ -1,0 +1,886 @@
+None
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'dpfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'iid', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': {'conv1.weight': 4.181984794139862, 'bn1.weight': 8.085697889328003, 'bn1.bias': 0.22725230641663074, 'bn1.running_mean': 0.928035831451416, 'bn1.running_var': 23.39664297103882, 'bn1.num_batches_tracked': 948.45, 'layer1.0.conv1.weight': 11.553188705444336, 'layer1.0.bn1.weight': 8.001431083679199, 'layer1.0.bn1.bias': 0.12198688723146915, 'layer1.0.bn1.running_mean': 9.957211875915528, 'layer1.0.bn1.running_var': 21.437686443328857, 'layer1.0.bn1.num_batches_tracked': 948.45, 'layer1.0.conv2.weight': 11.49886326789856, 'layer1.0.bn2.weight': 7.955541610717773, 'layer1.0.bn2.bias': 0.08299417328089476, 'layer1.0.bn2.running_mean': 6.568105173110962, 'layer1.0.bn2.running_var': 10.674507570266723, 'layer1.0.bn2.num_batches_tracked': 948.45, 'layer1.1.conv1.weight': 11.408628129959107, 'layer1.1.bn1.weight': 8.00065312385559, 'layer1.1.bn1.bias': 0.0794845481403172, 'layer1.1.bn1.running_mean': 10.903985643386841, 'layer1.1.bn1.running_var': 29.371485233306885, 'layer1.1.bn1.num_batches_tracked': 948.45, 'layer1.1.conv2.weight': 11.396786642074584, 'layer1.1.bn2.weight': 7.961781620979309, 'layer1.1.bn2.bias': 0.051205734629184006, 'layer1.1.bn2.running_mean': 4.988979530334473, 'layer1.1.bn2.running_var': 9.960107946395874, 'layer1.1.bn2.num_batches_tracked': 948.45, 'layer2.0.conv1.weight': 11.471849250793458, 'layer2.0.bn1.weight': 11.314029693603516, 'layer2.0.bn1.bias': 0.07692573871463537, 'layer2.0.bn1.running_mean': 15.89602222442627, 'layer2.0.bn1.running_var': 34.54496097564697, 'layer2.0.bn1.num_batches_tracked': 948.45, 'layer2.0.conv2.weight': 16.10927734375, 'layer2.0.bn2.weight': 11.296163606643677, 'layer2.0.bn2.bias': 0.07544297482818366, 'layer2.0.bn2.running_mean': 7.026301050186158, 'layer2.0.bn2.running_var': 13.906872034072876, 'layer2.0.bn2.num_batches_tracked': 948.45, 'layer2.0.downsample.0.weight': 11.267029619216919, 'layer2.0.downsample.1.weight': 11.349491548538207, 'layer2.0.downsample.1.bias': 0.07544297482818366, 'layer2.0.downsample.1.running_mean': 11.45429835319519, 'layer2.0.downsample.1.running_var': 22.135292053222656, 'layer2.0.downsample.1.num_batches_tracked': 948.45, 'layer2.1.conv1.weight': 16.1131609916687, 'layer2.1.bn1.weight': 11.313955354690552, 'layer2.1.bn1.bias': 0.0657136982306838, 'layer2.1.bn1.running_mean': 9.463627004623413, 'layer2.1.bn1.running_var': 27.911805057525633, 'layer2.1.bn1.num_batches_tracked': 948.45, 'layer2.1.conv2.weight': 16.073034048080444, 'layer2.1.bn2.weight': 11.296633291244508, 'layer2.1.bn2.bias': 0.04723547864705324, 'layer2.1.bn2.running_mean': 6.619246625900269, 'layer2.1.bn2.running_var': 13.078615045547485, 'layer2.1.bn2.num_batches_tracked': 948.45, 'layer3.0.conv1.weight': 16.100053691864012, 'layer3.0.bn1.weight': 16.000131034851073, 'layer3.0.bn1.bias': 0.05660345200449228, 'layer3.0.bn1.running_mean': 15.48650403022766, 'layer3.0.bn1.running_var': 36.36982908248901, 'layer3.0.bn1.num_batches_tracked': 948.45, 'layer3.0.conv2.weight': 22.712170696258546, 'layer3.0.bn2.weight': 16.000376224517822, 'layer3.0.bn2.bias': 0.06445518573746085, 'layer3.0.bn2.running_mean': 9.797925901412963, 'layer3.0.bn2.running_var': 20.095711517333985, 'layer3.0.bn2.num_batches_tracked': 948.45, 'layer3.0.downsample.0.weight': 16.045401668548585, 'layer3.0.downsample.1.weight': 15.991445159912109, 'layer3.0.downsample.1.bias': 0.06445518573746085, 'layer3.0.downsample.1.running_mean': 12.925026178359985, 'layer3.0.downsample.1.running_var': 26.70232629776001, 'layer3.0.downsample.1.num_batches_tracked': 948.45, 'layer3.1.conv1.weight': 22.692408561706543, 'layer3.1.bn1.weight': 16.000113677978515, 'layer3.1.bn1.bias': 0.04843625472858548, 'layer3.1.bn1.running_mean': 14.136521768569946, 'layer3.1.bn1.running_var': 42.91485424041748, 'layer3.1.bn1.num_batches_tracked': 948.45, 'layer3.1.conv2.weight': 22.696173095703124, 'layer3.1.bn2.weight': 16.008739137649535, 'layer3.1.bn2.bias': 0.04918956938199699, 'layer3.1.bn2.running_mean': 11.282309865951538, 'layer3.1.bn2.running_var': 25.04137134552002, 'layer3.1.bn2.num_batches_tracked': 948.45, 'layer4.0.conv1.weight': 22.71857271194458, 'layer4.0.bn1.weight': 22.62747268676758, 'layer4.0.bn1.bias': 0.04758210023865104, 'layer4.0.bn1.running_mean': 25.725024890899657, 'layer4.0.bn1.running_var': 74.89567260742187, 'layer4.0.bn1.num_batches_tracked': 948.45, 'layer4.0.conv2.weight': 32.0731107711792, 'layer4.0.bn2.weight': 22.399503993988038, 'layer4.0.bn2.bias': 0.5314272738993168, 'layer4.0.bn2.running_mean': 21.141964054107667, 'layer4.0.bn2.running_var': 64.82737131118775, 'layer4.0.bn2.num_batches_tracked': 948.45, 'layer4.0.downsample.0.weight': 22.623112201690674, 'layer4.0.downsample.1.weight': 22.4127179145813, 'layer4.0.downsample.1.bias': 0.5314272738993168, 'layer4.0.downsample.1.running_mean': 23.23727035522461, 'layer4.0.downsample.1.running_var': 63.886111640930174, 'layer4.0.downsample.1.num_batches_tracked': 948.45, 'layer4.1.conv1.weight': 32.076686477661134, 'layer4.1.bn1.weight': 22.627466201782227, 'layer4.1.bn1.bias': 0.06572004253976046, 'layer4.1.bn1.running_mean': 11.550013160705566, 'layer4.1.bn1.running_var': 24.157433795928956, 'layer4.1.bn1.num_batches_tracked': 948.45, 'layer4.1.conv2.weight': 32.069811534881595, 'layer4.1.bn2.weight': 22.221644401550293, 'layer4.1.bn2.bias': 0.9417458564043045, 'layer4.1.bn2.running_mean': 15.613087224960328, 'layer4.1.bn2.running_var': 42.65533618927002, 'layer4.1.bn2.num_batches_tracked': 948.45, 'fc.weight': 3.112790638208389, 'fc.bias': 0.08526732362806796}}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-dpfedavg-iid-0
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-iid.npy
+Loading partition from ./temp/imagenette-c10-iid.npy
+Data splitted
+dpfedavg
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: 432.8699, Acc: 0.1011
+Round 5 Loss: 337.0603, Acc: 0.1169
+Round 6 Loss: 420.5792, Acc: 0.1006
+Round 7 Loss: 344.1900, Acc: 0.1083
+Round 8 Loss: 286.5926, Acc: 0.1101
+Round 9 Loss: 645.9193, Acc: 0.0963
+Round 10 Loss: 295.7370, Acc: 0.1297
+Round 11 Loss: 306.4136, Acc: 0.1180
+Round 12 Loss: 276.6057, Acc: 0.1228
+Round 13 Loss: 442.1170, Acc: 0.1090
+Round 14 Loss: 486.2924, Acc: 0.1378
+Round 15 Loss: 490.0377, Acc: 0.1164
+Round 16 Loss: 479.7018, Acc: 0.1169
+Round 17 Loss: 562.1704, Acc: 0.1162
+Round 18 Loss: 551.7639, Acc: 0.1080
+Round 19 Loss: 782.7468, Acc: 0.0966
+Round 20 Loss: 873.4949, Acc: 0.1014
+Round 21 Loss: 933.7603, Acc: 0.0927
+Round 22 Loss: 599.2039, Acc: 0.1169
+Round 23 Loss: 305.2664, Acc: 0.1332
+Round 24 Loss: 636.6021, Acc: 0.1014
+Round 25 Loss: 354.6786, Acc: 0.1447
+Round 26 Loss: 332.9271, Acc: 0.1605
+Round 27 Loss: 426.8060, Acc: 0.1243
+Round 28 Loss: 388.8653, Acc: 0.1562
+Round 29 Loss: 893.6786, Acc: 0.1047
+Round 30 Loss: 675.3100, Acc: 0.1338
+Round 31 Loss: 422.6817, Acc: 0.1396
+Round 32 Loss: 520.8695, Acc: 0.1600
+Round 33 Loss: 799.3072, Acc: 0.1144
+Round 34 Loss: 762.7376, Acc: 0.1819
+Round 35 Loss: 685.0625, Acc: 0.1518
+Round 36 Loss: 873.7732, Acc: 0.1141
+Round 37 Loss: 1233.9297, Acc: 0.1098
+Round 38 Loss: 958.1145, Acc: 0.1185
+Round 39 Loss: 613.6056, Acc: 0.1524
+Round 40 Loss: 791.5951, Acc: 0.1501
+Round 41 Loss: 489.9899, Acc: 0.1804
+Round 42 Loss: 813.0405, Acc: 0.1315
+Round 43 Loss: 649.0312, Acc: 0.1327
+Round 44 Loss: 886.0314, Acc: 0.1513
+Round 45 Loss: 507.1694, Acc: 0.1674
+Round 46 Loss: 779.0557, Acc: 0.1470
+Round 47 Loss: 1039.7070, Acc: 0.1254
+Round 48 Loss: 687.5840, Acc: 0.1297
+Round 49 Loss: 649.1888, Acc: 0.1266
+Round 50 Loss: 988.4903, Acc: 0.1131
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'dpfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'iid', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': {'conv1.weight': 4.181984794139862, 'bn1.weight': 8.085697889328003, 'bn1.bias': 0.22725230641663074, 'bn1.running_mean': 0.928035831451416, 'bn1.running_var': 23.39664297103882, 'bn1.num_batches_tracked': 948.45, 'layer1.0.conv1.weight': 11.553188705444336, 'layer1.0.bn1.weight': 8.001431083679199, 'layer1.0.bn1.bias': 0.12198688723146915, 'layer1.0.bn1.running_mean': 9.957211875915528, 'layer1.0.bn1.running_var': 21.437686443328857, 'layer1.0.bn1.num_batches_tracked': 948.45, 'layer1.0.conv2.weight': 11.49886326789856, 'layer1.0.bn2.weight': 7.955541610717773, 'layer1.0.bn2.bias': 0.08299417328089476, 'layer1.0.bn2.running_mean': 6.568105173110962, 'layer1.0.bn2.running_var': 10.674507570266723, 'layer1.0.bn2.num_batches_tracked': 948.45, 'layer1.1.conv1.weight': 11.408628129959107, 'layer1.1.bn1.weight': 8.00065312385559, 'layer1.1.bn1.bias': 0.0794845481403172, 'layer1.1.bn1.running_mean': 10.903985643386841, 'layer1.1.bn1.running_var': 29.371485233306885, 'layer1.1.bn1.num_batches_tracked': 948.45, 'layer1.1.conv2.weight': 11.396786642074584, 'layer1.1.bn2.weight': 7.961781620979309, 'layer1.1.bn2.bias': 0.051205734629184006, 'layer1.1.bn2.running_mean': 4.988979530334473, 'layer1.1.bn2.running_var': 9.960107946395874, 'layer1.1.bn2.num_batches_tracked': 948.45, 'layer2.0.conv1.weight': 11.471849250793458, 'layer2.0.bn1.weight': 11.314029693603516, 'layer2.0.bn1.bias': 0.07692573871463537, 'layer2.0.bn1.running_mean': 15.89602222442627, 'layer2.0.bn1.running_var': 34.54496097564697, 'layer2.0.bn1.num_batches_tracked': 948.45, 'layer2.0.conv2.weight': 16.10927734375, 'layer2.0.bn2.weight': 11.296163606643677, 'layer2.0.bn2.bias': 0.07544297482818366, 'layer2.0.bn2.running_mean': 7.026301050186158, 'layer2.0.bn2.running_var': 13.906872034072876, 'layer2.0.bn2.num_batches_tracked': 948.45, 'layer2.0.downsample.0.weight': 11.267029619216919, 'layer2.0.downsample.1.weight': 11.349491548538207, 'layer2.0.downsample.1.bias': 0.07544297482818366, 'layer2.0.downsample.1.running_mean': 11.45429835319519, 'layer2.0.downsample.1.running_var': 22.135292053222656, 'layer2.0.downsample.1.num_batches_tracked': 948.45, 'layer2.1.conv1.weight': 16.1131609916687, 'layer2.1.bn1.weight': 11.313955354690552, 'layer2.1.bn1.bias': 0.0657136982306838, 'layer2.1.bn1.running_mean': 9.463627004623413, 'layer2.1.bn1.running_var': 27.911805057525633, 'layer2.1.bn1.num_batches_tracked': 948.45, 'layer2.1.conv2.weight': 16.073034048080444, 'layer2.1.bn2.weight': 11.296633291244508, 'layer2.1.bn2.bias': 0.04723547864705324, 'layer2.1.bn2.running_mean': 6.619246625900269, 'layer2.1.bn2.running_var': 13.078615045547485, 'layer2.1.bn2.num_batches_tracked': 948.45, 'layer3.0.conv1.weight': 16.100053691864012, 'layer3.0.bn1.weight': 16.000131034851073, 'layer3.0.bn1.bias': 0.05660345200449228, 'layer3.0.bn1.running_mean': 15.48650403022766, 'layer3.0.bn1.running_var': 36.36982908248901, 'layer3.0.bn1.num_batches_tracked': 948.45, 'layer3.0.conv2.weight': 22.712170696258546, 'layer3.0.bn2.weight': 16.000376224517822, 'layer3.0.bn2.bias': 0.06445518573746085, 'layer3.0.bn2.running_mean': 9.797925901412963, 'layer3.0.bn2.running_var': 20.095711517333985, 'layer3.0.bn2.num_batches_tracked': 948.45, 'layer3.0.downsample.0.weight': 16.045401668548585, 'layer3.0.downsample.1.weight': 15.991445159912109, 'layer3.0.downsample.1.bias': 0.06445518573746085, 'layer3.0.downsample.1.running_mean': 12.925026178359985, 'layer3.0.downsample.1.running_var': 26.70232629776001, 'layer3.0.downsample.1.num_batches_tracked': 948.45, 'layer3.1.conv1.weight': 22.692408561706543, 'layer3.1.bn1.weight': 16.000113677978515, 'layer3.1.bn1.bias': 0.04843625472858548, 'layer3.1.bn1.running_mean': 14.136521768569946, 'layer3.1.bn1.running_var': 42.91485424041748, 'layer3.1.bn1.num_batches_tracked': 948.45, 'layer3.1.conv2.weight': 22.696173095703124, 'layer3.1.bn2.weight': 16.008739137649535, 'layer3.1.bn2.bias': 0.04918956938199699, 'layer3.1.bn2.running_mean': 11.282309865951538, 'layer3.1.bn2.running_var': 25.04137134552002, 'layer3.1.bn2.num_batches_tracked': 948.45, 'layer4.0.conv1.weight': 22.71857271194458, 'layer4.0.bn1.weight': 22.62747268676758, 'layer4.0.bn1.bias': 0.04758210023865104, 'layer4.0.bn1.running_mean': 25.725024890899657, 'layer4.0.bn1.running_var': 74.89567260742187, 'layer4.0.bn1.num_batches_tracked': 948.45, 'layer4.0.conv2.weight': 32.0731107711792, 'layer4.0.bn2.weight': 22.399503993988038, 'layer4.0.bn2.bias': 0.5314272738993168, 'layer4.0.bn2.running_mean': 21.141964054107667, 'layer4.0.bn2.running_var': 64.82737131118775, 'layer4.0.bn2.num_batches_tracked': 948.45, 'layer4.0.downsample.0.weight': 22.623112201690674, 'layer4.0.downsample.1.weight': 22.4127179145813, 'layer4.0.downsample.1.bias': 0.5314272738993168, 'layer4.0.downsample.1.running_mean': 23.23727035522461, 'layer4.0.downsample.1.running_var': 63.886111640930174, 'layer4.0.downsample.1.num_batches_tracked': 948.45, 'layer4.1.conv1.weight': 32.076686477661134, 'layer4.1.bn1.weight': 22.627466201782227, 'layer4.1.bn1.bias': 0.06572004253976046, 'layer4.1.bn1.running_mean': 11.550013160705566, 'layer4.1.bn1.running_var': 24.157433795928956, 'layer4.1.bn1.num_batches_tracked': 948.45, 'layer4.1.conv2.weight': 32.069811534881595, 'layer4.1.bn2.weight': 22.221644401550293, 'layer4.1.bn2.bias': 0.9417458564043045, 'layer4.1.bn2.running_mean': 15.613087224960328, 'layer4.1.bn2.running_var': 42.65533618927002, 'layer4.1.bn2.num_batches_tracked': 948.45, 'fc.weight': 3.112790638208389, 'fc.bias': 0.08526732362806796}}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-dpfedavg-iid-1
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-iid.npy
+Loading partition from ./temp/imagenette-c10-iid.npy
+Data splitted
+dpfedavg
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: 528.0804, Acc: 0.1014
+Round 4 Loss: 446.4922, Acc: 0.1065
+Round 5 Loss: 418.8222, Acc: 0.1014
+Round 6 Loss: 454.3206, Acc: 0.1029
+Round 7 Loss: 324.2634, Acc: 0.1363
+Round 8 Loss: 413.2449, Acc: 0.0971
+Round 9 Loss: 426.3920, Acc: 0.1088
+Round 10 Loss: 329.3437, Acc: 0.0917
+Round 11 Loss: 372.4115, Acc: 0.1098
+Round 12 Loss: 499.9801, Acc: 0.1152
+Round 13 Loss: 316.5026, Acc: 0.1488
+Round 14 Loss: 431.2437, Acc: 0.1085
+Round 15 Loss: 322.8772, Acc: 0.1717
+Round 16 Loss: 445.2389, Acc: 0.1348
+Round 17 Loss: 356.9286, Acc: 0.1146
+Round 18 Loss: 457.6191, Acc: 0.0889
+Round 19 Loss: 720.9416, Acc: 0.0991
+Round 20 Loss: 478.4302, Acc: 0.1009
+Round 21 Loss: 467.8589, Acc: 0.1154
+Round 22 Loss: 491.7888, Acc: 0.1182
+Round 23 Loss: 419.9023, Acc: 0.0983
+Round 24 Loss: 483.7782, Acc: 0.1544
+Round 25 Loss: 453.4109, Acc: 0.1310
+Round 26 Loss: 425.0142, Acc: 0.1327
+Round 27 Loss: 345.3127, Acc: 0.1490
+Round 28 Loss: 447.8253, Acc: 0.1330
+Round 29 Loss: 397.8166, Acc: 0.1529
+Round 30 Loss: 374.6509, Acc: 0.1404
+Round 31 Loss: 457.9597, Acc: 0.1299
+Round 32 Loss: 730.1004, Acc: 0.1027
+Round 33 Loss: 755.2432, Acc: 0.0910
+Round 34 Loss: 538.8379, Acc: 0.1417
+Round 35 Loss: 512.3398, Acc: 0.1343
+Round 36 Loss: 657.1955, Acc: 0.1139
+Round 37 Loss: 784.7297, Acc: 0.1126
+Round 38 Loss: 741.2609, Acc: 0.1338
+Round 39 Loss: 451.2164, Acc: 0.1450
+Round 40 Loss: 728.2507, Acc: 0.1185
+Round 41 Loss: 460.0326, Acc: 0.1496
+Round 42 Loss: 481.9924, Acc: 0.1465
+Round 43 Loss: 768.1298, Acc: 0.1251
+Round 44 Loss: 1191.2303, Acc: 0.1325
+Round 45 Loss: 670.3752, Acc: 0.1468
+Round 46 Loss: 585.4964, Acc: 0.1648
+Round 47 Loss: 565.8351, Acc: 0.1182
+Round 48 Loss: 586.6920, Acc: 0.1631
+Round 49 Loss: 758.5108, Acc: 0.1203
+Round 50 Loss: 710.5532, Acc: 0.1332
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'dpfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'iid', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': {'conv1.weight': 4.181984794139862, 'bn1.weight': 8.085697889328003, 'bn1.bias': 0.22725230641663074, 'bn1.running_mean': 0.928035831451416, 'bn1.running_var': 23.39664297103882, 'bn1.num_batches_tracked': 948.45, 'layer1.0.conv1.weight': 11.553188705444336, 'layer1.0.bn1.weight': 8.001431083679199, 'layer1.0.bn1.bias': 0.12198688723146915, 'layer1.0.bn1.running_mean': 9.957211875915528, 'layer1.0.bn1.running_var': 21.437686443328857, 'layer1.0.bn1.num_batches_tracked': 948.45, 'layer1.0.conv2.weight': 11.49886326789856, 'layer1.0.bn2.weight': 7.955541610717773, 'layer1.0.bn2.bias': 0.08299417328089476, 'layer1.0.bn2.running_mean': 6.568105173110962, 'layer1.0.bn2.running_var': 10.674507570266723, 'layer1.0.bn2.num_batches_tracked': 948.45, 'layer1.1.conv1.weight': 11.408628129959107, 'layer1.1.bn1.weight': 8.00065312385559, 'layer1.1.bn1.bias': 0.0794845481403172, 'layer1.1.bn1.running_mean': 10.903985643386841, 'layer1.1.bn1.running_var': 29.371485233306885, 'layer1.1.bn1.num_batches_tracked': 948.45, 'layer1.1.conv2.weight': 11.396786642074584, 'layer1.1.bn2.weight': 7.961781620979309, 'layer1.1.bn2.bias': 0.051205734629184006, 'layer1.1.bn2.running_mean': 4.988979530334473, 'layer1.1.bn2.running_var': 9.960107946395874, 'layer1.1.bn2.num_batches_tracked': 948.45, 'layer2.0.conv1.weight': 11.471849250793458, 'layer2.0.bn1.weight': 11.314029693603516, 'layer2.0.bn1.bias': 0.07692573871463537, 'layer2.0.bn1.running_mean': 15.89602222442627, 'layer2.0.bn1.running_var': 34.54496097564697, 'layer2.0.bn1.num_batches_tracked': 948.45, 'layer2.0.conv2.weight': 16.10927734375, 'layer2.0.bn2.weight': 11.296163606643677, 'layer2.0.bn2.bias': 0.07544297482818366, 'layer2.0.bn2.running_mean': 7.026301050186158, 'layer2.0.bn2.running_var': 13.906872034072876, 'layer2.0.bn2.num_batches_tracked': 948.45, 'layer2.0.downsample.0.weight': 11.267029619216919, 'layer2.0.downsample.1.weight': 11.349491548538207, 'layer2.0.downsample.1.bias': 0.07544297482818366, 'layer2.0.downsample.1.running_mean': 11.45429835319519, 'layer2.0.downsample.1.running_var': 22.135292053222656, 'layer2.0.downsample.1.num_batches_tracked': 948.45, 'layer2.1.conv1.weight': 16.1131609916687, 'layer2.1.bn1.weight': 11.313955354690552, 'layer2.1.bn1.bias': 0.0657136982306838, 'layer2.1.bn1.running_mean': 9.463627004623413, 'layer2.1.bn1.running_var': 27.911805057525633, 'layer2.1.bn1.num_batches_tracked': 948.45, 'layer2.1.conv2.weight': 16.073034048080444, 'layer2.1.bn2.weight': 11.296633291244508, 'layer2.1.bn2.bias': 0.04723547864705324, 'layer2.1.bn2.running_mean': 6.619246625900269, 'layer2.1.bn2.running_var': 13.078615045547485, 'layer2.1.bn2.num_batches_tracked': 948.45, 'layer3.0.conv1.weight': 16.100053691864012, 'layer3.0.bn1.weight': 16.000131034851073, 'layer3.0.bn1.bias': 0.05660345200449228, 'layer3.0.bn1.running_mean': 15.48650403022766, 'layer3.0.bn1.running_var': 36.36982908248901, 'layer3.0.bn1.num_batches_tracked': 948.45, 'layer3.0.conv2.weight': 22.712170696258546, 'layer3.0.bn2.weight': 16.000376224517822, 'layer3.0.bn2.bias': 0.06445518573746085, 'layer3.0.bn2.running_mean': 9.797925901412963, 'layer3.0.bn2.running_var': 20.095711517333985, 'layer3.0.bn2.num_batches_tracked': 948.45, 'layer3.0.downsample.0.weight': 16.045401668548585, 'layer3.0.downsample.1.weight': 15.991445159912109, 'layer3.0.downsample.1.bias': 0.06445518573746085, 'layer3.0.downsample.1.running_mean': 12.925026178359985, 'layer3.0.downsample.1.running_var': 26.70232629776001, 'layer3.0.downsample.1.num_batches_tracked': 948.45, 'layer3.1.conv1.weight': 22.692408561706543, 'layer3.1.bn1.weight': 16.000113677978515, 'layer3.1.bn1.bias': 0.04843625472858548, 'layer3.1.bn1.running_mean': 14.136521768569946, 'layer3.1.bn1.running_var': 42.91485424041748, 'layer3.1.bn1.num_batches_tracked': 948.45, 'layer3.1.conv2.weight': 22.696173095703124, 'layer3.1.bn2.weight': 16.008739137649535, 'layer3.1.bn2.bias': 0.04918956938199699, 'layer3.1.bn2.running_mean': 11.282309865951538, 'layer3.1.bn2.running_var': 25.04137134552002, 'layer3.1.bn2.num_batches_tracked': 948.45, 'layer4.0.conv1.weight': 22.71857271194458, 'layer4.0.bn1.weight': 22.62747268676758, 'layer4.0.bn1.bias': 0.04758210023865104, 'layer4.0.bn1.running_mean': 25.725024890899657, 'layer4.0.bn1.running_var': 74.89567260742187, 'layer4.0.bn1.num_batches_tracked': 948.45, 'layer4.0.conv2.weight': 32.0731107711792, 'layer4.0.bn2.weight': 22.399503993988038, 'layer4.0.bn2.bias': 0.5314272738993168, 'layer4.0.bn2.running_mean': 21.141964054107667, 'layer4.0.bn2.running_var': 64.82737131118775, 'layer4.0.bn2.num_batches_tracked': 948.45, 'layer4.0.downsample.0.weight': 22.623112201690674, 'layer4.0.downsample.1.weight': 22.4127179145813, 'layer4.0.downsample.1.bias': 0.5314272738993168, 'layer4.0.downsample.1.running_mean': 23.23727035522461, 'layer4.0.downsample.1.running_var': 63.886111640930174, 'layer4.0.downsample.1.num_batches_tracked': 948.45, 'layer4.1.conv1.weight': 32.076686477661134, 'layer4.1.bn1.weight': 22.627466201782227, 'layer4.1.bn1.bias': 0.06572004253976046, 'layer4.1.bn1.running_mean': 11.550013160705566, 'layer4.1.bn1.running_var': 24.157433795928956, 'layer4.1.bn1.num_batches_tracked': 948.45, 'layer4.1.conv2.weight': 32.069811534881595, 'layer4.1.bn2.weight': 22.221644401550293, 'layer4.1.bn2.bias': 0.9417458564043045, 'layer4.1.bn2.running_mean': 15.613087224960328, 'layer4.1.bn2.running_var': 42.65533618927002, 'layer4.1.bn2.num_batches_tracked': 948.45, 'fc.weight': 3.112790638208389, 'fc.bias': 0.08526732362806796}}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-dpfedavg-iid-2
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-iid.npy
+Loading partition from ./temp/imagenette-c10-iid.npy
+Data splitted
+dpfedavg
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: 544.4839, Acc: 0.0910
+Round 5 Loss: 532.3171, Acc: 0.1006
+Round 6 Loss: 336.9292, Acc: 0.1062
+Round 7 Loss: 189.5693, Acc: 0.1307
+Round 8 Loss: 222.8489, Acc: 0.1088
+Round 9 Loss: 186.0344, Acc: 0.1080
+Round 10 Loss: 348.6692, Acc: 0.1001
+Round 11 Loss: 295.0427, Acc: 0.0927
+Round 12 Loss: 346.6997, Acc: 0.1154
+Round 13 Loss: 234.1371, Acc: 0.1164
+Round 14 Loss: 362.1294, Acc: 0.1292
+Round 15 Loss: 462.4227, Acc: 0.1017
+Round 16 Loss: 327.7103, Acc: 0.1146
+Round 17 Loss: 431.3337, Acc: 0.1406
+Round 18 Loss: 736.8071, Acc: 0.0917
+Round 19 Loss: 543.5069, Acc: 0.1185
+Round 20 Loss: 1045.2993, Acc: 0.0902
+Round 21 Loss: 542.3947, Acc: 0.1190
+Round 22 Loss: 546.8219, Acc: 0.0925
+Round 23 Loss: 848.7486, Acc: 0.0910
+Round 24 Loss: 527.2470, Acc: 0.0945
+Round 25 Loss: 482.2297, Acc: 0.1350
+Round 26 Loss: 506.9652, Acc: 0.1121
+Round 27 Loss: 576.4086, Acc: 0.1108
+Round 28 Loss: 887.5247, Acc: 0.0917
+Round 29 Loss: 634.8559, Acc: 0.1085
+Round 30 Loss: 966.3640, Acc: 0.1024
+Round 31 Loss: 760.6051, Acc: 0.1327
+Round 32 Loss: 485.9916, Acc: 0.1608
+Round 33 Loss: 492.3740, Acc: 0.1773
+Round 34 Loss: 469.8303, Acc: 0.1829
+Round 35 Loss: 943.0382, Acc: 0.1506
+Round 36 Loss: 669.3927, Acc: 0.1363
+Round 37 Loss: 828.1560, Acc: 0.1279
+Round 38 Loss: 1027.7190, Acc: 0.0986
+Round 39 Loss: 979.4020, Acc: 0.1113
+Round 40 Loss: 1408.5143, Acc: 0.1190
+Round 41 Loss: 1128.5038, Acc: 0.1302
+Round 42 Loss: 1079.9444, Acc: 0.1404
+Round 43 Loss: 979.5545, Acc: 0.1218
+Round 44 Loss: 1593.4231, Acc: 0.1006
+Round 45 Loss: 754.8431, Acc: 0.1811
+Round 46 Loss: 1315.9740, Acc: 0.1302
+Round 47 Loss: 1425.4188, Acc: 0.0787
+Round 48 Loss: 814.8826, Acc: 0.1562
+Round 49 Loss: 839.5079, Acc: 0.1394
+Round 50 Loss: 1489.5435, Acc: 0.1159
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'dpfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'iid', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': {'conv1.weight': 4.181984794139862, 'bn1.weight': 8.085697889328003, 'bn1.bias': 0.22725230641663074, 'bn1.running_mean': 0.928035831451416, 'bn1.running_var': 23.39664297103882, 'bn1.num_batches_tracked': 948.45, 'layer1.0.conv1.weight': 11.553188705444336, 'layer1.0.bn1.weight': 8.001431083679199, 'layer1.0.bn1.bias': 0.12198688723146915, 'layer1.0.bn1.running_mean': 9.957211875915528, 'layer1.0.bn1.running_var': 21.437686443328857, 'layer1.0.bn1.num_batches_tracked': 948.45, 'layer1.0.conv2.weight': 11.49886326789856, 'layer1.0.bn2.weight': 7.955541610717773, 'layer1.0.bn2.bias': 0.08299417328089476, 'layer1.0.bn2.running_mean': 6.568105173110962, 'layer1.0.bn2.running_var': 10.674507570266723, 'layer1.0.bn2.num_batches_tracked': 948.45, 'layer1.1.conv1.weight': 11.408628129959107, 'layer1.1.bn1.weight': 8.00065312385559, 'layer1.1.bn1.bias': 0.0794845481403172, 'layer1.1.bn1.running_mean': 10.903985643386841, 'layer1.1.bn1.running_var': 29.371485233306885, 'layer1.1.bn1.num_batches_tracked': 948.45, 'layer1.1.conv2.weight': 11.396786642074584, 'layer1.1.bn2.weight': 7.961781620979309, 'layer1.1.bn2.bias': 0.051205734629184006, 'layer1.1.bn2.running_mean': 4.988979530334473, 'layer1.1.bn2.running_var': 9.960107946395874, 'layer1.1.bn2.num_batches_tracked': 948.45, 'layer2.0.conv1.weight': 11.471849250793458, 'layer2.0.bn1.weight': 11.314029693603516, 'layer2.0.bn1.bias': 0.07692573871463537, 'layer2.0.bn1.running_mean': 15.89602222442627, 'layer2.0.bn1.running_var': 34.54496097564697, 'layer2.0.bn1.num_batches_tracked': 948.45, 'layer2.0.conv2.weight': 16.10927734375, 'layer2.0.bn2.weight': 11.296163606643677, 'layer2.0.bn2.bias': 0.07544297482818366, 'layer2.0.bn2.running_mean': 7.026301050186158, 'layer2.0.bn2.running_var': 13.906872034072876, 'layer2.0.bn2.num_batches_tracked': 948.45, 'layer2.0.downsample.0.weight': 11.267029619216919, 'layer2.0.downsample.1.weight': 11.349491548538207, 'layer2.0.downsample.1.bias': 0.07544297482818366, 'layer2.0.downsample.1.running_mean': 11.45429835319519, 'layer2.0.downsample.1.running_var': 22.135292053222656, 'layer2.0.downsample.1.num_batches_tracked': 948.45, 'layer2.1.conv1.weight': 16.1131609916687, 'layer2.1.bn1.weight': 11.313955354690552, 'layer2.1.bn1.bias': 0.0657136982306838, 'layer2.1.bn1.running_mean': 9.463627004623413, 'layer2.1.bn1.running_var': 27.911805057525633, 'layer2.1.bn1.num_batches_tracked': 948.45, 'layer2.1.conv2.weight': 16.073034048080444, 'layer2.1.bn2.weight': 11.296633291244508, 'layer2.1.bn2.bias': 0.04723547864705324, 'layer2.1.bn2.running_mean': 6.619246625900269, 'layer2.1.bn2.running_var': 13.078615045547485, 'layer2.1.bn2.num_batches_tracked': 948.45, 'layer3.0.conv1.weight': 16.100053691864012, 'layer3.0.bn1.weight': 16.000131034851073, 'layer3.0.bn1.bias': 0.05660345200449228, 'layer3.0.bn1.running_mean': 15.48650403022766, 'layer3.0.bn1.running_var': 36.36982908248901, 'layer3.0.bn1.num_batches_tracked': 948.45, 'layer3.0.conv2.weight': 22.712170696258546, 'layer3.0.bn2.weight': 16.000376224517822, 'layer3.0.bn2.bias': 0.06445518573746085, 'layer3.0.bn2.running_mean': 9.797925901412963, 'layer3.0.bn2.running_var': 20.095711517333985, 'layer3.0.bn2.num_batches_tracked': 948.45, 'layer3.0.downsample.0.weight': 16.045401668548585, 'layer3.0.downsample.1.weight': 15.991445159912109, 'layer3.0.downsample.1.bias': 0.06445518573746085, 'layer3.0.downsample.1.running_mean': 12.925026178359985, 'layer3.0.downsample.1.running_var': 26.70232629776001, 'layer3.0.downsample.1.num_batches_tracked': 948.45, 'layer3.1.conv1.weight': 22.692408561706543, 'layer3.1.bn1.weight': 16.000113677978515, 'layer3.1.bn1.bias': 0.04843625472858548, 'layer3.1.bn1.running_mean': 14.136521768569946, 'layer3.1.bn1.running_var': 42.91485424041748, 'layer3.1.bn1.num_batches_tracked': 948.45, 'layer3.1.conv2.weight': 22.696173095703124, 'layer3.1.bn2.weight': 16.008739137649535, 'layer3.1.bn2.bias': 0.04918956938199699, 'layer3.1.bn2.running_mean': 11.282309865951538, 'layer3.1.bn2.running_var': 25.04137134552002, 'layer3.1.bn2.num_batches_tracked': 948.45, 'layer4.0.conv1.weight': 22.71857271194458, 'layer4.0.bn1.weight': 22.62747268676758, 'layer4.0.bn1.bias': 0.04758210023865104, 'layer4.0.bn1.running_mean': 25.725024890899657, 'layer4.0.bn1.running_var': 74.89567260742187, 'layer4.0.bn1.num_batches_tracked': 948.45, 'layer4.0.conv2.weight': 32.0731107711792, 'layer4.0.bn2.weight': 22.399503993988038, 'layer4.0.bn2.bias': 0.5314272738993168, 'layer4.0.bn2.running_mean': 21.141964054107667, 'layer4.0.bn2.running_var': 64.82737131118775, 'layer4.0.bn2.num_batches_tracked': 948.45, 'layer4.0.downsample.0.weight': 22.623112201690674, 'layer4.0.downsample.1.weight': 22.4127179145813, 'layer4.0.downsample.1.bias': 0.5314272738993168, 'layer4.0.downsample.1.running_mean': 23.23727035522461, 'layer4.0.downsample.1.running_var': 63.886111640930174, 'layer4.0.downsample.1.num_batches_tracked': 948.45, 'layer4.1.conv1.weight': 32.076686477661134, 'layer4.1.bn1.weight': 22.627466201782227, 'layer4.1.bn1.bias': 0.06572004253976046, 'layer4.1.bn1.running_mean': 11.550013160705566, 'layer4.1.bn1.running_var': 24.157433795928956, 'layer4.1.bn1.num_batches_tracked': 948.45, 'layer4.1.conv2.weight': 32.069811534881595, 'layer4.1.bn2.weight': 22.221644401550293, 'layer4.1.bn2.bias': 0.9417458564043045, 'layer4.1.bn2.running_mean': 15.613087224960328, 'layer4.1.bn2.running_var': 42.65533618927002, 'layer4.1.bn2.num_batches_tracked': 948.45, 'fc.weight': 3.112790638208389, 'fc.bias': 0.08526732362806796}}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-dpfedavg-iid-3
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-iid.npy
+Loading partition from ./temp/imagenette-c10-iid.npy
+Data splitted
+dpfedavg
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: 879.6303, Acc: 0.1042
+Round 4 Loss: 246.8734, Acc: 0.0818
+Round 5 Loss: 355.9696, Acc: 0.1011
+Round 6 Loss: 380.2195, Acc: 0.1101
+Round 7 Loss: 369.6056, Acc: 0.1027
+Round 8 Loss: 373.1762, Acc: 0.1361
+Round 9 Loss: 322.5508, Acc: 0.1595
+Round 10 Loss: 469.5105, Acc: 0.1427
+Round 11 Loss: 406.3802, Acc: 0.1182
+Round 12 Loss: 312.0375, Acc: 0.0978
+Round 13 Loss: 282.2133, Acc: 0.1172
+Round 14 Loss: 608.8861, Acc: 0.0986
+Round 15 Loss: 561.9385, Acc: 0.0966
+Round 16 Loss: 542.4463, Acc: 0.0950
+Round 17 Loss: 799.8865, Acc: 0.1068
+Round 18 Loss: 428.8863, Acc: 0.1348
+Round 19 Loss: 448.0090, Acc: 0.1417
+Round 20 Loss: 400.2970, Acc: 0.1585
+Round 21 Loss: 457.1757, Acc: 0.1353
+Round 22 Loss: 444.4097, Acc: 0.1172
+Round 23 Loss: 431.9763, Acc: 0.1236
+Round 24 Loss: 509.6227, Acc: 0.1096
+Round 25 Loss: 481.1841, Acc: 0.1386
+Round 26 Loss: 893.8090, Acc: 0.1083
+Round 27 Loss: 638.3515, Acc: 0.1134
+Round 28 Loss: 447.8175, Acc: 0.1526
+Round 29 Loss: 623.1117, Acc: 0.1261
+Round 30 Loss: 741.0119, Acc: 0.1264
+Round 31 Loss: 747.8636, Acc: 0.1325
+Round 32 Loss: 618.6359, Acc: 0.1200
+Round 33 Loss: 626.0491, Acc: 0.1269
+Round 34 Loss: 1263.2519, Acc: 0.1276
+Round 35 Loss: 738.9842, Acc: 0.1429
+Round 36 Loss: 1447.1104, Acc: 0.1014
+Round 37 Loss: 889.8681, Acc: 0.1399
+Round 38 Loss: 1027.0539, Acc: 0.1294
+Round 39 Loss: 1766.3917, Acc: 0.0981
+Round 40 Loss: 1034.2733, Acc: 0.1126
+Round 41 Loss: 993.5867, Acc: 0.1208
+Round 42 Loss: 1094.0701, Acc: 0.1282
+Round 43 Loss: 660.2165, Acc: 0.2222
+Round 44 Loss: 828.7840, Acc: 0.1710
+Round 45 Loss: 936.2686, Acc: 0.1068
+Round 46 Loss: 1551.5461, Acc: 0.1083
+Round 47 Loss: 621.0064, Acc: 0.1641
+Round 48 Loss: 1055.9505, Acc: 0.1422
+Round 49 Loss: 841.5268, Acc: 0.1860
+Round 50 Loss: 1144.0271, Acc: 0.1134
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'dpfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'iid', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': {'conv1.weight': 4.181984794139862, 'bn1.weight': 8.085697889328003, 'bn1.bias': 0.22725230641663074, 'bn1.running_mean': 0.928035831451416, 'bn1.running_var': 23.39664297103882, 'bn1.num_batches_tracked': 948.45, 'layer1.0.conv1.weight': 11.553188705444336, 'layer1.0.bn1.weight': 8.001431083679199, 'layer1.0.bn1.bias': 0.12198688723146915, 'layer1.0.bn1.running_mean': 9.957211875915528, 'layer1.0.bn1.running_var': 21.437686443328857, 'layer1.0.bn1.num_batches_tracked': 948.45, 'layer1.0.conv2.weight': 11.49886326789856, 'layer1.0.bn2.weight': 7.955541610717773, 'layer1.0.bn2.bias': 0.08299417328089476, 'layer1.0.bn2.running_mean': 6.568105173110962, 'layer1.0.bn2.running_var': 10.674507570266723, 'layer1.0.bn2.num_batches_tracked': 948.45, 'layer1.1.conv1.weight': 11.408628129959107, 'layer1.1.bn1.weight': 8.00065312385559, 'layer1.1.bn1.bias': 0.0794845481403172, 'layer1.1.bn1.running_mean': 10.903985643386841, 'layer1.1.bn1.running_var': 29.371485233306885, 'layer1.1.bn1.num_batches_tracked': 948.45, 'layer1.1.conv2.weight': 11.396786642074584, 'layer1.1.bn2.weight': 7.961781620979309, 'layer1.1.bn2.bias': 0.051205734629184006, 'layer1.1.bn2.running_mean': 4.988979530334473, 'layer1.1.bn2.running_var': 9.960107946395874, 'layer1.1.bn2.num_batches_tracked': 948.45, 'layer2.0.conv1.weight': 11.471849250793458, 'layer2.0.bn1.weight': 11.314029693603516, 'layer2.0.bn1.bias': 0.07692573871463537, 'layer2.0.bn1.running_mean': 15.89602222442627, 'layer2.0.bn1.running_var': 34.54496097564697, 'layer2.0.bn1.num_batches_tracked': 948.45, 'layer2.0.conv2.weight': 16.10927734375, 'layer2.0.bn2.weight': 11.296163606643677, 'layer2.0.bn2.bias': 0.07544297482818366, 'layer2.0.bn2.running_mean': 7.026301050186158, 'layer2.0.bn2.running_var': 13.906872034072876, 'layer2.0.bn2.num_batches_tracked': 948.45, 'layer2.0.downsample.0.weight': 11.267029619216919, 'layer2.0.downsample.1.weight': 11.349491548538207, 'layer2.0.downsample.1.bias': 0.07544297482818366, 'layer2.0.downsample.1.running_mean': 11.45429835319519, 'layer2.0.downsample.1.running_var': 22.135292053222656, 'layer2.0.downsample.1.num_batches_tracked': 948.45, 'layer2.1.conv1.weight': 16.1131609916687, 'layer2.1.bn1.weight': 11.313955354690552, 'layer2.1.bn1.bias': 0.0657136982306838, 'layer2.1.bn1.running_mean': 9.463627004623413, 'layer2.1.bn1.running_var': 27.911805057525633, 'layer2.1.bn1.num_batches_tracked': 948.45, 'layer2.1.conv2.weight': 16.073034048080444, 'layer2.1.bn2.weight': 11.296633291244508, 'layer2.1.bn2.bias': 0.04723547864705324, 'layer2.1.bn2.running_mean': 6.619246625900269, 'layer2.1.bn2.running_var': 13.078615045547485, 'layer2.1.bn2.num_batches_tracked': 948.45, 'layer3.0.conv1.weight': 16.100053691864012, 'layer3.0.bn1.weight': 16.000131034851073, 'layer3.0.bn1.bias': 0.05660345200449228, 'layer3.0.bn1.running_mean': 15.48650403022766, 'layer3.0.bn1.running_var': 36.36982908248901, 'layer3.0.bn1.num_batches_tracked': 948.45, 'layer3.0.conv2.weight': 22.712170696258546, 'layer3.0.bn2.weight': 16.000376224517822, 'layer3.0.bn2.bias': 0.06445518573746085, 'layer3.0.bn2.running_mean': 9.797925901412963, 'layer3.0.bn2.running_var': 20.095711517333985, 'layer3.0.bn2.num_batches_tracked': 948.45, 'layer3.0.downsample.0.weight': 16.045401668548585, 'layer3.0.downsample.1.weight': 15.991445159912109, 'layer3.0.downsample.1.bias': 0.06445518573746085, 'layer3.0.downsample.1.running_mean': 12.925026178359985, 'layer3.0.downsample.1.running_var': 26.70232629776001, 'layer3.0.downsample.1.num_batches_tracked': 948.45, 'layer3.1.conv1.weight': 22.692408561706543, 'layer3.1.bn1.weight': 16.000113677978515, 'layer3.1.bn1.bias': 0.04843625472858548, 'layer3.1.bn1.running_mean': 14.136521768569946, 'layer3.1.bn1.running_var': 42.91485424041748, 'layer3.1.bn1.num_batches_tracked': 948.45, 'layer3.1.conv2.weight': 22.696173095703124, 'layer3.1.bn2.weight': 16.008739137649535, 'layer3.1.bn2.bias': 0.04918956938199699, 'layer3.1.bn2.running_mean': 11.282309865951538, 'layer3.1.bn2.running_var': 25.04137134552002, 'layer3.1.bn2.num_batches_tracked': 948.45, 'layer4.0.conv1.weight': 22.71857271194458, 'layer4.0.bn1.weight': 22.62747268676758, 'layer4.0.bn1.bias': 0.04758210023865104, 'layer4.0.bn1.running_mean': 25.725024890899657, 'layer4.0.bn1.running_var': 74.89567260742187, 'layer4.0.bn1.num_batches_tracked': 948.45, 'layer4.0.conv2.weight': 32.0731107711792, 'layer4.0.bn2.weight': 22.399503993988038, 'layer4.0.bn2.bias': 0.5314272738993168, 'layer4.0.bn2.running_mean': 21.141964054107667, 'layer4.0.bn2.running_var': 64.82737131118775, 'layer4.0.bn2.num_batches_tracked': 948.45, 'layer4.0.downsample.0.weight': 22.623112201690674, 'layer4.0.downsample.1.weight': 22.4127179145813, 'layer4.0.downsample.1.bias': 0.5314272738993168, 'layer4.0.downsample.1.running_mean': 23.23727035522461, 'layer4.0.downsample.1.running_var': 63.886111640930174, 'layer4.0.downsample.1.num_batches_tracked': 948.45, 'layer4.1.conv1.weight': 32.076686477661134, 'layer4.1.bn1.weight': 22.627466201782227, 'layer4.1.bn1.bias': 0.06572004253976046, 'layer4.1.bn1.running_mean': 11.550013160705566, 'layer4.1.bn1.running_var': 24.157433795928956, 'layer4.1.bn1.num_batches_tracked': 948.45, 'layer4.1.conv2.weight': 32.069811534881595, 'layer4.1.bn2.weight': 22.221644401550293, 'layer4.1.bn2.bias': 0.9417458564043045, 'layer4.1.bn2.running_mean': 15.613087224960328, 'layer4.1.bn2.running_var': 42.65533618927002, 'layer4.1.bn2.num_batches_tracked': 948.45, 'fc.weight': 3.112790638208389, 'fc.bias': 0.08526732362806796}}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-dpfedavg-iid-4
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-iid.npy
+Loading partition from ./temp/imagenette-c10-iid.npy
+Data splitted
+dpfedavg
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: 1044.9333, Acc: 0.1068
+Round 4 Loss: 583.6605, Acc: 0.0996
+Round 5 Loss: 616.4091, Acc: 0.0994
+Round 6 Loss: 198.8028, Acc: 0.1106
+Round 7 Loss: 530.3112, Acc: 0.0994
+Round 8 Loss: 581.3502, Acc: 0.0989
+Round 9 Loss: 256.7541, Acc: 0.1039
+Round 10 Loss: 198.5711, Acc: 0.1215
+Round 11 Loss: 273.3841, Acc: 0.0978
+Round 12 Loss: 328.8506, Acc: 0.1055
+Round 13 Loss: 261.3962, Acc: 0.1353
+Round 14 Loss: 307.6855, Acc: 0.1276
+Round 15 Loss: 251.1218, Acc: 0.1317
+Round 16 Loss: 342.3037, Acc: 0.1085
+Round 17 Loss: 433.1330, Acc: 0.1154
+Round 18 Loss: 316.0660, Acc: 0.1304
+Round 19 Loss: 361.6958, Acc: 0.1182
+Round 20 Loss: 354.3574, Acc: 0.1220
+Round 21 Loss: 332.6507, Acc: 0.1215
+Round 22 Loss: 299.8965, Acc: 0.1401
+Round 23 Loss: 460.0634, Acc: 0.1017
+Round 24 Loss: 327.3149, Acc: 0.1687
+Round 25 Loss: 555.3520, Acc: 0.1116
+Round 26 Loss: 619.5432, Acc: 0.1052
+Round 27 Loss: 269.2158, Acc: 0.1766
+Round 28 Loss: 495.7232, Acc: 0.1057
+Round 29 Loss: 372.1813, Acc: 0.1378
+Round 30 Loss: 617.3523, Acc: 0.1027
+Round 31 Loss: 560.2248, Acc: 0.1228
+Round 32 Loss: 490.0620, Acc: 0.1452
+Round 33 Loss: 467.8738, Acc: 0.1322
+Round 34 Loss: 381.8160, Acc: 0.1656
+Round 35 Loss: 505.3467, Acc: 0.1712
+Round 36 Loss: 588.9310, Acc: 0.1447
+Round 37 Loss: 467.2546, Acc: 0.1536
+Round 38 Loss: 827.7848, Acc: 0.1567
+Round 39 Loss: 517.1604, Acc: 0.1664
+Round 40 Loss: 333.4227, Acc: 0.2550
+Round 41 Loss: 582.0216, Acc: 0.1432
+Round 42 Loss: 689.0858, Acc: 0.1062
+Round 43 Loss: 525.5690, Acc: 0.1745
+Round 44 Loss: 768.5629, Acc: 0.1057
+Round 45 Loss: 465.5595, Acc: 0.2173
+Round 46 Loss: 615.8686, Acc: 0.1995
+Round 47 Loss: 528.6138, Acc: 0.1809
+Round 48 Loss: 736.1988, Acc: 0.1251
+Round 49 Loss: 799.4881, Acc: 0.1083
+Round 50 Loss: 798.3828, Acc: 0.1646
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'dpfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir1', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': {'conv1.weight': 4.181984794139862, 'bn1.weight': 8.085697889328003, 'bn1.bias': 0.22725230641663074, 'bn1.running_mean': 0.928035831451416, 'bn1.running_var': 23.39664297103882, 'bn1.num_batches_tracked': 948.45, 'layer1.0.conv1.weight': 11.553188705444336, 'layer1.0.bn1.weight': 8.001431083679199, 'layer1.0.bn1.bias': 0.12198688723146915, 'layer1.0.bn1.running_mean': 9.957211875915528, 'layer1.0.bn1.running_var': 21.437686443328857, 'layer1.0.bn1.num_batches_tracked': 948.45, 'layer1.0.conv2.weight': 11.49886326789856, 'layer1.0.bn2.weight': 7.955541610717773, 'layer1.0.bn2.bias': 0.08299417328089476, 'layer1.0.bn2.running_mean': 6.568105173110962, 'layer1.0.bn2.running_var': 10.674507570266723, 'layer1.0.bn2.num_batches_tracked': 948.45, 'layer1.1.conv1.weight': 11.408628129959107, 'layer1.1.bn1.weight': 8.00065312385559, 'layer1.1.bn1.bias': 0.0794845481403172, 'layer1.1.bn1.running_mean': 10.903985643386841, 'layer1.1.bn1.running_var': 29.371485233306885, 'layer1.1.bn1.num_batches_tracked': 948.45, 'layer1.1.conv2.weight': 11.396786642074584, 'layer1.1.bn2.weight': 7.961781620979309, 'layer1.1.bn2.bias': 0.051205734629184006, 'layer1.1.bn2.running_mean': 4.988979530334473, 'layer1.1.bn2.running_var': 9.960107946395874, 'layer1.1.bn2.num_batches_tracked': 948.45, 'layer2.0.conv1.weight': 11.471849250793458, 'layer2.0.bn1.weight': 11.314029693603516, 'layer2.0.bn1.bias': 0.07692573871463537, 'layer2.0.bn1.running_mean': 15.89602222442627, 'layer2.0.bn1.running_var': 34.54496097564697, 'layer2.0.bn1.num_batches_tracked': 948.45, 'layer2.0.conv2.weight': 16.10927734375, 'layer2.0.bn2.weight': 11.296163606643677, 'layer2.0.bn2.bias': 0.07544297482818366, 'layer2.0.bn2.running_mean': 7.026301050186158, 'layer2.0.bn2.running_var': 13.906872034072876, 'layer2.0.bn2.num_batches_tracked': 948.45, 'layer2.0.downsample.0.weight': 11.267029619216919, 'layer2.0.downsample.1.weight': 11.349491548538207, 'layer2.0.downsample.1.bias': 0.07544297482818366, 'layer2.0.downsample.1.running_mean': 11.45429835319519, 'layer2.0.downsample.1.running_var': 22.135292053222656, 'layer2.0.downsample.1.num_batches_tracked': 948.45, 'layer2.1.conv1.weight': 16.1131609916687, 'layer2.1.bn1.weight': 11.313955354690552, 'layer2.1.bn1.bias': 0.0657136982306838, 'layer2.1.bn1.running_mean': 9.463627004623413, 'layer2.1.bn1.running_var': 27.911805057525633, 'layer2.1.bn1.num_batches_tracked': 948.45, 'layer2.1.conv2.weight': 16.073034048080444, 'layer2.1.bn2.weight': 11.296633291244508, 'layer2.1.bn2.bias': 0.04723547864705324, 'layer2.1.bn2.running_mean': 6.619246625900269, 'layer2.1.bn2.running_var': 13.078615045547485, 'layer2.1.bn2.num_batches_tracked': 948.45, 'layer3.0.conv1.weight': 16.100053691864012, 'layer3.0.bn1.weight': 16.000131034851073, 'layer3.0.bn1.bias': 0.05660345200449228, 'layer3.0.bn1.running_mean': 15.48650403022766, 'layer3.0.bn1.running_var': 36.36982908248901, 'layer3.0.bn1.num_batches_tracked': 948.45, 'layer3.0.conv2.weight': 22.712170696258546, 'layer3.0.bn2.weight': 16.000376224517822, 'layer3.0.bn2.bias': 0.06445518573746085, 'layer3.0.bn2.running_mean': 9.797925901412963, 'layer3.0.bn2.running_var': 20.095711517333985, 'layer3.0.bn2.num_batches_tracked': 948.45, 'layer3.0.downsample.0.weight': 16.045401668548585, 'layer3.0.downsample.1.weight': 15.991445159912109, 'layer3.0.downsample.1.bias': 0.06445518573746085, 'layer3.0.downsample.1.running_mean': 12.925026178359985, 'layer3.0.downsample.1.running_var': 26.70232629776001, 'layer3.0.downsample.1.num_batches_tracked': 948.45, 'layer3.1.conv1.weight': 22.692408561706543, 'layer3.1.bn1.weight': 16.000113677978515, 'layer3.1.bn1.bias': 0.04843625472858548, 'layer3.1.bn1.running_mean': 14.136521768569946, 'layer3.1.bn1.running_var': 42.91485424041748, 'layer3.1.bn1.num_batches_tracked': 948.45, 'layer3.1.conv2.weight': 22.696173095703124, 'layer3.1.bn2.weight': 16.008739137649535, 'layer3.1.bn2.bias': 0.04918956938199699, 'layer3.1.bn2.running_mean': 11.282309865951538, 'layer3.1.bn2.running_var': 25.04137134552002, 'layer3.1.bn2.num_batches_tracked': 948.45, 'layer4.0.conv1.weight': 22.71857271194458, 'layer4.0.bn1.weight': 22.62747268676758, 'layer4.0.bn1.bias': 0.04758210023865104, 'layer4.0.bn1.running_mean': 25.725024890899657, 'layer4.0.bn1.running_var': 74.89567260742187, 'layer4.0.bn1.num_batches_tracked': 948.45, 'layer4.0.conv2.weight': 32.0731107711792, 'layer4.0.bn2.weight': 22.399503993988038, 'layer4.0.bn2.bias': 0.5314272738993168, 'layer4.0.bn2.running_mean': 21.141964054107667, 'layer4.0.bn2.running_var': 64.82737131118775, 'layer4.0.bn2.num_batches_tracked': 948.45, 'layer4.0.downsample.0.weight': 22.623112201690674, 'layer4.0.downsample.1.weight': 22.4127179145813, 'layer4.0.downsample.1.bias': 0.5314272738993168, 'layer4.0.downsample.1.running_mean': 23.23727035522461, 'layer4.0.downsample.1.running_var': 63.886111640930174, 'layer4.0.downsample.1.num_batches_tracked': 948.45, 'layer4.1.conv1.weight': 32.076686477661134, 'layer4.1.bn1.weight': 22.627466201782227, 'layer4.1.bn1.bias': 0.06572004253976046, 'layer4.1.bn1.running_mean': 11.550013160705566, 'layer4.1.bn1.running_var': 24.157433795928956, 'layer4.1.bn1.num_batches_tracked': 948.45, 'layer4.1.conv2.weight': 32.069811534881595, 'layer4.1.bn2.weight': 22.221644401550293, 'layer4.1.bn2.bias': 0.9417458564043045, 'layer4.1.bn2.running_mean': 15.613087224960328, 'layer4.1.bn2.running_var': 42.65533618927002, 'layer4.1.bn2.num_batches_tracked': 948.45, 'fc.weight': 3.112790638208389, 'fc.bias': 0.08526732362806796}}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-dpfedavg-dir1-0
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir1.npy
+Loading partition from ./temp/imagenette-c10-dir1.npy
+Data splitted
+dpfedavg
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: 2082.5047, Acc: 0.1009
+Round 7 Loss: 1962.0215, Acc: 0.0986
+Round 8 Loss: 2936.2363, Acc: 0.1039
+Round 9 Loss: 1954.1500, Acc: 0.0981
+Round 10 Loss: 1952.5581, Acc: 0.0718
+Round 11 Loss: 1844.4971, Acc: 0.1366
+Round 12 Loss: 1715.3684, Acc: 0.0884
+Round 13 Loss: 1341.8442, Acc: 0.1124
+Round 14 Loss: 2628.5325, Acc: 0.1047
+Round 15 Loss: 2478.6139, Acc: 0.1141
+Round 16 Loss: 4464.2791, Acc: 0.1019
+Round 17 Loss: 2506.0966, Acc: 0.1233
+Round 18 Loss: 2255.8594, Acc: 0.1004
+Round 19 Loss: 2206.3403, Acc: 0.0948
+Round 20 Loss: 2500.4759, Acc: 0.0996
+Round 21 Loss: 2768.4872, Acc: 0.1452
+Round 22 Loss: 3529.0011, Acc: 0.1088
+Round 23 Loss: 2570.3876, Acc: 0.1264
+Round 24 Loss: 2925.4056, Acc: 0.1134
+Round 25 Loss: 3860.5768, Acc: 0.0976
+Round 26 Loss: 1766.3308, Acc: 0.1488
+Round 27 Loss: 4758.9140, Acc: 0.1126
+Round 28 Loss: 3572.4362, Acc: 0.1042
+Round 29 Loss: 2654.1590, Acc: 0.1450
+Round 30 Loss: 3758.4742, Acc: 0.1225
+Round 31 Loss: 4305.3803, Acc: 0.1473
+Round 32 Loss: 5012.5963, Acc: 0.1185
+Round 33 Loss: 6081.6998, Acc: 0.1294
+Round 34 Loss: 5951.5278, Acc: 0.1190
+Round 35 Loss: 5116.7095, Acc: 0.1264
+Round 36 Loss: 2552.0200, Acc: 0.1348
+Round 37 Loss: 4221.7602, Acc: 0.1182
+Round 38 Loss: 3704.4164, Acc: 0.1373
+Round 39 Loss: 4676.3666, Acc: 0.1159
+Round 40 Loss: 4379.4650, Acc: 0.1167
+Round 41 Loss: 3048.4169, Acc: 0.1330
+Round 42 Loss: 6755.1563, Acc: 0.1424
+Round 43 Loss: 4869.2732, Acc: 0.1460
+Round 44 Loss: 3761.6938, Acc: 0.1274
+Round 45 Loss: 4889.1158, Acc: 0.1152
+Round 46 Loss: 5494.6754, Acc: 0.1473
+Round 47 Loss: 5632.8652, Acc: 0.1284
+Round 48 Loss: 7332.8417, Acc: 0.1350
+Round 49 Loss: 4212.5214, Acc: 0.1348
+Round 50 Loss: 5549.7348, Acc: 0.1276
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'dpfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir1', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': {'conv1.weight': 4.181984794139862, 'bn1.weight': 8.085697889328003, 'bn1.bias': 0.22725230641663074, 'bn1.running_mean': 0.928035831451416, 'bn1.running_var': 23.39664297103882, 'bn1.num_batches_tracked': 948.45, 'layer1.0.conv1.weight': 11.553188705444336, 'layer1.0.bn1.weight': 8.001431083679199, 'layer1.0.bn1.bias': 0.12198688723146915, 'layer1.0.bn1.running_mean': 9.957211875915528, 'layer1.0.bn1.running_var': 21.437686443328857, 'layer1.0.bn1.num_batches_tracked': 948.45, 'layer1.0.conv2.weight': 11.49886326789856, 'layer1.0.bn2.weight': 7.955541610717773, 'layer1.0.bn2.bias': 0.08299417328089476, 'layer1.0.bn2.running_mean': 6.568105173110962, 'layer1.0.bn2.running_var': 10.674507570266723, 'layer1.0.bn2.num_batches_tracked': 948.45, 'layer1.1.conv1.weight': 11.408628129959107, 'layer1.1.bn1.weight': 8.00065312385559, 'layer1.1.bn1.bias': 0.0794845481403172, 'layer1.1.bn1.running_mean': 10.903985643386841, 'layer1.1.bn1.running_var': 29.371485233306885, 'layer1.1.bn1.num_batches_tracked': 948.45, 'layer1.1.conv2.weight': 11.396786642074584, 'layer1.1.bn2.weight': 7.961781620979309, 'layer1.1.bn2.bias': 0.051205734629184006, 'layer1.1.bn2.running_mean': 4.988979530334473, 'layer1.1.bn2.running_var': 9.960107946395874, 'layer1.1.bn2.num_batches_tracked': 948.45, 'layer2.0.conv1.weight': 11.471849250793458, 'layer2.0.bn1.weight': 11.314029693603516, 'layer2.0.bn1.bias': 0.07692573871463537, 'layer2.0.bn1.running_mean': 15.89602222442627, 'layer2.0.bn1.running_var': 34.54496097564697, 'layer2.0.bn1.num_batches_tracked': 948.45, 'layer2.0.conv2.weight': 16.10927734375, 'layer2.0.bn2.weight': 11.296163606643677, 'layer2.0.bn2.bias': 0.07544297482818366, 'layer2.0.bn2.running_mean': 7.026301050186158, 'layer2.0.bn2.running_var': 13.906872034072876, 'layer2.0.bn2.num_batches_tracked': 948.45, 'layer2.0.downsample.0.weight': 11.267029619216919, 'layer2.0.downsample.1.weight': 11.349491548538207, 'layer2.0.downsample.1.bias': 0.07544297482818366, 'layer2.0.downsample.1.running_mean': 11.45429835319519, 'layer2.0.downsample.1.running_var': 22.135292053222656, 'layer2.0.downsample.1.num_batches_tracked': 948.45, 'layer2.1.conv1.weight': 16.1131609916687, 'layer2.1.bn1.weight': 11.313955354690552, 'layer2.1.bn1.bias': 0.0657136982306838, 'layer2.1.bn1.running_mean': 9.463627004623413, 'layer2.1.bn1.running_var': 27.911805057525633, 'layer2.1.bn1.num_batches_tracked': 948.45, 'layer2.1.conv2.weight': 16.073034048080444, 'layer2.1.bn2.weight': 11.296633291244508, 'layer2.1.bn2.bias': 0.04723547864705324, 'layer2.1.bn2.running_mean': 6.619246625900269, 'layer2.1.bn2.running_var': 13.078615045547485, 'layer2.1.bn2.num_batches_tracked': 948.45, 'layer3.0.conv1.weight': 16.100053691864012, 'layer3.0.bn1.weight': 16.000131034851073, 'layer3.0.bn1.bias': 0.05660345200449228, 'layer3.0.bn1.running_mean': 15.48650403022766, 'layer3.0.bn1.running_var': 36.36982908248901, 'layer3.0.bn1.num_batches_tracked': 948.45, 'layer3.0.conv2.weight': 22.712170696258546, 'layer3.0.bn2.weight': 16.000376224517822, 'layer3.0.bn2.bias': 0.06445518573746085, 'layer3.0.bn2.running_mean': 9.797925901412963, 'layer3.0.bn2.running_var': 20.095711517333985, 'layer3.0.bn2.num_batches_tracked': 948.45, 'layer3.0.downsample.0.weight': 16.045401668548585, 'layer3.0.downsample.1.weight': 15.991445159912109, 'layer3.0.downsample.1.bias': 0.06445518573746085, 'layer3.0.downsample.1.running_mean': 12.925026178359985, 'layer3.0.downsample.1.running_var': 26.70232629776001, 'layer3.0.downsample.1.num_batches_tracked': 948.45, 'layer3.1.conv1.weight': 22.692408561706543, 'layer3.1.bn1.weight': 16.000113677978515, 'layer3.1.bn1.bias': 0.04843625472858548, 'layer3.1.bn1.running_mean': 14.136521768569946, 'layer3.1.bn1.running_var': 42.91485424041748, 'layer3.1.bn1.num_batches_tracked': 948.45, 'layer3.1.conv2.weight': 22.696173095703124, 'layer3.1.bn2.weight': 16.008739137649535, 'layer3.1.bn2.bias': 0.04918956938199699, 'layer3.1.bn2.running_mean': 11.282309865951538, 'layer3.1.bn2.running_var': 25.04137134552002, 'layer3.1.bn2.num_batches_tracked': 948.45, 'layer4.0.conv1.weight': 22.71857271194458, 'layer4.0.bn1.weight': 22.62747268676758, 'layer4.0.bn1.bias': 0.04758210023865104, 'layer4.0.bn1.running_mean': 25.725024890899657, 'layer4.0.bn1.running_var': 74.89567260742187, 'layer4.0.bn1.num_batches_tracked': 948.45, 'layer4.0.conv2.weight': 32.0731107711792, 'layer4.0.bn2.weight': 22.399503993988038, 'layer4.0.bn2.bias': 0.5314272738993168, 'layer4.0.bn2.running_mean': 21.141964054107667, 'layer4.0.bn2.running_var': 64.82737131118775, 'layer4.0.bn2.num_batches_tracked': 948.45, 'layer4.0.downsample.0.weight': 22.623112201690674, 'layer4.0.downsample.1.weight': 22.4127179145813, 'layer4.0.downsample.1.bias': 0.5314272738993168, 'layer4.0.downsample.1.running_mean': 23.23727035522461, 'layer4.0.downsample.1.running_var': 63.886111640930174, 'layer4.0.downsample.1.num_batches_tracked': 948.45, 'layer4.1.conv1.weight': 32.076686477661134, 'layer4.1.bn1.weight': 22.627466201782227, 'layer4.1.bn1.bias': 0.06572004253976046, 'layer4.1.bn1.running_mean': 11.550013160705566, 'layer4.1.bn1.running_var': 24.157433795928956, 'layer4.1.bn1.num_batches_tracked': 948.45, 'layer4.1.conv2.weight': 32.069811534881595, 'layer4.1.bn2.weight': 22.221644401550293, 'layer4.1.bn2.bias': 0.9417458564043045, 'layer4.1.bn2.running_mean': 15.613087224960328, 'layer4.1.bn2.running_var': 42.65533618927002, 'layer4.1.bn2.num_batches_tracked': 948.45, 'fc.weight': 3.112790638208389, 'fc.bias': 0.08526732362806796}}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-dpfedavg-dir1-1
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir1.npy
+Loading partition from ./temp/imagenette-c10-dir1.npy
+Data splitted
+dpfedavg
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: nan, Acc: 0.0986
+Round 9 Loss: 1941.8233, Acc: 0.0940
+Round 10 Loss: 1706.9857, Acc: 0.0920
+Round 11 Loss: 3070.2500, Acc: 0.0716
+Round 12 Loss: 2453.0832, Acc: 0.1075
+Round 13 Loss: 2976.0943, Acc: 0.0968
+Round 14 Loss: 3692.9517, Acc: 0.1070
+Round 15 Loss: 4547.7524, Acc: 0.0910
+Round 16 Loss: 4394.8824, Acc: 0.0983
+Round 17 Loss: 3868.6984, Acc: 0.1141
+Round 18 Loss: 2722.4976, Acc: 0.1057
+Round 19 Loss: 4561.6704, Acc: 0.0894
+Round 20 Loss: 5147.0658, Acc: 0.1029
+Round 21 Loss: 6093.5262, Acc: 0.1096
+Round 22 Loss: 3331.5680, Acc: 0.1361
+Round 23 Loss: 4343.4485, Acc: 0.1004
+Round 24 Loss: 6334.9495, Acc: 0.0966
+Round 25 Loss: 3789.5113, Acc: 0.0869
+Round 26 Loss: 3385.4908, Acc: 0.1182
+Round 27 Loss: 6702.4497, Acc: 0.1121
+Round 28 Loss: 2822.6139, Acc: 0.1116
+Round 29 Loss: 5436.4207, Acc: 0.1386
+Round 30 Loss: 7504.1912, Acc: 0.0920
+Round 31 Loss: 8776.2765, Acc: 0.1154
+Round 32 Loss: 4200.7451, Acc: 0.1139
+Round 33 Loss: 6861.1269, Acc: 0.1129
+Round 34 Loss: 5670.7740, Acc: 0.1136
+Round 35 Loss: 7068.9023, Acc: 0.1001
+Round 36 Loss: 8867.4210, Acc: 0.1236
+Round 37 Loss: 9694.2569, Acc: 0.0971
+Round 38 Loss: 5725.2599, Acc: 0.1169
+Round 39 Loss: 8946.3480, Acc: 0.1080
+Round 40 Loss: 8200.1916, Acc: 0.1243
+Round 41 Loss: 7607.9951, Acc: 0.0925
+Round 42 Loss: 7742.1496, Acc: 0.1378
+Round 43 Loss: 6484.4070, Acc: 0.1134
+Round 44 Loss: 8709.9256, Acc: 0.1101
+Round 45 Loss: 5434.1507, Acc: 0.1554
+Round 46 Loss: 8134.0711, Acc: 0.1106
+Round 47 Loss: 6055.9950, Acc: 0.1029
+Round 48 Loss: 6137.7134, Acc: 0.1266
+Round 49 Loss: 3903.3444, Acc: 0.1592
+Round 50 Loss: 8265.6227, Acc: 0.1144
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'dpfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir1', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': {'conv1.weight': 4.181984794139862, 'bn1.weight': 8.085697889328003, 'bn1.bias': 0.22725230641663074, 'bn1.running_mean': 0.928035831451416, 'bn1.running_var': 23.39664297103882, 'bn1.num_batches_tracked': 948.45, 'layer1.0.conv1.weight': 11.553188705444336, 'layer1.0.bn1.weight': 8.001431083679199, 'layer1.0.bn1.bias': 0.12198688723146915, 'layer1.0.bn1.running_mean': 9.957211875915528, 'layer1.0.bn1.running_var': 21.437686443328857, 'layer1.0.bn1.num_batches_tracked': 948.45, 'layer1.0.conv2.weight': 11.49886326789856, 'layer1.0.bn2.weight': 7.955541610717773, 'layer1.0.bn2.bias': 0.08299417328089476, 'layer1.0.bn2.running_mean': 6.568105173110962, 'layer1.0.bn2.running_var': 10.674507570266723, 'layer1.0.bn2.num_batches_tracked': 948.45, 'layer1.1.conv1.weight': 11.408628129959107, 'layer1.1.bn1.weight': 8.00065312385559, 'layer1.1.bn1.bias': 0.0794845481403172, 'layer1.1.bn1.running_mean': 10.903985643386841, 'layer1.1.bn1.running_var': 29.371485233306885, 'layer1.1.bn1.num_batches_tracked': 948.45, 'layer1.1.conv2.weight': 11.396786642074584, 'layer1.1.bn2.weight': 7.961781620979309, 'layer1.1.bn2.bias': 0.051205734629184006, 'layer1.1.bn2.running_mean': 4.988979530334473, 'layer1.1.bn2.running_var': 9.960107946395874, 'layer1.1.bn2.num_batches_tracked': 948.45, 'layer2.0.conv1.weight': 11.471849250793458, 'layer2.0.bn1.weight': 11.314029693603516, 'layer2.0.bn1.bias': 0.07692573871463537, 'layer2.0.bn1.running_mean': 15.89602222442627, 'layer2.0.bn1.running_var': 34.54496097564697, 'layer2.0.bn1.num_batches_tracked': 948.45, 'layer2.0.conv2.weight': 16.10927734375, 'layer2.0.bn2.weight': 11.296163606643677, 'layer2.0.bn2.bias': 0.07544297482818366, 'layer2.0.bn2.running_mean': 7.026301050186158, 'layer2.0.bn2.running_var': 13.906872034072876, 'layer2.0.bn2.num_batches_tracked': 948.45, 'layer2.0.downsample.0.weight': 11.267029619216919, 'layer2.0.downsample.1.weight': 11.349491548538207, 'layer2.0.downsample.1.bias': 0.07544297482818366, 'layer2.0.downsample.1.running_mean': 11.45429835319519, 'layer2.0.downsample.1.running_var': 22.135292053222656, 'layer2.0.downsample.1.num_batches_tracked': 948.45, 'layer2.1.conv1.weight': 16.1131609916687, 'layer2.1.bn1.weight': 11.313955354690552, 'layer2.1.bn1.bias': 0.0657136982306838, 'layer2.1.bn1.running_mean': 9.463627004623413, 'layer2.1.bn1.running_var': 27.911805057525633, 'layer2.1.bn1.num_batches_tracked': 948.45, 'layer2.1.conv2.weight': 16.073034048080444, 'layer2.1.bn2.weight': 11.296633291244508, 'layer2.1.bn2.bias': 0.04723547864705324, 'layer2.1.bn2.running_mean': 6.619246625900269, 'layer2.1.bn2.running_var': 13.078615045547485, 'layer2.1.bn2.num_batches_tracked': 948.45, 'layer3.0.conv1.weight': 16.100053691864012, 'layer3.0.bn1.weight': 16.000131034851073, 'layer3.0.bn1.bias': 0.05660345200449228, 'layer3.0.bn1.running_mean': 15.48650403022766, 'layer3.0.bn1.running_var': 36.36982908248901, 'layer3.0.bn1.num_batches_tracked': 948.45, 'layer3.0.conv2.weight': 22.712170696258546, 'layer3.0.bn2.weight': 16.000376224517822, 'layer3.0.bn2.bias': 0.06445518573746085, 'layer3.0.bn2.running_mean': 9.797925901412963, 'layer3.0.bn2.running_var': 20.095711517333985, 'layer3.0.bn2.num_batches_tracked': 948.45, 'layer3.0.downsample.0.weight': 16.045401668548585, 'layer3.0.downsample.1.weight': 15.991445159912109, 'layer3.0.downsample.1.bias': 0.06445518573746085, 'layer3.0.downsample.1.running_mean': 12.925026178359985, 'layer3.0.downsample.1.running_var': 26.70232629776001, 'layer3.0.downsample.1.num_batches_tracked': 948.45, 'layer3.1.conv1.weight': 22.692408561706543, 'layer3.1.bn1.weight': 16.000113677978515, 'layer3.1.bn1.bias': 0.04843625472858548, 'layer3.1.bn1.running_mean': 14.136521768569946, 'layer3.1.bn1.running_var': 42.91485424041748, 'layer3.1.bn1.num_batches_tracked': 948.45, 'layer3.1.conv2.weight': 22.696173095703124, 'layer3.1.bn2.weight': 16.008739137649535, 'layer3.1.bn2.bias': 0.04918956938199699, 'layer3.1.bn2.running_mean': 11.282309865951538, 'layer3.1.bn2.running_var': 25.04137134552002, 'layer3.1.bn2.num_batches_tracked': 948.45, 'layer4.0.conv1.weight': 22.71857271194458, 'layer4.0.bn1.weight': 22.62747268676758, 'layer4.0.bn1.bias': 0.04758210023865104, 'layer4.0.bn1.running_mean': 25.725024890899657, 'layer4.0.bn1.running_var': 74.89567260742187, 'layer4.0.bn1.num_batches_tracked': 948.45, 'layer4.0.conv2.weight': 32.0731107711792, 'layer4.0.bn2.weight': 22.399503993988038, 'layer4.0.bn2.bias': 0.5314272738993168, 'layer4.0.bn2.running_mean': 21.141964054107667, 'layer4.0.bn2.running_var': 64.82737131118775, 'layer4.0.bn2.num_batches_tracked': 948.45, 'layer4.0.downsample.0.weight': 22.623112201690674, 'layer4.0.downsample.1.weight': 22.4127179145813, 'layer4.0.downsample.1.bias': 0.5314272738993168, 'layer4.0.downsample.1.running_mean': 23.23727035522461, 'layer4.0.downsample.1.running_var': 63.886111640930174, 'layer4.0.downsample.1.num_batches_tracked': 948.45, 'layer4.1.conv1.weight': 32.076686477661134, 'layer4.1.bn1.weight': 22.627466201782227, 'layer4.1.bn1.bias': 0.06572004253976046, 'layer4.1.bn1.running_mean': 11.550013160705566, 'layer4.1.bn1.running_var': 24.157433795928956, 'layer4.1.bn1.num_batches_tracked': 948.45, 'layer4.1.conv2.weight': 32.069811534881595, 'layer4.1.bn2.weight': 22.221644401550293, 'layer4.1.bn2.bias': 0.9417458564043045, 'layer4.1.bn2.running_mean': 15.613087224960328, 'layer4.1.bn2.running_var': 42.65533618927002, 'layer4.1.bn2.num_batches_tracked': 948.45, 'fc.weight': 3.112790638208389, 'fc.bias': 0.08526732362806796}}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-dpfedavg-dir1-2
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir1.npy
+Loading partition from ./temp/imagenette-c10-dir1.npy
+Data splitted
+dpfedavg
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: 2335.1896, Acc: 0.1022
+Round 9 Loss: 3093.5944, Acc: 0.0963
+Round 10 Loss: 2603.8789, Acc: 0.1062
+Round 11 Loss: 1709.7672, Acc: 0.0688
+Round 12 Loss: 1472.2685, Acc: 0.0744
+Round 13 Loss: 1421.0034, Acc: 0.1320
+Round 14 Loss: 2392.2584, Acc: 0.1073
+Round 15 Loss: 1822.3484, Acc: 0.1526
+Round 16 Loss: 3950.8528, Acc: 0.1011
+Round 17 Loss: 3611.1281, Acc: 0.1014
+Round 18 Loss: 4815.1743, Acc: 0.1055
+Round 19 Loss: 3099.4448, Acc: 0.1103
+Round 20 Loss: 4006.5636, Acc: 0.0996
+Round 21 Loss: 3257.7073, Acc: 0.1118
+Round 22 Loss: 4930.2010, Acc: 0.0973
+Round 23 Loss: 2595.5092, Acc: 0.1432
+Round 24 Loss: 2002.5844, Acc: 0.1661
+Round 25 Loss: 4188.3149, Acc: 0.1131
+Round 26 Loss: 4923.3444, Acc: 0.1070
+Round 27 Loss: 2331.3284, Acc: 0.1615
+Round 28 Loss: 1872.0264, Acc: 0.1727
+Round 29 Loss: 4280.5739, Acc: 0.0848
+Round 30 Loss: 4408.9685, Acc: 0.1549
+Round 31 Loss: 3389.4091, Acc: 0.1730
+Round 32 Loss: 4646.1168, Acc: 0.1468
+Round 33 Loss: 4062.7162, Acc: 0.1060
+Round 34 Loss: 4824.4689, Acc: 0.1073
+Round 35 Loss: 3904.9575, Acc: 0.1475
+Round 36 Loss: 6842.6981, Acc: 0.1019
+Round 37 Loss: 4079.1944, Acc: 0.1429
+Round 38 Loss: 6930.9357, Acc: 0.0955
+Round 39 Loss: 5237.8114, Acc: 0.1106
+Round 40 Loss: 6076.4437, Acc: 0.0963
+Round 41 Loss: 4461.2121, Acc: 0.1192
+Round 42 Loss: 8049.4668, Acc: 0.0864
+Round 43 Loss: 7415.5130, Acc: 0.1093
+Round 44 Loss: 6304.4416, Acc: 0.1075
+Round 45 Loss: 4541.1086, Acc: 0.1045
+Round 46 Loss: 4548.1212, Acc: 0.0966
+Round 47 Loss: 4231.7257, Acc: 0.1345
+Round 48 Loss: 5100.0521, Acc: 0.1223
+Round 49 Loss: 4969.1133, Acc: 0.1057
+Round 50 Loss: 7647.2803, Acc: 0.1027
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'dpfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir1', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': {'conv1.weight': 4.181984794139862, 'bn1.weight': 8.085697889328003, 'bn1.bias': 0.22725230641663074, 'bn1.running_mean': 0.928035831451416, 'bn1.running_var': 23.39664297103882, 'bn1.num_batches_tracked': 948.45, 'layer1.0.conv1.weight': 11.553188705444336, 'layer1.0.bn1.weight': 8.001431083679199, 'layer1.0.bn1.bias': 0.12198688723146915, 'layer1.0.bn1.running_mean': 9.957211875915528, 'layer1.0.bn1.running_var': 21.437686443328857, 'layer1.0.bn1.num_batches_tracked': 948.45, 'layer1.0.conv2.weight': 11.49886326789856, 'layer1.0.bn2.weight': 7.955541610717773, 'layer1.0.bn2.bias': 0.08299417328089476, 'layer1.0.bn2.running_mean': 6.568105173110962, 'layer1.0.bn2.running_var': 10.674507570266723, 'layer1.0.bn2.num_batches_tracked': 948.45, 'layer1.1.conv1.weight': 11.408628129959107, 'layer1.1.bn1.weight': 8.00065312385559, 'layer1.1.bn1.bias': 0.0794845481403172, 'layer1.1.bn1.running_mean': 10.903985643386841, 'layer1.1.bn1.running_var': 29.371485233306885, 'layer1.1.bn1.num_batches_tracked': 948.45, 'layer1.1.conv2.weight': 11.396786642074584, 'layer1.1.bn2.weight': 7.961781620979309, 'layer1.1.bn2.bias': 0.051205734629184006, 'layer1.1.bn2.running_mean': 4.988979530334473, 'layer1.1.bn2.running_var': 9.960107946395874, 'layer1.1.bn2.num_batches_tracked': 948.45, 'layer2.0.conv1.weight': 11.471849250793458, 'layer2.0.bn1.weight': 11.314029693603516, 'layer2.0.bn1.bias': 0.07692573871463537, 'layer2.0.bn1.running_mean': 15.89602222442627, 'layer2.0.bn1.running_var': 34.54496097564697, 'layer2.0.bn1.num_batches_tracked': 948.45, 'layer2.0.conv2.weight': 16.10927734375, 'layer2.0.bn2.weight': 11.296163606643677, 'layer2.0.bn2.bias': 0.07544297482818366, 'layer2.0.bn2.running_mean': 7.026301050186158, 'layer2.0.bn2.running_var': 13.906872034072876, 'layer2.0.bn2.num_batches_tracked': 948.45, 'layer2.0.downsample.0.weight': 11.267029619216919, 'layer2.0.downsample.1.weight': 11.349491548538207, 'layer2.0.downsample.1.bias': 0.07544297482818366, 'layer2.0.downsample.1.running_mean': 11.45429835319519, 'layer2.0.downsample.1.running_var': 22.135292053222656, 'layer2.0.downsample.1.num_batches_tracked': 948.45, 'layer2.1.conv1.weight': 16.1131609916687, 'layer2.1.bn1.weight': 11.313955354690552, 'layer2.1.bn1.bias': 0.0657136982306838, 'layer2.1.bn1.running_mean': 9.463627004623413, 'layer2.1.bn1.running_var': 27.911805057525633, 'layer2.1.bn1.num_batches_tracked': 948.45, 'layer2.1.conv2.weight': 16.073034048080444, 'layer2.1.bn2.weight': 11.296633291244508, 'layer2.1.bn2.bias': 0.04723547864705324, 'layer2.1.bn2.running_mean': 6.619246625900269, 'layer2.1.bn2.running_var': 13.078615045547485, 'layer2.1.bn2.num_batches_tracked': 948.45, 'layer3.0.conv1.weight': 16.100053691864012, 'layer3.0.bn1.weight': 16.000131034851073, 'layer3.0.bn1.bias': 0.05660345200449228, 'layer3.0.bn1.running_mean': 15.48650403022766, 'layer3.0.bn1.running_var': 36.36982908248901, 'layer3.0.bn1.num_batches_tracked': 948.45, 'layer3.0.conv2.weight': 22.712170696258546, 'layer3.0.bn2.weight': 16.000376224517822, 'layer3.0.bn2.bias': 0.06445518573746085, 'layer3.0.bn2.running_mean': 9.797925901412963, 'layer3.0.bn2.running_var': 20.095711517333985, 'layer3.0.bn2.num_batches_tracked': 948.45, 'layer3.0.downsample.0.weight': 16.045401668548585, 'layer3.0.downsample.1.weight': 15.991445159912109, 'layer3.0.downsample.1.bias': 0.06445518573746085, 'layer3.0.downsample.1.running_mean': 12.925026178359985, 'layer3.0.downsample.1.running_var': 26.70232629776001, 'layer3.0.downsample.1.num_batches_tracked': 948.45, 'layer3.1.conv1.weight': 22.692408561706543, 'layer3.1.bn1.weight': 16.000113677978515, 'layer3.1.bn1.bias': 0.04843625472858548, 'layer3.1.bn1.running_mean': 14.136521768569946, 'layer3.1.bn1.running_var': 42.91485424041748, 'layer3.1.bn1.num_batches_tracked': 948.45, 'layer3.1.conv2.weight': 22.696173095703124, 'layer3.1.bn2.weight': 16.008739137649535, 'layer3.1.bn2.bias': 0.04918956938199699, 'layer3.1.bn2.running_mean': 11.282309865951538, 'layer3.1.bn2.running_var': 25.04137134552002, 'layer3.1.bn2.num_batches_tracked': 948.45, 'layer4.0.conv1.weight': 22.71857271194458, 'layer4.0.bn1.weight': 22.62747268676758, 'layer4.0.bn1.bias': 0.04758210023865104, 'layer4.0.bn1.running_mean': 25.725024890899657, 'layer4.0.bn1.running_var': 74.89567260742187, 'layer4.0.bn1.num_batches_tracked': 948.45, 'layer4.0.conv2.weight': 32.0731107711792, 'layer4.0.bn2.weight': 22.399503993988038, 'layer4.0.bn2.bias': 0.5314272738993168, 'layer4.0.bn2.running_mean': 21.141964054107667, 'layer4.0.bn2.running_var': 64.82737131118775, 'layer4.0.bn2.num_batches_tracked': 948.45, 'layer4.0.downsample.0.weight': 22.623112201690674, 'layer4.0.downsample.1.weight': 22.4127179145813, 'layer4.0.downsample.1.bias': 0.5314272738993168, 'layer4.0.downsample.1.running_mean': 23.23727035522461, 'layer4.0.downsample.1.running_var': 63.886111640930174, 'layer4.0.downsample.1.num_batches_tracked': 948.45, 'layer4.1.conv1.weight': 32.076686477661134, 'layer4.1.bn1.weight': 22.627466201782227, 'layer4.1.bn1.bias': 0.06572004253976046, 'layer4.1.bn1.running_mean': 11.550013160705566, 'layer4.1.bn1.running_var': 24.157433795928956, 'layer4.1.bn1.num_batches_tracked': 948.45, 'layer4.1.conv2.weight': 32.069811534881595, 'layer4.1.bn2.weight': 22.221644401550293, 'layer4.1.bn2.bias': 0.9417458564043045, 'layer4.1.bn2.running_mean': 15.613087224960328, 'layer4.1.bn2.running_var': 42.65533618927002, 'layer4.1.bn2.num_batches_tracked': 948.45, 'fc.weight': 3.112790638208389, 'fc.bias': 0.08526732362806796}}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-dpfedavg-dir1-3
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir1.npy
+Loading partition from ./temp/imagenette-c10-dir1.npy
+Data splitted
+dpfedavg
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: 2097.6042, Acc: 0.0917
+Round 6 Loss: 2282.2996, Acc: 0.1011
+Round 7 Loss: 2631.5947, Acc: 0.0981
+Round 8 Loss: 4106.1184, Acc: 0.0994
+Round 9 Loss: 4778.1210, Acc: 0.1068
+Round 10 Loss: 2365.8368, Acc: 0.0813
+Round 11 Loss: 2122.6919, Acc: 0.1154
+Round 12 Loss: 1574.8397, Acc: 0.1011
+Round 13 Loss: 1908.2331, Acc: 0.1465
+Round 14 Loss: 2686.5142, Acc: 0.1085
+Round 15 Loss: 2072.8188, Acc: 0.1164
+Round 16 Loss: 3144.1257, Acc: 0.1027
+Round 17 Loss: 3234.7353, Acc: 0.1361
+Round 18 Loss: 2842.3655, Acc: 0.1401
+Round 19 Loss: 3338.9641, Acc: 0.1231
+Round 20 Loss: 5076.7149, Acc: 0.0981
+Round 21 Loss: 3001.2624, Acc: 0.1225
+Round 22 Loss: 2501.6253, Acc: 0.0813
+Round 23 Loss: 3866.1878, Acc: 0.1180
+Round 24 Loss: 5894.8115, Acc: 0.0999
+Round 25 Loss: 2467.7814, Acc: 0.1501
+Round 26 Loss: 2484.3299, Acc: 0.0981
+Round 27 Loss: 4691.3821, Acc: 0.1055
+Round 28 Loss: 2816.8536, Acc: 0.1315
+Round 29 Loss: 2862.7378, Acc: 0.1447
+Round 30 Loss: 2345.1512, Acc: 0.1671
+Round 31 Loss: 3619.3077, Acc: 0.1366
+Round 32 Loss: 2758.1949, Acc: 0.1271
+Round 33 Loss: 5229.5030, Acc: 0.1437
+Round 34 Loss: 5218.4508, Acc: 0.1134
+Round 35 Loss: 6018.0155, Acc: 0.0986
+Round 36 Loss: 4946.8729, Acc: 0.1169
+Round 37 Loss: 5974.5962, Acc: 0.0912
+Round 38 Loss: 3752.1433, Acc: 0.1124
+Round 39 Loss: 4017.6086, Acc: 0.0833
+Round 40 Loss: 5101.6275, Acc: 0.0820
+Round 41 Loss: 4763.4891, Acc: 0.1223
+Round 42 Loss: 5626.4145, Acc: 0.1190
+Round 43 Loss: 5398.3779, Acc: 0.1241
+Round 44 Loss: 6296.4218, Acc: 0.1139
+Round 45 Loss: 4898.6077, Acc: 0.1623
+Round 46 Loss: 5491.7771, Acc: 0.1498
+Round 47 Loss: 4049.6092, Acc: 0.1475
+Round 48 Loss: 4808.4887, Acc: 0.1702
+Round 49 Loss: 3835.3103, Acc: 0.2036
+Round 50 Loss: 5078.5340, Acc: 0.1355
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'dpfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir1', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': {'conv1.weight': 4.181984794139862, 'bn1.weight': 8.085697889328003, 'bn1.bias': 0.22725230641663074, 'bn1.running_mean': 0.928035831451416, 'bn1.running_var': 23.39664297103882, 'bn1.num_batches_tracked': 948.45, 'layer1.0.conv1.weight': 11.553188705444336, 'layer1.0.bn1.weight': 8.001431083679199, 'layer1.0.bn1.bias': 0.12198688723146915, 'layer1.0.bn1.running_mean': 9.957211875915528, 'layer1.0.bn1.running_var': 21.437686443328857, 'layer1.0.bn1.num_batches_tracked': 948.45, 'layer1.0.conv2.weight': 11.49886326789856, 'layer1.0.bn2.weight': 7.955541610717773, 'layer1.0.bn2.bias': 0.08299417328089476, 'layer1.0.bn2.running_mean': 6.568105173110962, 'layer1.0.bn2.running_var': 10.674507570266723, 'layer1.0.bn2.num_batches_tracked': 948.45, 'layer1.1.conv1.weight': 11.408628129959107, 'layer1.1.bn1.weight': 8.00065312385559, 'layer1.1.bn1.bias': 0.0794845481403172, 'layer1.1.bn1.running_mean': 10.903985643386841, 'layer1.1.bn1.running_var': 29.371485233306885, 'layer1.1.bn1.num_batches_tracked': 948.45, 'layer1.1.conv2.weight': 11.396786642074584, 'layer1.1.bn2.weight': 7.961781620979309, 'layer1.1.bn2.bias': 0.051205734629184006, 'layer1.1.bn2.running_mean': 4.988979530334473, 'layer1.1.bn2.running_var': 9.960107946395874, 'layer1.1.bn2.num_batches_tracked': 948.45, 'layer2.0.conv1.weight': 11.471849250793458, 'layer2.0.bn1.weight': 11.314029693603516, 'layer2.0.bn1.bias': 0.07692573871463537, 'layer2.0.bn1.running_mean': 15.89602222442627, 'layer2.0.bn1.running_var': 34.54496097564697, 'layer2.0.bn1.num_batches_tracked': 948.45, 'layer2.0.conv2.weight': 16.10927734375, 'layer2.0.bn2.weight': 11.296163606643677, 'layer2.0.bn2.bias': 0.07544297482818366, 'layer2.0.bn2.running_mean': 7.026301050186158, 'layer2.0.bn2.running_var': 13.906872034072876, 'layer2.0.bn2.num_batches_tracked': 948.45, 'layer2.0.downsample.0.weight': 11.267029619216919, 'layer2.0.downsample.1.weight': 11.349491548538207, 'layer2.0.downsample.1.bias': 0.07544297482818366, 'layer2.0.downsample.1.running_mean': 11.45429835319519, 'layer2.0.downsample.1.running_var': 22.135292053222656, 'layer2.0.downsample.1.num_batches_tracked': 948.45, 'layer2.1.conv1.weight': 16.1131609916687, 'layer2.1.bn1.weight': 11.313955354690552, 'layer2.1.bn1.bias': 0.0657136982306838, 'layer2.1.bn1.running_mean': 9.463627004623413, 'layer2.1.bn1.running_var': 27.911805057525633, 'layer2.1.bn1.num_batches_tracked': 948.45, 'layer2.1.conv2.weight': 16.073034048080444, 'layer2.1.bn2.weight': 11.296633291244508, 'layer2.1.bn2.bias': 0.04723547864705324, 'layer2.1.bn2.running_mean': 6.619246625900269, 'layer2.1.bn2.running_var': 13.078615045547485, 'layer2.1.bn2.num_batches_tracked': 948.45, 'layer3.0.conv1.weight': 16.100053691864012, 'layer3.0.bn1.weight': 16.000131034851073, 'layer3.0.bn1.bias': 0.05660345200449228, 'layer3.0.bn1.running_mean': 15.48650403022766, 'layer3.0.bn1.running_var': 36.36982908248901, 'layer3.0.bn1.num_batches_tracked': 948.45, 'layer3.0.conv2.weight': 22.712170696258546, 'layer3.0.bn2.weight': 16.000376224517822, 'layer3.0.bn2.bias': 0.06445518573746085, 'layer3.0.bn2.running_mean': 9.797925901412963, 'layer3.0.bn2.running_var': 20.095711517333985, 'layer3.0.bn2.num_batches_tracked': 948.45, 'layer3.0.downsample.0.weight': 16.045401668548585, 'layer3.0.downsample.1.weight': 15.991445159912109, 'layer3.0.downsample.1.bias': 0.06445518573746085, 'layer3.0.downsample.1.running_mean': 12.925026178359985, 'layer3.0.downsample.1.running_var': 26.70232629776001, 'layer3.0.downsample.1.num_batches_tracked': 948.45, 'layer3.1.conv1.weight': 22.692408561706543, 'layer3.1.bn1.weight': 16.000113677978515, 'layer3.1.bn1.bias': 0.04843625472858548, 'layer3.1.bn1.running_mean': 14.136521768569946, 'layer3.1.bn1.running_var': 42.91485424041748, 'layer3.1.bn1.num_batches_tracked': 948.45, 'layer3.1.conv2.weight': 22.696173095703124, 'layer3.1.bn2.weight': 16.008739137649535, 'layer3.1.bn2.bias': 0.04918956938199699, 'layer3.1.bn2.running_mean': 11.282309865951538, 'layer3.1.bn2.running_var': 25.04137134552002, 'layer3.1.bn2.num_batches_tracked': 948.45, 'layer4.0.conv1.weight': 22.71857271194458, 'layer4.0.bn1.weight': 22.62747268676758, 'layer4.0.bn1.bias': 0.04758210023865104, 'layer4.0.bn1.running_mean': 25.725024890899657, 'layer4.0.bn1.running_var': 74.89567260742187, 'layer4.0.bn1.num_batches_tracked': 948.45, 'layer4.0.conv2.weight': 32.0731107711792, 'layer4.0.bn2.weight': 22.399503993988038, 'layer4.0.bn2.bias': 0.5314272738993168, 'layer4.0.bn2.running_mean': 21.141964054107667, 'layer4.0.bn2.running_var': 64.82737131118775, 'layer4.0.bn2.num_batches_tracked': 948.45, 'layer4.0.downsample.0.weight': 22.623112201690674, 'layer4.0.downsample.1.weight': 22.4127179145813, 'layer4.0.downsample.1.bias': 0.5314272738993168, 'layer4.0.downsample.1.running_mean': 23.23727035522461, 'layer4.0.downsample.1.running_var': 63.886111640930174, 'layer4.0.downsample.1.num_batches_tracked': 948.45, 'layer4.1.conv1.weight': 32.076686477661134, 'layer4.1.bn1.weight': 22.627466201782227, 'layer4.1.bn1.bias': 0.06572004253976046, 'layer4.1.bn1.running_mean': 11.550013160705566, 'layer4.1.bn1.running_var': 24.157433795928956, 'layer4.1.bn1.num_batches_tracked': 948.45, 'layer4.1.conv2.weight': 32.069811534881595, 'layer4.1.bn2.weight': 22.221644401550293, 'layer4.1.bn2.bias': 0.9417458564043045, 'layer4.1.bn2.running_mean': 15.613087224960328, 'layer4.1.bn2.running_var': 42.65533618927002, 'layer4.1.bn2.num_batches_tracked': 948.45, 'fc.weight': 3.112790638208389, 'fc.bias': 0.08526732362806796}}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-dpfedavg-dir1-4
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir1.npy
+Loading partition from ./temp/imagenette-c10-dir1.npy
+Data splitted
+dpfedavg
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: 2495.5839, Acc: 0.0940
+Round 8 Loss: 2537.9519, Acc: 0.1088
+Round 9 Loss: 1772.9248, Acc: 0.1284
+Round 10 Loss: 2695.1209, Acc: 0.1241
+Round 11 Loss: 2220.7242, Acc: 0.1037
+Round 12 Loss: 3183.3106, Acc: 0.1001
+Round 13 Loss: 1685.6318, Acc: 0.1297
+Round 14 Loss: 1961.4270, Acc: 0.1256
+Round 15 Loss: 2655.8626, Acc: 0.1047
+Round 16 Loss: 1329.0532, Acc: 0.1254
+Round 17 Loss: 3252.7029, Acc: 0.1070
+Round 18 Loss: 2797.4021, Acc: 0.1271
+Round 19 Loss: 3007.1829, Acc: 0.0999
+Round 20 Loss: 2630.6216, Acc: 0.0999
+Round 21 Loss: 3507.4031, Acc: 0.0991
+Round 22 Loss: 3264.3332, Acc: 0.0978
+Round 23 Loss: 3955.7037, Acc: 0.0999
+Round 24 Loss: 2990.2631, Acc: 0.1004
+Round 25 Loss: 2547.7700, Acc: 0.1037
+Round 26 Loss: 3339.0465, Acc: 0.1093
+Round 27 Loss: 3062.3076, Acc: 0.1294
+Round 28 Loss: 4773.5103, Acc: 0.1378
+Round 29 Loss: 2372.7949, Acc: 0.1715
+Round 30 Loss: 3165.3223, Acc: 0.1050
+Round 31 Loss: 4501.1270, Acc: 0.1134
+Round 32 Loss: 4188.4165, Acc: 0.1093
+Round 33 Loss: 2187.5497, Acc: 0.1480
+Round 34 Loss: 4062.7441, Acc: 0.1501
+Round 35 Loss: 4192.6891, Acc: 0.1001
+Round 36 Loss: 3500.9023, Acc: 0.1315
+Round 37 Loss: 4408.4174, Acc: 0.1353
+Round 38 Loss: 6248.8944, Acc: 0.1180
+Round 39 Loss: 4510.1080, Acc: 0.1462
+Round 40 Loss: 6642.6210, Acc: 0.1259
+Round 41 Loss: 3761.7025, Acc: 0.1338
+Round 42 Loss: 4861.7774, Acc: 0.1524
+Round 43 Loss: 8692.2264, Acc: 0.1332
+Round 44 Loss: 4516.9101, Acc: 0.1050
+Round 45 Loss: 3207.9496, Acc: 0.1587
+Round 46 Loss: 3963.3810, Acc: 0.1508
+Round 47 Loss: 5449.6749, Acc: 0.1175
+Round 48 Loss: 3941.4109, Acc: 0.1483
+Round 49 Loss: 4740.2951, Acc: 0.1172
+Round 50 Loss: 6743.3464, Acc: 0.1073
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'dpfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir0.5', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': {'conv1.weight': 4.181984794139862, 'bn1.weight': 8.085697889328003, 'bn1.bias': 0.22725230641663074, 'bn1.running_mean': 0.928035831451416, 'bn1.running_var': 23.39664297103882, 'bn1.num_batches_tracked': 948.45, 'layer1.0.conv1.weight': 11.553188705444336, 'layer1.0.bn1.weight': 8.001431083679199, 'layer1.0.bn1.bias': 0.12198688723146915, 'layer1.0.bn1.running_mean': 9.957211875915528, 'layer1.0.bn1.running_var': 21.437686443328857, 'layer1.0.bn1.num_batches_tracked': 948.45, 'layer1.0.conv2.weight': 11.49886326789856, 'layer1.0.bn2.weight': 7.955541610717773, 'layer1.0.bn2.bias': 0.08299417328089476, 'layer1.0.bn2.running_mean': 6.568105173110962, 'layer1.0.bn2.running_var': 10.674507570266723, 'layer1.0.bn2.num_batches_tracked': 948.45, 'layer1.1.conv1.weight': 11.408628129959107, 'layer1.1.bn1.weight': 8.00065312385559, 'layer1.1.bn1.bias': 0.0794845481403172, 'layer1.1.bn1.running_mean': 10.903985643386841, 'layer1.1.bn1.running_var': 29.371485233306885, 'layer1.1.bn1.num_batches_tracked': 948.45, 'layer1.1.conv2.weight': 11.396786642074584, 'layer1.1.bn2.weight': 7.961781620979309, 'layer1.1.bn2.bias': 0.051205734629184006, 'layer1.1.bn2.running_mean': 4.988979530334473, 'layer1.1.bn2.running_var': 9.960107946395874, 'layer1.1.bn2.num_batches_tracked': 948.45, 'layer2.0.conv1.weight': 11.471849250793458, 'layer2.0.bn1.weight': 11.314029693603516, 'layer2.0.bn1.bias': 0.07692573871463537, 'layer2.0.bn1.running_mean': 15.89602222442627, 'layer2.0.bn1.running_var': 34.54496097564697, 'layer2.0.bn1.num_batches_tracked': 948.45, 'layer2.0.conv2.weight': 16.10927734375, 'layer2.0.bn2.weight': 11.296163606643677, 'layer2.0.bn2.bias': 0.07544297482818366, 'layer2.0.bn2.running_mean': 7.026301050186158, 'layer2.0.bn2.running_var': 13.906872034072876, 'layer2.0.bn2.num_batches_tracked': 948.45, 'layer2.0.downsample.0.weight': 11.267029619216919, 'layer2.0.downsample.1.weight': 11.349491548538207, 'layer2.0.downsample.1.bias': 0.07544297482818366, 'layer2.0.downsample.1.running_mean': 11.45429835319519, 'layer2.0.downsample.1.running_var': 22.135292053222656, 'layer2.0.downsample.1.num_batches_tracked': 948.45, 'layer2.1.conv1.weight': 16.1131609916687, 'layer2.1.bn1.weight': 11.313955354690552, 'layer2.1.bn1.bias': 0.0657136982306838, 'layer2.1.bn1.running_mean': 9.463627004623413, 'layer2.1.bn1.running_var': 27.911805057525633, 'layer2.1.bn1.num_batches_tracked': 948.45, 'layer2.1.conv2.weight': 16.073034048080444, 'layer2.1.bn2.weight': 11.296633291244508, 'layer2.1.bn2.bias': 0.04723547864705324, 'layer2.1.bn2.running_mean': 6.619246625900269, 'layer2.1.bn2.running_var': 13.078615045547485, 'layer2.1.bn2.num_batches_tracked': 948.45, 'layer3.0.conv1.weight': 16.100053691864012, 'layer3.0.bn1.weight': 16.000131034851073, 'layer3.0.bn1.bias': 0.05660345200449228, 'layer3.0.bn1.running_mean': 15.48650403022766, 'layer3.0.bn1.running_var': 36.36982908248901, 'layer3.0.bn1.num_batches_tracked': 948.45, 'layer3.0.conv2.weight': 22.712170696258546, 'layer3.0.bn2.weight': 16.000376224517822, 'layer3.0.bn2.bias': 0.06445518573746085, 'layer3.0.bn2.running_mean': 9.797925901412963, 'layer3.0.bn2.running_var': 20.095711517333985, 'layer3.0.bn2.num_batches_tracked': 948.45, 'layer3.0.downsample.0.weight': 16.045401668548585, 'layer3.0.downsample.1.weight': 15.991445159912109, 'layer3.0.downsample.1.bias': 0.06445518573746085, 'layer3.0.downsample.1.running_mean': 12.925026178359985, 'layer3.0.downsample.1.running_var': 26.70232629776001, 'layer3.0.downsample.1.num_batches_tracked': 948.45, 'layer3.1.conv1.weight': 22.692408561706543, 'layer3.1.bn1.weight': 16.000113677978515, 'layer3.1.bn1.bias': 0.04843625472858548, 'layer3.1.bn1.running_mean': 14.136521768569946, 'layer3.1.bn1.running_var': 42.91485424041748, 'layer3.1.bn1.num_batches_tracked': 948.45, 'layer3.1.conv2.weight': 22.696173095703124, 'layer3.1.bn2.weight': 16.008739137649535, 'layer3.1.bn2.bias': 0.04918956938199699, 'layer3.1.bn2.running_mean': 11.282309865951538, 'layer3.1.bn2.running_var': 25.04137134552002, 'layer3.1.bn2.num_batches_tracked': 948.45, 'layer4.0.conv1.weight': 22.71857271194458, 'layer4.0.bn1.weight': 22.62747268676758, 'layer4.0.bn1.bias': 0.04758210023865104, 'layer4.0.bn1.running_mean': 25.725024890899657, 'layer4.0.bn1.running_var': 74.89567260742187, 'layer4.0.bn1.num_batches_tracked': 948.45, 'layer4.0.conv2.weight': 32.0731107711792, 'layer4.0.bn2.weight': 22.399503993988038, 'layer4.0.bn2.bias': 0.5314272738993168, 'layer4.0.bn2.running_mean': 21.141964054107667, 'layer4.0.bn2.running_var': 64.82737131118775, 'layer4.0.bn2.num_batches_tracked': 948.45, 'layer4.0.downsample.0.weight': 22.623112201690674, 'layer4.0.downsample.1.weight': 22.4127179145813, 'layer4.0.downsample.1.bias': 0.5314272738993168, 'layer4.0.downsample.1.running_mean': 23.23727035522461, 'layer4.0.downsample.1.running_var': 63.886111640930174, 'layer4.0.downsample.1.num_batches_tracked': 948.45, 'layer4.1.conv1.weight': 32.076686477661134, 'layer4.1.bn1.weight': 22.627466201782227, 'layer4.1.bn1.bias': 0.06572004253976046, 'layer4.1.bn1.running_mean': 11.550013160705566, 'layer4.1.bn1.running_var': 24.157433795928956, 'layer4.1.bn1.num_batches_tracked': 948.45, 'layer4.1.conv2.weight': 32.069811534881595, 'layer4.1.bn2.weight': 22.221644401550293, 'layer4.1.bn2.bias': 0.9417458564043045, 'layer4.1.bn2.running_mean': 15.613087224960328, 'layer4.1.bn2.running_var': 42.65533618927002, 'layer4.1.bn2.num_batches_tracked': 948.45, 'fc.weight': 3.112790638208389, 'fc.bias': 0.08526732362806796}}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-dpfedavg-dir0.5-0
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir0.5.npy
+Loading partition from ./temp/imagenette-c10-dir0.5.npy
+Data splitted
+dpfedavg
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: nan, Acc: 0.0986
+Round 9 Loss: nan, Acc: 0.0986
+Round 10 Loss: nan, Acc: 0.0986
+Round 11 Loss: nan, Acc: 0.0986
+Round 12 Loss: nan, Acc: 0.0986
+Round 13 Loss: nan, Acc: 0.0986
+Round 14 Loss: nan, Acc: 0.0986
+Round 15 Loss: nan, Acc: 0.0986
+Round 16 Loss: nan, Acc: 0.0986
+Round 17 Loss: nan, Acc: 0.0986
+Round 18 Loss: nan, Acc: 0.0986
+Round 19 Loss: nan, Acc: 0.0986
+Round 20 Loss: nan, Acc: 0.0986
+Round 21 Loss: nan, Acc: 0.0986
+Round 22 Loss: nan, Acc: 0.0986
+Round 23 Loss: nan, Acc: 0.0986
+Round 24 Loss: nan, Acc: 0.0986
+Round 25 Loss: nan, Acc: 0.0986
+Round 26 Loss: nan, Acc: 0.0986
+Round 27 Loss: nan, Acc: 0.0986
+Round 28 Loss: nan, Acc: 0.0986
+Round 29 Loss: nan, Acc: 0.0986
+Round 30 Loss: nan, Acc: 0.0986
+Round 31 Loss: nan, Acc: 0.0986
+Round 32 Loss: nan, Acc: 0.0986
+Round 33 Loss: nan, Acc: 0.0986
+Round 34 Loss: nan, Acc: 0.0986
+Round 35 Loss: 36014.9504, Acc: 0.1070
+Round 36 Loss: 28410.2904, Acc: 0.1175
+Round 37 Loss: 26792.7586, Acc: 0.1039
+Round 38 Loss: 29659.4392, Acc: 0.0950
+Round 39 Loss: nan, Acc: 0.0986
+Round 40 Loss: nan, Acc: 0.0986
+Round 41 Loss: nan, Acc: 0.0986
+Round 42 Loss: nan, Acc: 0.0986
+Round 43 Loss: nan, Acc: 0.0986
+Round 44 Loss: nan, Acc: 0.0986
+Round 45 Loss: nan, Acc: 0.0986
+Round 46 Loss: nan, Acc: 0.0986
+Round 47 Loss: nan, Acc: 0.0986
+Round 48 Loss: nan, Acc: 0.0986
+Round 49 Loss: nan, Acc: 0.0986
+Round 50 Loss: nan, Acc: 0.0986
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'dpfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir0.5', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': {'conv1.weight': 4.181984794139862, 'bn1.weight': 8.085697889328003, 'bn1.bias': 0.22725230641663074, 'bn1.running_mean': 0.928035831451416, 'bn1.running_var': 23.39664297103882, 'bn1.num_batches_tracked': 948.45, 'layer1.0.conv1.weight': 11.553188705444336, 'layer1.0.bn1.weight': 8.001431083679199, 'layer1.0.bn1.bias': 0.12198688723146915, 'layer1.0.bn1.running_mean': 9.957211875915528, 'layer1.0.bn1.running_var': 21.437686443328857, 'layer1.0.bn1.num_batches_tracked': 948.45, 'layer1.0.conv2.weight': 11.49886326789856, 'layer1.0.bn2.weight': 7.955541610717773, 'layer1.0.bn2.bias': 0.08299417328089476, 'layer1.0.bn2.running_mean': 6.568105173110962, 'layer1.0.bn2.running_var': 10.674507570266723, 'layer1.0.bn2.num_batches_tracked': 948.45, 'layer1.1.conv1.weight': 11.408628129959107, 'layer1.1.bn1.weight': 8.00065312385559, 'layer1.1.bn1.bias': 0.0794845481403172, 'layer1.1.bn1.running_mean': 10.903985643386841, 'layer1.1.bn1.running_var': 29.371485233306885, 'layer1.1.bn1.num_batches_tracked': 948.45, 'layer1.1.conv2.weight': 11.396786642074584, 'layer1.1.bn2.weight': 7.961781620979309, 'layer1.1.bn2.bias': 0.051205734629184006, 'layer1.1.bn2.running_mean': 4.988979530334473, 'layer1.1.bn2.running_var': 9.960107946395874, 'layer1.1.bn2.num_batches_tracked': 948.45, 'layer2.0.conv1.weight': 11.471849250793458, 'layer2.0.bn1.weight': 11.314029693603516, 'layer2.0.bn1.bias': 0.07692573871463537, 'layer2.0.bn1.running_mean': 15.89602222442627, 'layer2.0.bn1.running_var': 34.54496097564697, 'layer2.0.bn1.num_batches_tracked': 948.45, 'layer2.0.conv2.weight': 16.10927734375, 'layer2.0.bn2.weight': 11.296163606643677, 'layer2.0.bn2.bias': 0.07544297482818366, 'layer2.0.bn2.running_mean': 7.026301050186158, 'layer2.0.bn2.running_var': 13.906872034072876, 'layer2.0.bn2.num_batches_tracked': 948.45, 'layer2.0.downsample.0.weight': 11.267029619216919, 'layer2.0.downsample.1.weight': 11.349491548538207, 'layer2.0.downsample.1.bias': 0.07544297482818366, 'layer2.0.downsample.1.running_mean': 11.45429835319519, 'layer2.0.downsample.1.running_var': 22.135292053222656, 'layer2.0.downsample.1.num_batches_tracked': 948.45, 'layer2.1.conv1.weight': 16.1131609916687, 'layer2.1.bn1.weight': 11.313955354690552, 'layer2.1.bn1.bias': 0.0657136982306838, 'layer2.1.bn1.running_mean': 9.463627004623413, 'layer2.1.bn1.running_var': 27.911805057525633, 'layer2.1.bn1.num_batches_tracked': 948.45, 'layer2.1.conv2.weight': 16.073034048080444, 'layer2.1.bn2.weight': 11.296633291244508, 'layer2.1.bn2.bias': 0.04723547864705324, 'layer2.1.bn2.running_mean': 6.619246625900269, 'layer2.1.bn2.running_var': 13.078615045547485, 'layer2.1.bn2.num_batches_tracked': 948.45, 'layer3.0.conv1.weight': 16.100053691864012, 'layer3.0.bn1.weight': 16.000131034851073, 'layer3.0.bn1.bias': 0.05660345200449228, 'layer3.0.bn1.running_mean': 15.48650403022766, 'layer3.0.bn1.running_var': 36.36982908248901, 'layer3.0.bn1.num_batches_tracked': 948.45, 'layer3.0.conv2.weight': 22.712170696258546, 'layer3.0.bn2.weight': 16.000376224517822, 'layer3.0.bn2.bias': 0.06445518573746085, 'layer3.0.bn2.running_mean': 9.797925901412963, 'layer3.0.bn2.running_var': 20.095711517333985, 'layer3.0.bn2.num_batches_tracked': 948.45, 'layer3.0.downsample.0.weight': 16.045401668548585, 'layer3.0.downsample.1.weight': 15.991445159912109, 'layer3.0.downsample.1.bias': 0.06445518573746085, 'layer3.0.downsample.1.running_mean': 12.925026178359985, 'layer3.0.downsample.1.running_var': 26.70232629776001, 'layer3.0.downsample.1.num_batches_tracked': 948.45, 'layer3.1.conv1.weight': 22.692408561706543, 'layer3.1.bn1.weight': 16.000113677978515, 'layer3.1.bn1.bias': 0.04843625472858548, 'layer3.1.bn1.running_mean': 14.136521768569946, 'layer3.1.bn1.running_var': 42.91485424041748, 'layer3.1.bn1.num_batches_tracked': 948.45, 'layer3.1.conv2.weight': 22.696173095703124, 'layer3.1.bn2.weight': 16.008739137649535, 'layer3.1.bn2.bias': 0.04918956938199699, 'layer3.1.bn2.running_mean': 11.282309865951538, 'layer3.1.bn2.running_var': 25.04137134552002, 'layer3.1.bn2.num_batches_tracked': 948.45, 'layer4.0.conv1.weight': 22.71857271194458, 'layer4.0.bn1.weight': 22.62747268676758, 'layer4.0.bn1.bias': 0.04758210023865104, 'layer4.0.bn1.running_mean': 25.725024890899657, 'layer4.0.bn1.running_var': 74.89567260742187, 'layer4.0.bn1.num_batches_tracked': 948.45, 'layer4.0.conv2.weight': 32.0731107711792, 'layer4.0.bn2.weight': 22.399503993988038, 'layer4.0.bn2.bias': 0.5314272738993168, 'layer4.0.bn2.running_mean': 21.141964054107667, 'layer4.0.bn2.running_var': 64.82737131118775, 'layer4.0.bn2.num_batches_tracked': 948.45, 'layer4.0.downsample.0.weight': 22.623112201690674, 'layer4.0.downsample.1.weight': 22.4127179145813, 'layer4.0.downsample.1.bias': 0.5314272738993168, 'layer4.0.downsample.1.running_mean': 23.23727035522461, 'layer4.0.downsample.1.running_var': 63.886111640930174, 'layer4.0.downsample.1.num_batches_tracked': 948.45, 'layer4.1.conv1.weight': 32.076686477661134, 'layer4.1.bn1.weight': 22.627466201782227, 'layer4.1.bn1.bias': 0.06572004253976046, 'layer4.1.bn1.running_mean': 11.550013160705566, 'layer4.1.bn1.running_var': 24.157433795928956, 'layer4.1.bn1.num_batches_tracked': 948.45, 'layer4.1.conv2.weight': 32.069811534881595, 'layer4.1.bn2.weight': 22.221644401550293, 'layer4.1.bn2.bias': 0.9417458564043045, 'layer4.1.bn2.running_mean': 15.613087224960328, 'layer4.1.bn2.running_var': 42.65533618927002, 'layer4.1.bn2.num_batches_tracked': 948.45, 'fc.weight': 3.112790638208389, 'fc.bias': 0.08526732362806796}}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-dpfedavg-dir0.5-1
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir0.5.npy
+Loading partition from ./temp/imagenette-c10-dir0.5.npy
+Data splitted
+dpfedavg
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: nan, Acc: 0.0986
+Round 9 Loss: nan, Acc: 0.0986
+Round 10 Loss: nan, Acc: 0.0986
+Round 11 Loss: nan, Acc: 0.0986
+Round 12 Loss: nan, Acc: 0.0986
+Round 13 Loss: nan, Acc: 0.0986
+Round 14 Loss: nan, Acc: 0.0986
+Round 15 Loss: nan, Acc: 0.0986
+Round 16 Loss: nan, Acc: 0.0986
+Round 17 Loss: nan, Acc: 0.0986
+Round 18 Loss: nan, Acc: 0.0986
+Round 19 Loss: nan, Acc: 0.0986
+Round 20 Loss: nan, Acc: 0.0986
+Round 21 Loss: nan, Acc: 0.0986
+Round 22 Loss: nan, Acc: 0.0986
+Round 23 Loss: nan, Acc: 0.0986
+Round 24 Loss: nan, Acc: 0.0986
+Round 25 Loss: nan, Acc: 0.0986
+Round 26 Loss: nan, Acc: 0.0986
+Round 27 Loss: nan, Acc: 0.0986
+Round 28 Loss: nan, Acc: 0.0986
+Round 29 Loss: nan, Acc: 0.0986
+Round 30 Loss: nan, Acc: 0.0986
+Round 31 Loss: nan, Acc: 0.0986
+Round 32 Loss: nan, Acc: 0.0986
+Round 33 Loss: nan, Acc: 0.0986
+Round 34 Loss: nan, Acc: 0.0986
+Round 35 Loss: 28243.1766, Acc: 0.1039
+Round 36 Loss: 25905.9316, Acc: 0.0991
+Round 37 Loss: 60049.1929, Acc: 0.0981
+Round 38 Loss: 51059.3974, Acc: 0.1039
+Round 39 Loss: 48326.8511, Acc: 0.0983
+Round 40 Loss: 61745.8253, Acc: 0.0994
+Round 41 Loss: 45958.1297, Acc: 0.0994
+Round 42 Loss: 96971.9416, Acc: 0.0994
+Round 43 Loss: 32137.4330, Acc: 0.1139
+Round 44 Loss: 35642.0938, Acc: 0.1243
+Round 45 Loss: 28166.7762, Acc: 0.0904
+Round 46 Loss: 113080.0804, Acc: 0.1363
+Round 47 Loss: 427376.2527, Acc: 0.0943
+Round 48 Loss: 287277.8711, Acc: 0.0690
+Round 49 Loss: 387474.1006, Acc: 0.0815
+Round 50 Loss: 328807.4868, Acc: 0.0889
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'dpfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir0.5', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': {'conv1.weight': 4.181984794139862, 'bn1.weight': 8.085697889328003, 'bn1.bias': 0.22725230641663074, 'bn1.running_mean': 0.928035831451416, 'bn1.running_var': 23.39664297103882, 'bn1.num_batches_tracked': 948.45, 'layer1.0.conv1.weight': 11.553188705444336, 'layer1.0.bn1.weight': 8.001431083679199, 'layer1.0.bn1.bias': 0.12198688723146915, 'layer1.0.bn1.running_mean': 9.957211875915528, 'layer1.0.bn1.running_var': 21.437686443328857, 'layer1.0.bn1.num_batches_tracked': 948.45, 'layer1.0.conv2.weight': 11.49886326789856, 'layer1.0.bn2.weight': 7.955541610717773, 'layer1.0.bn2.bias': 0.08299417328089476, 'layer1.0.bn2.running_mean': 6.568105173110962, 'layer1.0.bn2.running_var': 10.674507570266723, 'layer1.0.bn2.num_batches_tracked': 948.45, 'layer1.1.conv1.weight': 11.408628129959107, 'layer1.1.bn1.weight': 8.00065312385559, 'layer1.1.bn1.bias': 0.0794845481403172, 'layer1.1.bn1.running_mean': 10.903985643386841, 'layer1.1.bn1.running_var': 29.371485233306885, 'layer1.1.bn1.num_batches_tracked': 948.45, 'layer1.1.conv2.weight': 11.396786642074584, 'layer1.1.bn2.weight': 7.961781620979309, 'layer1.1.bn2.bias': 0.051205734629184006, 'layer1.1.bn2.running_mean': 4.988979530334473, 'layer1.1.bn2.running_var': 9.960107946395874, 'layer1.1.bn2.num_batches_tracked': 948.45, 'layer2.0.conv1.weight': 11.471849250793458, 'layer2.0.bn1.weight': 11.314029693603516, 'layer2.0.bn1.bias': 0.07692573871463537, 'layer2.0.bn1.running_mean': 15.89602222442627, 'layer2.0.bn1.running_var': 34.54496097564697, 'layer2.0.bn1.num_batches_tracked': 948.45, 'layer2.0.conv2.weight': 16.10927734375, 'layer2.0.bn2.weight': 11.296163606643677, 'layer2.0.bn2.bias': 0.07544297482818366, 'layer2.0.bn2.running_mean': 7.026301050186158, 'layer2.0.bn2.running_var': 13.906872034072876, 'layer2.0.bn2.num_batches_tracked': 948.45, 'layer2.0.downsample.0.weight': 11.267029619216919, 'layer2.0.downsample.1.weight': 11.349491548538207, 'layer2.0.downsample.1.bias': 0.07544297482818366, 'layer2.0.downsample.1.running_mean': 11.45429835319519, 'layer2.0.downsample.1.running_var': 22.135292053222656, 'layer2.0.downsample.1.num_batches_tracked': 948.45, 'layer2.1.conv1.weight': 16.1131609916687, 'layer2.1.bn1.weight': 11.313955354690552, 'layer2.1.bn1.bias': 0.0657136982306838, 'layer2.1.bn1.running_mean': 9.463627004623413, 'layer2.1.bn1.running_var': 27.911805057525633, 'layer2.1.bn1.num_batches_tracked': 948.45, 'layer2.1.conv2.weight': 16.073034048080444, 'layer2.1.bn2.weight': 11.296633291244508, 'layer2.1.bn2.bias': 0.04723547864705324, 'layer2.1.bn2.running_mean': 6.619246625900269, 'layer2.1.bn2.running_var': 13.078615045547485, 'layer2.1.bn2.num_batches_tracked': 948.45, 'layer3.0.conv1.weight': 16.100053691864012, 'layer3.0.bn1.weight': 16.000131034851073, 'layer3.0.bn1.bias': 0.05660345200449228, 'layer3.0.bn1.running_mean': 15.48650403022766, 'layer3.0.bn1.running_var': 36.36982908248901, 'layer3.0.bn1.num_batches_tracked': 948.45, 'layer3.0.conv2.weight': 22.712170696258546, 'layer3.0.bn2.weight': 16.000376224517822, 'layer3.0.bn2.bias': 0.06445518573746085, 'layer3.0.bn2.running_mean': 9.797925901412963, 'layer3.0.bn2.running_var': 20.095711517333985, 'layer3.0.bn2.num_batches_tracked': 948.45, 'layer3.0.downsample.0.weight': 16.045401668548585, 'layer3.0.downsample.1.weight': 15.991445159912109, 'layer3.0.downsample.1.bias': 0.06445518573746085, 'layer3.0.downsample.1.running_mean': 12.925026178359985, 'layer3.0.downsample.1.running_var': 26.70232629776001, 'layer3.0.downsample.1.num_batches_tracked': 948.45, 'layer3.1.conv1.weight': 22.692408561706543, 'layer3.1.bn1.weight': 16.000113677978515, 'layer3.1.bn1.bias': 0.04843625472858548, 'layer3.1.bn1.running_mean': 14.136521768569946, 'layer3.1.bn1.running_var': 42.91485424041748, 'layer3.1.bn1.num_batches_tracked': 948.45, 'layer3.1.conv2.weight': 22.696173095703124, 'layer3.1.bn2.weight': 16.008739137649535, 'layer3.1.bn2.bias': 0.04918956938199699, 'layer3.1.bn2.running_mean': 11.282309865951538, 'layer3.1.bn2.running_var': 25.04137134552002, 'layer3.1.bn2.num_batches_tracked': 948.45, 'layer4.0.conv1.weight': 22.71857271194458, 'layer4.0.bn1.weight': 22.62747268676758, 'layer4.0.bn1.bias': 0.04758210023865104, 'layer4.0.bn1.running_mean': 25.725024890899657, 'layer4.0.bn1.running_var': 74.89567260742187, 'layer4.0.bn1.num_batches_tracked': 948.45, 'layer4.0.conv2.weight': 32.0731107711792, 'layer4.0.bn2.weight': 22.399503993988038, 'layer4.0.bn2.bias': 0.5314272738993168, 'layer4.0.bn2.running_mean': 21.141964054107667, 'layer4.0.bn2.running_var': 64.82737131118775, 'layer4.0.bn2.num_batches_tracked': 948.45, 'layer4.0.downsample.0.weight': 22.623112201690674, 'layer4.0.downsample.1.weight': 22.4127179145813, 'layer4.0.downsample.1.bias': 0.5314272738993168, 'layer4.0.downsample.1.running_mean': 23.23727035522461, 'layer4.0.downsample.1.running_var': 63.886111640930174, 'layer4.0.downsample.1.num_batches_tracked': 948.45, 'layer4.1.conv1.weight': 32.076686477661134, 'layer4.1.bn1.weight': 22.627466201782227, 'layer4.1.bn1.bias': 0.06572004253976046, 'layer4.1.bn1.running_mean': 11.550013160705566, 'layer4.1.bn1.running_var': 24.157433795928956, 'layer4.1.bn1.num_batches_tracked': 948.45, 'layer4.1.conv2.weight': 32.069811534881595, 'layer4.1.bn2.weight': 22.221644401550293, 'layer4.1.bn2.bias': 0.9417458564043045, 'layer4.1.bn2.running_mean': 15.613087224960328, 'layer4.1.bn2.running_var': 42.65533618927002, 'layer4.1.bn2.num_batches_tracked': 948.45, 'fc.weight': 3.112790638208389, 'fc.bias': 0.08526732362806796}}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-dpfedavg-dir0.5-2
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir0.5.npy
+Loading partition from ./temp/imagenette-c10-dir0.5.npy
+Data splitted
+dpfedavg
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: nan, Acc: 0.0986
+Round 9 Loss: nan, Acc: 0.0986
+Round 10 Loss: nan, Acc: 0.0986
+Round 11 Loss: nan, Acc: 0.0986
+Round 12 Loss: nan, Acc: 0.0986
+Round 13 Loss: nan, Acc: 0.0986
+Round 14 Loss: 34143.1959, Acc: 0.1070
+Round 15 Loss: nan, Acc: 0.0986
+Round 16 Loss: nan, Acc: 0.0986
+Round 17 Loss: nan, Acc: 0.0986
+Round 18 Loss: nan, Acc: 0.0986
+Round 19 Loss: nan, Acc: 0.0986
+Round 20 Loss: nan, Acc: 0.0986
+Round 21 Loss: nan, Acc: 0.0986
+Round 22 Loss: nan, Acc: 0.0986
+Round 23 Loss: nan, Acc: 0.0986
+Round 24 Loss: 77409.5602, Acc: 0.1108
+Round 25 Loss: 39678.7942, Acc: 0.1139
+Round 26 Loss: nan, Acc: 0.0986
+Round 27 Loss: 22419.9838, Acc: 0.1111
+Round 28 Loss: 34512.1942, Acc: 0.1075
+Round 29 Loss: 23548.2615, Acc: 0.1017
+Round 30 Loss: 18856.9048, Acc: 0.1032
+Round 31 Loss: nan, Acc: 0.0986
+Round 32 Loss: nan, Acc: 0.0986
+Round 33 Loss: nan, Acc: 0.0986
+Round 34 Loss: nan, Acc: 0.0986
+Round 35 Loss: nan, Acc: 0.0986
+Round 36 Loss: nan, Acc: 0.0986
+Round 37 Loss: nan, Acc: 0.0986
+Round 38 Loss: nan, Acc: 0.0986
+Round 39 Loss: nan, Acc: 0.0986
+Round 40 Loss: nan, Acc: 0.0986
+Round 41 Loss: 21665.5043, Acc: 0.0797
+Round 42 Loss: 18674.4754, Acc: 0.0838
+Round 43 Loss: 26450.5133, Acc: 0.1050
+Round 44 Loss: 21327.1741, Acc: 0.1062
+Round 45 Loss: 30248.4798, Acc: 0.1312
+Round 46 Loss: 31383.7230, Acc: 0.1014
+Round 47 Loss: 22840.9249, Acc: 0.1243
+Round 48 Loss: 23061.4612, Acc: 0.1376
+Round 49 Loss: 22906.0108, Acc: 0.1152
+Round 50 Loss: 54091.2505, Acc: 0.1014
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'dpfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir0.5', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': {'conv1.weight': 4.181984794139862, 'bn1.weight': 8.085697889328003, 'bn1.bias': 0.22725230641663074, 'bn1.running_mean': 0.928035831451416, 'bn1.running_var': 23.39664297103882, 'bn1.num_batches_tracked': 948.45, 'layer1.0.conv1.weight': 11.553188705444336, 'layer1.0.bn1.weight': 8.001431083679199, 'layer1.0.bn1.bias': 0.12198688723146915, 'layer1.0.bn1.running_mean': 9.957211875915528, 'layer1.0.bn1.running_var': 21.437686443328857, 'layer1.0.bn1.num_batches_tracked': 948.45, 'layer1.0.conv2.weight': 11.49886326789856, 'layer1.0.bn2.weight': 7.955541610717773, 'layer1.0.bn2.bias': 0.08299417328089476, 'layer1.0.bn2.running_mean': 6.568105173110962, 'layer1.0.bn2.running_var': 10.674507570266723, 'layer1.0.bn2.num_batches_tracked': 948.45, 'layer1.1.conv1.weight': 11.408628129959107, 'layer1.1.bn1.weight': 8.00065312385559, 'layer1.1.bn1.bias': 0.0794845481403172, 'layer1.1.bn1.running_mean': 10.903985643386841, 'layer1.1.bn1.running_var': 29.371485233306885, 'layer1.1.bn1.num_batches_tracked': 948.45, 'layer1.1.conv2.weight': 11.396786642074584, 'layer1.1.bn2.weight': 7.961781620979309, 'layer1.1.bn2.bias': 0.051205734629184006, 'layer1.1.bn2.running_mean': 4.988979530334473, 'layer1.1.bn2.running_var': 9.960107946395874, 'layer1.1.bn2.num_batches_tracked': 948.45, 'layer2.0.conv1.weight': 11.471849250793458, 'layer2.0.bn1.weight': 11.314029693603516, 'layer2.0.bn1.bias': 0.07692573871463537, 'layer2.0.bn1.running_mean': 15.89602222442627, 'layer2.0.bn1.running_var': 34.54496097564697, 'layer2.0.bn1.num_batches_tracked': 948.45, 'layer2.0.conv2.weight': 16.10927734375, 'layer2.0.bn2.weight': 11.296163606643677, 'layer2.0.bn2.bias': 0.07544297482818366, 'layer2.0.bn2.running_mean': 7.026301050186158, 'layer2.0.bn2.running_var': 13.906872034072876, 'layer2.0.bn2.num_batches_tracked': 948.45, 'layer2.0.downsample.0.weight': 11.267029619216919, 'layer2.0.downsample.1.weight': 11.349491548538207, 'layer2.0.downsample.1.bias': 0.07544297482818366, 'layer2.0.downsample.1.running_mean': 11.45429835319519, 'layer2.0.downsample.1.running_var': 22.135292053222656, 'layer2.0.downsample.1.num_batches_tracked': 948.45, 'layer2.1.conv1.weight': 16.1131609916687, 'layer2.1.bn1.weight': 11.313955354690552, 'layer2.1.bn1.bias': 0.0657136982306838, 'layer2.1.bn1.running_mean': 9.463627004623413, 'layer2.1.bn1.running_var': 27.911805057525633, 'layer2.1.bn1.num_batches_tracked': 948.45, 'layer2.1.conv2.weight': 16.073034048080444, 'layer2.1.bn2.weight': 11.296633291244508, 'layer2.1.bn2.bias': 0.04723547864705324, 'layer2.1.bn2.running_mean': 6.619246625900269, 'layer2.1.bn2.running_var': 13.078615045547485, 'layer2.1.bn2.num_batches_tracked': 948.45, 'layer3.0.conv1.weight': 16.100053691864012, 'layer3.0.bn1.weight': 16.000131034851073, 'layer3.0.bn1.bias': 0.05660345200449228, 'layer3.0.bn1.running_mean': 15.48650403022766, 'layer3.0.bn1.running_var': 36.36982908248901, 'layer3.0.bn1.num_batches_tracked': 948.45, 'layer3.0.conv2.weight': 22.712170696258546, 'layer3.0.bn2.weight': 16.000376224517822, 'layer3.0.bn2.bias': 0.06445518573746085, 'layer3.0.bn2.running_mean': 9.797925901412963, 'layer3.0.bn2.running_var': 20.095711517333985, 'layer3.0.bn2.num_batches_tracked': 948.45, 'layer3.0.downsample.0.weight': 16.045401668548585, 'layer3.0.downsample.1.weight': 15.991445159912109, 'layer3.0.downsample.1.bias': 0.06445518573746085, 'layer3.0.downsample.1.running_mean': 12.925026178359985, 'layer3.0.downsample.1.running_var': 26.70232629776001, 'layer3.0.downsample.1.num_batches_tracked': 948.45, 'layer3.1.conv1.weight': 22.692408561706543, 'layer3.1.bn1.weight': 16.000113677978515, 'layer3.1.bn1.bias': 0.04843625472858548, 'layer3.1.bn1.running_mean': 14.136521768569946, 'layer3.1.bn1.running_var': 42.91485424041748, 'layer3.1.bn1.num_batches_tracked': 948.45, 'layer3.1.conv2.weight': 22.696173095703124, 'layer3.1.bn2.weight': 16.008739137649535, 'layer3.1.bn2.bias': 0.04918956938199699, 'layer3.1.bn2.running_mean': 11.282309865951538, 'layer3.1.bn2.running_var': 25.04137134552002, 'layer3.1.bn2.num_batches_tracked': 948.45, 'layer4.0.conv1.weight': 22.71857271194458, 'layer4.0.bn1.weight': 22.62747268676758, 'layer4.0.bn1.bias': 0.04758210023865104, 'layer4.0.bn1.running_mean': 25.725024890899657, 'layer4.0.bn1.running_var': 74.89567260742187, 'layer4.0.bn1.num_batches_tracked': 948.45, 'layer4.0.conv2.weight': 32.0731107711792, 'layer4.0.bn2.weight': 22.399503993988038, 'layer4.0.bn2.bias': 0.5314272738993168, 'layer4.0.bn2.running_mean': 21.141964054107667, 'layer4.0.bn2.running_var': 64.82737131118775, 'layer4.0.bn2.num_batches_tracked': 948.45, 'layer4.0.downsample.0.weight': 22.623112201690674, 'layer4.0.downsample.1.weight': 22.4127179145813, 'layer4.0.downsample.1.bias': 0.5314272738993168, 'layer4.0.downsample.1.running_mean': 23.23727035522461, 'layer4.0.downsample.1.running_var': 63.886111640930174, 'layer4.0.downsample.1.num_batches_tracked': 948.45, 'layer4.1.conv1.weight': 32.076686477661134, 'layer4.1.bn1.weight': 22.627466201782227, 'layer4.1.bn1.bias': 0.06572004253976046, 'layer4.1.bn1.running_mean': 11.550013160705566, 'layer4.1.bn1.running_var': 24.157433795928956, 'layer4.1.bn1.num_batches_tracked': 948.45, 'layer4.1.conv2.weight': 32.069811534881595, 'layer4.1.bn2.weight': 22.221644401550293, 'layer4.1.bn2.bias': 0.9417458564043045, 'layer4.1.bn2.running_mean': 15.613087224960328, 'layer4.1.bn2.running_var': 42.65533618927002, 'layer4.1.bn2.num_batches_tracked': 948.45, 'fc.weight': 3.112790638208389, 'fc.bias': 0.08526732362806796}}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-dpfedavg-dir0.5-3
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir0.5.npy
+Loading partition from ./temp/imagenette-c10-dir0.5.npy
+Data splitted
+dpfedavg
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: nan, Acc: 0.0986
+Round 9 Loss: nan, Acc: 0.0986
+Round 10 Loss: nan, Acc: 0.0986
+Round 11 Loss: nan, Acc: 0.0986
+Round 12 Loss: nan, Acc: 0.0986
+Round 13 Loss: nan, Acc: 0.0986
+Round 14 Loss: nan, Acc: 0.0986
+Round 15 Loss: nan, Acc: 0.0986
+Round 16 Loss: nan, Acc: 0.0986
+Round 17 Loss: nan, Acc: 0.0986
+Round 18 Loss: nan, Acc: 0.0986
+Round 19 Loss: nan, Acc: 0.0986
+Round 20 Loss: nan, Acc: 0.0986
+Round 21 Loss: nan, Acc: 0.0986
+Round 22 Loss: nan, Acc: 0.0986
+Round 23 Loss: nan, Acc: 0.0986
+Round 24 Loss: nan, Acc: 0.0986
+Round 25 Loss: nan, Acc: 0.0986
+Round 26 Loss: nan, Acc: 0.0986
+Round 27 Loss: nan, Acc: 0.0986
+Round 28 Loss: 109028.2820, Acc: 0.1065
+Round 29 Loss: 53285.1343, Acc: 0.0950
+Round 30 Loss: 77551.1154, Acc: 0.0961
+Round 31 Loss: 54891.0726, Acc: 0.1009
+Round 32 Loss: 45615.6404, Acc: 0.1126
+Round 33 Loss: 37547.0528, Acc: 0.1019
+Round 34 Loss: 41102.9393, Acc: 0.0922
+Round 35 Loss: 37614.9581, Acc: 0.0976
+Round 36 Loss: 32364.5188, Acc: 0.1101
+Round 37 Loss: 42343.7774, Acc: 0.0989
+Round 38 Loss: 34472.6804, Acc: 0.0823
+Round 39 Loss: 46790.6909, Acc: 0.1039
+Round 40 Loss: 22881.7589, Acc: 0.0851
+Round 41 Loss: 31573.6358, Acc: 0.0948
+Round 42 Loss: 25735.0148, Acc: 0.1073
+Round 43 Loss: 32840.4063, Acc: 0.0922
+Round 44 Loss: 37301.3549, Acc: 0.1006
+Round 45 Loss: 39726.9163, Acc: 0.0897
+Round 46 Loss: 57633.0792, Acc: 0.0994
+Round 47 Loss: 45452.0161, Acc: 0.0996
+Round 48 Loss: 41291.5950, Acc: 0.1032
+Round 49 Loss: 33493.4764, Acc: 0.1057
+Round 50 Loss: 56125.9256, Acc: 0.1047
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'dpfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir0.5', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': {'conv1.weight': 4.181984794139862, 'bn1.weight': 8.085697889328003, 'bn1.bias': 0.22725230641663074, 'bn1.running_mean': 0.928035831451416, 'bn1.running_var': 23.39664297103882, 'bn1.num_batches_tracked': 948.45, 'layer1.0.conv1.weight': 11.553188705444336, 'layer1.0.bn1.weight': 8.001431083679199, 'layer1.0.bn1.bias': 0.12198688723146915, 'layer1.0.bn1.running_mean': 9.957211875915528, 'layer1.0.bn1.running_var': 21.437686443328857, 'layer1.0.bn1.num_batches_tracked': 948.45, 'layer1.0.conv2.weight': 11.49886326789856, 'layer1.0.bn2.weight': 7.955541610717773, 'layer1.0.bn2.bias': 0.08299417328089476, 'layer1.0.bn2.running_mean': 6.568105173110962, 'layer1.0.bn2.running_var': 10.674507570266723, 'layer1.0.bn2.num_batches_tracked': 948.45, 'layer1.1.conv1.weight': 11.408628129959107, 'layer1.1.bn1.weight': 8.00065312385559, 'layer1.1.bn1.bias': 0.0794845481403172, 'layer1.1.bn1.running_mean': 10.903985643386841, 'layer1.1.bn1.running_var': 29.371485233306885, 'layer1.1.bn1.num_batches_tracked': 948.45, 'layer1.1.conv2.weight': 11.396786642074584, 'layer1.1.bn2.weight': 7.961781620979309, 'layer1.1.bn2.bias': 0.051205734629184006, 'layer1.1.bn2.running_mean': 4.988979530334473, 'layer1.1.bn2.running_var': 9.960107946395874, 'layer1.1.bn2.num_batches_tracked': 948.45, 'layer2.0.conv1.weight': 11.471849250793458, 'layer2.0.bn1.weight': 11.314029693603516, 'layer2.0.bn1.bias': 0.07692573871463537, 'layer2.0.bn1.running_mean': 15.89602222442627, 'layer2.0.bn1.running_var': 34.54496097564697, 'layer2.0.bn1.num_batches_tracked': 948.45, 'layer2.0.conv2.weight': 16.10927734375, 'layer2.0.bn2.weight': 11.296163606643677, 'layer2.0.bn2.bias': 0.07544297482818366, 'layer2.0.bn2.running_mean': 7.026301050186158, 'layer2.0.bn2.running_var': 13.906872034072876, 'layer2.0.bn2.num_batches_tracked': 948.45, 'layer2.0.downsample.0.weight': 11.267029619216919, 'layer2.0.downsample.1.weight': 11.349491548538207, 'layer2.0.downsample.1.bias': 0.07544297482818366, 'layer2.0.downsample.1.running_mean': 11.45429835319519, 'layer2.0.downsample.1.running_var': 22.135292053222656, 'layer2.0.downsample.1.num_batches_tracked': 948.45, 'layer2.1.conv1.weight': 16.1131609916687, 'layer2.1.bn1.weight': 11.313955354690552, 'layer2.1.bn1.bias': 0.0657136982306838, 'layer2.1.bn1.running_mean': 9.463627004623413, 'layer2.1.bn1.running_var': 27.911805057525633, 'layer2.1.bn1.num_batches_tracked': 948.45, 'layer2.1.conv2.weight': 16.073034048080444, 'layer2.1.bn2.weight': 11.296633291244508, 'layer2.1.bn2.bias': 0.04723547864705324, 'layer2.1.bn2.running_mean': 6.619246625900269, 'layer2.1.bn2.running_var': 13.078615045547485, 'layer2.1.bn2.num_batches_tracked': 948.45, 'layer3.0.conv1.weight': 16.100053691864012, 'layer3.0.bn1.weight': 16.000131034851073, 'layer3.0.bn1.bias': 0.05660345200449228, 'layer3.0.bn1.running_mean': 15.48650403022766, 'layer3.0.bn1.running_var': 36.36982908248901, 'layer3.0.bn1.num_batches_tracked': 948.45, 'layer3.0.conv2.weight': 22.712170696258546, 'layer3.0.bn2.weight': 16.000376224517822, 'layer3.0.bn2.bias': 0.06445518573746085, 'layer3.0.bn2.running_mean': 9.797925901412963, 'layer3.0.bn2.running_var': 20.095711517333985, 'layer3.0.bn2.num_batches_tracked': 948.45, 'layer3.0.downsample.0.weight': 16.045401668548585, 'layer3.0.downsample.1.weight': 15.991445159912109, 'layer3.0.downsample.1.bias': 0.06445518573746085, 'layer3.0.downsample.1.running_mean': 12.925026178359985, 'layer3.0.downsample.1.running_var': 26.70232629776001, 'layer3.0.downsample.1.num_batches_tracked': 948.45, 'layer3.1.conv1.weight': 22.692408561706543, 'layer3.1.bn1.weight': 16.000113677978515, 'layer3.1.bn1.bias': 0.04843625472858548, 'layer3.1.bn1.running_mean': 14.136521768569946, 'layer3.1.bn1.running_var': 42.91485424041748, 'layer3.1.bn1.num_batches_tracked': 948.45, 'layer3.1.conv2.weight': 22.696173095703124, 'layer3.1.bn2.weight': 16.008739137649535, 'layer3.1.bn2.bias': 0.04918956938199699, 'layer3.1.bn2.running_mean': 11.282309865951538, 'layer3.1.bn2.running_var': 25.04137134552002, 'layer3.1.bn2.num_batches_tracked': 948.45, 'layer4.0.conv1.weight': 22.71857271194458, 'layer4.0.bn1.weight': 22.62747268676758, 'layer4.0.bn1.bias': 0.04758210023865104, 'layer4.0.bn1.running_mean': 25.725024890899657, 'layer4.0.bn1.running_var': 74.89567260742187, 'layer4.0.bn1.num_batches_tracked': 948.45, 'layer4.0.conv2.weight': 32.0731107711792, 'layer4.0.bn2.weight': 22.399503993988038, 'layer4.0.bn2.bias': 0.5314272738993168, 'layer4.0.bn2.running_mean': 21.141964054107667, 'layer4.0.bn2.running_var': 64.82737131118775, 'layer4.0.bn2.num_batches_tracked': 948.45, 'layer4.0.downsample.0.weight': 22.623112201690674, 'layer4.0.downsample.1.weight': 22.4127179145813, 'layer4.0.downsample.1.bias': 0.5314272738993168, 'layer4.0.downsample.1.running_mean': 23.23727035522461, 'layer4.0.downsample.1.running_var': 63.886111640930174, 'layer4.0.downsample.1.num_batches_tracked': 948.45, 'layer4.1.conv1.weight': 32.076686477661134, 'layer4.1.bn1.weight': 22.627466201782227, 'layer4.1.bn1.bias': 0.06572004253976046, 'layer4.1.bn1.running_mean': 11.550013160705566, 'layer4.1.bn1.running_var': 24.157433795928956, 'layer4.1.bn1.num_batches_tracked': 948.45, 'layer4.1.conv2.weight': 32.069811534881595, 'layer4.1.bn2.weight': 22.221644401550293, 'layer4.1.bn2.bias': 0.9417458564043045, 'layer4.1.bn2.running_mean': 15.613087224960328, 'layer4.1.bn2.running_var': 42.65533618927002, 'layer4.1.bn2.num_batches_tracked': 948.45, 'fc.weight': 3.112790638208389, 'fc.bias': 0.08526732362806796}}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-dpfedavg-dir0.5-4
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir0.5.npy
+Loading partition from ./temp/imagenette-c10-dir0.5.npy
+Data splitted
+dpfedavg
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: nan, Acc: 0.0986
+Round 9 Loss: nan, Acc: 0.0986
+Round 10 Loss: nan, Acc: 0.0986
+Round 11 Loss: nan, Acc: 0.0986
+Round 12 Loss: nan, Acc: 0.0986
+Round 13 Loss: nan, Acc: 0.0986
+Round 14 Loss: nan, Acc: 0.0986
+Round 15 Loss: nan, Acc: 0.0986
+Round 16 Loss: 113528.8256, Acc: 0.1006
+Round 17 Loss: nan, Acc: 0.0986
+Round 18 Loss: 50321.9753, Acc: 0.1037
+Round 19 Loss: 56121.3840, Acc: 0.1062
+Round 20 Loss: 65507.0022, Acc: 0.1009
+Round 21 Loss: 34215.9206, Acc: 0.1302
+Round 22 Loss: nan, Acc: 0.0986
+Round 23 Loss: 90881.9481, Acc: 0.0894
+Round 24 Loss: 38996.2372, Acc: 0.0912
+Round 25 Loss: 18611.9345, Acc: 0.1001
+Round 26 Loss: 35524.9768, Acc: 0.0902
+Round 27 Loss: 32740.8608, Acc: 0.1009
+Round 28 Loss: nan, Acc: 0.0986
+Round 29 Loss: nan, Acc: 0.0986
+Round 30 Loss: nan, Acc: 0.0986
+Round 31 Loss: 18061.1888, Acc: 0.1101
+Round 32 Loss: 25591.5394, Acc: 0.1101
+Round 33 Loss: 21784.7717, Acc: 0.0932
+Round 34 Loss: 20632.5591, Acc: 0.0927
+Round 35 Loss: 21752.7724, Acc: 0.0994
+Round 36 Loss: 19833.5889, Acc: 0.1134
+Round 37 Loss: 22708.5424, Acc: 0.0930
+Round 38 Loss: 10921.6780, Acc: 0.1396
+Round 39 Loss: 22032.0151, Acc: 0.0910
+Round 40 Loss: 21579.5872, Acc: 0.0983
+Round 41 Loss: 26512.7557, Acc: 0.1068
+Round 42 Loss: 32421.1033, Acc: 0.0910
+Round 43 Loss: 17377.2541, Acc: 0.1068
+Round 44 Loss: 23992.9937, Acc: 0.0922
+Round 45 Loss: 26752.9687, Acc: 0.1006
+Round 46 Loss: 31950.7912, Acc: 0.1068
+Round 47 Loss: 24801.4887, Acc: 0.1062
+Round 48 Loss: 36370.8284, Acc: 0.1068
+Round 49 Loss: 43660.6048, Acc: 0.1068
+Round 50 Loss: 35612.7714, Acc: 0.1006

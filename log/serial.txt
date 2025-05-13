@@ -1,0 +1,659 @@
+None
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'serial', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'iid', 'save_path': './res', 'dp': {'eps': 5, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-serial-iid-0
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-iid.npy
+Loading partition from ./temp/imagenette-c10-iid.npy
+Data splitted
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: nan, Acc: 0.0986
+Round 9 Loss: nan, Acc: 0.0986
+Round 10 Loss: nan, Acc: 0.0986
+Round 11 Loss: nan, Acc: 0.0986
+Round 12 Loss: nan, Acc: 0.0986
+Round 13 Loss: nan, Acc: 0.0986
+Round 14 Loss: nan, Acc: 0.0986
+Round 15 Loss: nan, Acc: 0.0986
+Round 16 Loss: nan, Acc: 0.0986
+Round 17 Loss: nan, Acc: 0.0986
+Round 18 Loss: nan, Acc: 0.0986
+Round 19 Loss: nan, Acc: 0.0986
+Round 20 Loss: nan, Acc: 0.0986
+Round 21 Loss: nan, Acc: 0.0986
+Round 22 Loss: nan, Acc: 0.0986
+Round 23 Loss: nan, Acc: 0.0986
+Round 24 Loss: nan, Acc: 0.0986
+Round 25 Loss: nan, Acc: 0.0986
+Round 26 Loss: nan, Acc: 0.0986
+Round 27 Loss: nan, Acc: 0.0986
+Round 28 Loss: nan, Acc: 0.0986
+Round 29 Loss: nan, Acc: 0.0986
+Round 30 Loss: nan, Acc: 0.0986
+Round 31 Loss: nan, Acc: 0.0986
+Round 32 Loss: nan, Acc: 0.0986
+Round 33 Loss: nan, Acc: 0.0986
+Round 34 Loss: nan, Acc: 0.0986
+Round 35 Loss: nan, Acc: 0.0986
+Round 36 Loss: nan, Acc: 0.0986
+Round 37 Loss: nan, Acc: 0.0986
+Round 38 Loss: nan, Acc: 0.0986
+Round 39 Loss: nan, Acc: 0.0986
+Round 40 Loss: nan, Acc: 0.0986
+Round 41 Loss: nan, Acc: 0.0986
+Round 42 Loss: nan, Acc: 0.0986
+Round 43 Loss: nan, Acc: 0.0986
+Round 44 Loss: nan, Acc: 0.0986
+Round 45 Loss: nan, Acc: 0.0986
+Round 46 Loss: nan, Acc: 0.0986
+Round 47 Loss: nan, Acc: 0.0986
+Round 48 Loss: nan, Acc: 0.0986
+Round 49 Loss: nan, Acc: 0.0986
+Round 50 Loss: nan, Acc: 0.0986
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'serial', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'iid', 'save_path': './res', 'dp': {'eps': 5, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-serial-iid-1
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-iid.npy
+Loading partition from ./temp/imagenette-c10-iid.npy
+Data splitted
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: nan, Acc: 0.0986
+Round 9 Loss: nan, Acc: 0.0986
+Round 10 Loss: nan, Acc: 0.0986
+Round 11 Loss: nan, Acc: 0.0986
+Round 12 Loss: nan, Acc: 0.0986
+Round 13 Loss: nan, Acc: 0.0986
+Round 14 Loss: nan, Acc: 0.0986
+Round 15 Loss: nan, Acc: 0.0986
+Round 16 Loss: nan, Acc: 0.0986
+Round 17 Loss: nan, Acc: 0.0986
+Round 18 Loss: nan, Acc: 0.0986
+Round 19 Loss: nan, Acc: 0.0986
+Round 20 Loss: nan, Acc: 0.0986
+Round 21 Loss: nan, Acc: 0.0986
+Round 22 Loss: nan, Acc: 0.0986
+Round 23 Loss: nan, Acc: 0.0986
+Round 24 Loss: nan, Acc: 0.0986
+Round 25 Loss: nan, Acc: 0.0986
+Round 26 Loss: nan, Acc: 0.0986
+Round 27 Loss: nan, Acc: 0.0986
+Round 28 Loss: nan, Acc: 0.0986
+Round 29 Loss: nan, Acc: 0.0986
+Round 30 Loss: nan, Acc: 0.0986
+Round 31 Loss: nan, Acc: 0.0986
+Round 32 Loss: nan, Acc: 0.0986
+Round 33 Loss: nan, Acc: 0.0986
+Round 34 Loss: nan, Acc: 0.0986
+Round 35 Loss: nan, Acc: 0.0986
+Round 36 Loss: nan, Acc: 0.0986
+Round 37 Loss: nan, Acc: 0.0986
+Round 38 Loss: nan, Acc: 0.0986
+Round 39 Loss: nan, Acc: 0.0986
+Round 40 Loss: nan, Acc: 0.0986
+Round 41 Loss: nan, Acc: 0.0986
+Round 42 Loss: nan, Acc: 0.0986
+Round 43 Loss: nan, Acc: 0.0986
+Round 44 Loss: nan, Acc: 0.0986
+Round 45 Loss: nan, Acc: 0.0986
+Round 46 Loss: nan, Acc: 0.0986
+Round 47 Loss: nan, Acc: 0.0986
+Round 48 Loss: nan, Acc: 0.0986
+Round 49 Loss: nan, Acc: 0.0986
+Round 50 Loss: nan, Acc: 0.0986
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'serial', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'iid', 'save_path': './res', 'dp': {'eps': 5, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-serial-iid-2
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-iid.npy
+Loading partition from ./temp/imagenette-c10-iid.npy
+Data splitted
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: nan, Acc: 0.0986
+Round 9 Loss: nan, Acc: 0.0986
+Round 10 Loss: nan, Acc: 0.0986
+Round 11 Loss: nan, Acc: 0.0986
+Round 12 Loss: nan, Acc: 0.0986
+Round 13 Loss: nan, Acc: 0.0986
+Round 14 Loss: nan, Acc: 0.0986
+Round 15 Loss: nan, Acc: 0.0986
+Round 16 Loss: nan, Acc: 0.0986
+Round 17 Loss: nan, Acc: 0.0986
+Round 18 Loss: nan, Acc: 0.0986
+Round 19 Loss: nan, Acc: 0.0986
+Round 20 Loss: nan, Acc: 0.0986
+Round 21 Loss: nan, Acc: 0.0986
+Round 22 Loss: nan, Acc: 0.0986
+Round 23 Loss: nan, Acc: 0.0986
+Round 24 Loss: nan, Acc: 0.0986
+Round 25 Loss: nan, Acc: 0.0986
+Round 26 Loss: nan, Acc: 0.0986
+Round 27 Loss: nan, Acc: 0.0986
+Round 28 Loss: nan, Acc: 0.0986
+Round 29 Loss: nan, Acc: 0.0986
+Round 30 Loss: nan, Acc: 0.0986
+Round 31 Loss: nan, Acc: 0.0986
+Round 32 Loss: nan, Acc: 0.0986
+Round 33 Loss: nan, Acc: 0.0986
+Round 34 Loss: nan, Acc: 0.0986
+Round 35 Loss: nan, Acc: 0.0986
+Round 36 Loss: nan, Acc: 0.0986
+Round 37 Loss: nan, Acc: 0.0986
+Round 38 Loss: nan, Acc: 0.0986
+Round 39 Loss: nan, Acc: 0.0986
+Round 40 Loss: nan, Acc: 0.0986
+Round 41 Loss: nan, Acc: 0.0986
+Round 42 Loss: nan, Acc: 0.0986
+Round 43 Loss: nan, Acc: 0.0986
+Round 44 Loss: nan, Acc: 0.0986
+Round 45 Loss: nan, Acc: 0.0986
+Round 46 Loss: nan, Acc: 0.0986
+Round 47 Loss: nan, Acc: 0.0986
+Round 48 Loss: nan, Acc: 0.0986
+Round 49 Loss: nan, Acc: 0.0986
+Round 50 Loss: nan, Acc: 0.0986
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'serial', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'iid', 'save_path': './res', 'dp': {'eps': 5, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-serial-iid-3
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-iid.npy
+Loading partition from ./temp/imagenette-c10-iid.npy
+Data splitted
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: nan, Acc: 0.0986
+Round 9 Loss: nan, Acc: 0.0986
+Round 10 Loss: nan, Acc: 0.0986
+Round 11 Loss: nan, Acc: 0.0986
+Round 12 Loss: nan, Acc: 0.0986
+Round 13 Loss: nan, Acc: 0.0986
+Round 14 Loss: nan, Acc: 0.0986
+Round 15 Loss: nan, Acc: 0.0986
+Round 16 Loss: nan, Acc: 0.0986
+Round 17 Loss: nan, Acc: 0.0986
+Round 18 Loss: nan, Acc: 0.0986
+Round 19 Loss: nan, Acc: 0.0986
+Round 20 Loss: nan, Acc: 0.0986
+Round 21 Loss: nan, Acc: 0.0986
+Round 22 Loss: nan, Acc: 0.0986
+Round 23 Loss: nan, Acc: 0.0986
+Round 24 Loss: nan, Acc: 0.0986
+Round 25 Loss: nan, Acc: 0.0986
+Round 26 Loss: nan, Acc: 0.0986
+Round 27 Loss: nan, Acc: 0.0986
+Round 28 Loss: nan, Acc: 0.0986
+Round 29 Loss: nan, Acc: 0.0986
+Round 30 Loss: nan, Acc: 0.0986
+Round 31 Loss: nan, Acc: 0.0986
+Round 32 Loss: nan, Acc: 0.0986
+Round 33 Loss: nan, Acc: 0.0986
+Round 34 Loss: nan, Acc: 0.0986
+Round 35 Loss: nan, Acc: 0.0986
+Round 36 Loss: nan, Acc: 0.0986
+Round 37 Loss: nan, Acc: 0.0986
+Round 38 Loss: nan, Acc: 0.0986
+Round 39 Loss: nan, Acc: 0.0986
+Round 40 Loss: nan, Acc: 0.0986
+Round 41 Loss: nan, Acc: 0.0986
+Round 42 Loss: nan, Acc: 0.0986
+Round 43 Loss: nan, Acc: 0.0986
+Round 44 Loss: nan, Acc: 0.0986
+Round 45 Loss: nan, Acc: 0.0986
+Round 46 Loss: nan, Acc: 0.0986
+Round 47 Loss: nan, Acc: 0.0986
+Round 48 Loss: nan, Acc: 0.0986
+Round 49 Loss: nan, Acc: 0.0986
+Round 50 Loss: nan, Acc: 0.0986
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'serial', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'iid', 'save_path': './res', 'dp': {'eps': 5, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-serial-iid-4
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-iid.npy
+Loading partition from ./temp/imagenette-c10-iid.npy
+Data splitted
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: nan, Acc: 0.0986
+Round 9 Loss: nan, Acc: 0.0986
+Round 10 Loss: nan, Acc: 0.0986
+Round 11 Loss: nan, Acc: 0.0986
+Round 12 Loss: nan, Acc: 0.0986
+Round 13 Loss: nan, Acc: 0.0986
+Round 14 Loss: nan, Acc: 0.0986
+Round 15 Loss: nan, Acc: 0.0986
+Round 16 Loss: nan, Acc: 0.0986
+Round 17 Loss: nan, Acc: 0.0986
+Round 18 Loss: nan, Acc: 0.0986
+Round 19 Loss: nan, Acc: 0.0986
+Round 20 Loss: nan, Acc: 0.0986
+Round 21 Loss: nan, Acc: 0.0986
+Round 22 Loss: nan, Acc: 0.0986
+Round 23 Loss: nan, Acc: 0.0986
+Round 24 Loss: nan, Acc: 0.0986
+Round 25 Loss: nan, Acc: 0.0986
+Round 26 Loss: nan, Acc: 0.0986
+Round 27 Loss: nan, Acc: 0.0986
+Round 28 Loss: nan, Acc: 0.0986
+Round 29 Loss: nan, Acc: 0.0986
+Round 30 Loss: nan, Acc: 0.0986
+Round 31 Loss: nan, Acc: 0.0986
+Round 32 Loss: nan, Acc: 0.0986
+Round 33 Loss: nan, Acc: 0.0986
+Round 34 Loss: nan, Acc: 0.0986
+Round 35 Loss: nan, Acc: 0.0986
+Round 36 Loss: nan, Acc: 0.0986
+Round 37 Loss: nan, Acc: 0.0986
+Round 38 Loss: nan, Acc: 0.0986
+Round 39 Loss: nan, Acc: 0.0986
+Round 40 Loss: nan, Acc: 0.0986
+Round 41 Loss: nan, Acc: 0.0986
+Round 42 Loss: nan, Acc: 0.0986
+Round 43 Loss: nan, Acc: 0.0986
+Round 44 Loss: nan, Acc: 0.0986
+Round 45 Loss: nan, Acc: 0.0986
+Round 46 Loss: nan, Acc: 0.0986
+Round 47 Loss: nan, Acc: 0.0986
+Round 48 Loss: nan, Acc: 0.0986
+Round 49 Loss: nan, Acc: 0.0986
+Round 50 Loss: nan, Acc: 0.0986
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'serial', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir1', 'save_path': './res', 'dp': {'eps': 5, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-serial-dir1-0
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir1.npy
+Loading partition from ./temp/imagenette-c10-dir1.npy
+Data splitted
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: nan, Acc: 0.0986
+Round 9 Loss: nan, Acc: 0.0986
+Round 10 Loss: nan, Acc: 0.0986
+Round 11 Loss: nan, Acc: 0.0986
+Round 12 Loss: nan, Acc: 0.0986
+Round 13 Loss: nan, Acc: 0.0986
+Round 14 Loss: nan, Acc: 0.0986
+Round 15 Loss: nan, Acc: 0.0986
+Round 16 Loss: nan, Acc: 0.0986
+Round 17 Loss: nan, Acc: 0.0986
+Round 18 Loss: nan, Acc: 0.0986
+Round 19 Loss: nan, Acc: 0.0986
+Round 20 Loss: nan, Acc: 0.0986
+Round 21 Loss: nan, Acc: 0.0986
+Round 22 Loss: nan, Acc: 0.0986
+Round 23 Loss: nan, Acc: 0.0986
+Round 24 Loss: nan, Acc: 0.0986
+Round 25 Loss: nan, Acc: 0.0986
+Round 26 Loss: nan, Acc: 0.0986
+Round 27 Loss: nan, Acc: 0.0986
+Round 28 Loss: nan, Acc: 0.0986
+Round 29 Loss: nan, Acc: 0.0986
+Round 30 Loss: nan, Acc: 0.0986
+Round 31 Loss: nan, Acc: 0.0986
+Round 32 Loss: nan, Acc: 0.0986
+Round 33 Loss: nan, Acc: 0.0986
+Round 34 Loss: nan, Acc: 0.0986
+Round 35 Loss: nan, Acc: 0.0986
+Round 36 Loss: nan, Acc: 0.0986
+Round 37 Loss: nan, Acc: 0.0986
+Round 38 Loss: nan, Acc: 0.0986
+Round 39 Loss: nan, Acc: 0.0986
+Round 40 Loss: nan, Acc: 0.0986
+Round 41 Loss: nan, Acc: 0.0986
+Round 42 Loss: nan, Acc: 0.0986
+Round 43 Loss: nan, Acc: 0.0986
+Round 44 Loss: nan, Acc: 0.0986
+Round 45 Loss: nan, Acc: 0.0986
+Round 46 Loss: nan, Acc: 0.0986
+Round 47 Loss: nan, Acc: 0.0986
+Round 48 Loss: nan, Acc: 0.0986
+Round 49 Loss: nan, Acc: 0.0986
+Round 50 Loss: nan, Acc: 0.0986
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'serial', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir1', 'save_path': './res', 'dp': {'eps': 5, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-serial-dir1-1
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir1.npy
+Loading partition from ./temp/imagenette-c10-dir1.npy
+Data splitted
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: nan, Acc: 0.0986
+Round 9 Loss: nan, Acc: 0.0986
+Round 10 Loss: nan, Acc: 0.0986
+Round 11 Loss: nan, Acc: 0.0986
+Round 12 Loss: nan, Acc: 0.0986
+Round 13 Loss: nan, Acc: 0.0986
+Round 14 Loss: nan, Acc: 0.0986
+Round 15 Loss: nan, Acc: 0.0986
+Round 16 Loss: nan, Acc: 0.0986
+Round 17 Loss: nan, Acc: 0.0986
+Round 18 Loss: nan, Acc: 0.0986
+Round 19 Loss: nan, Acc: 0.0986
+Round 20 Loss: nan, Acc: 0.0986
+Round 21 Loss: nan, Acc: 0.0986
+Round 22 Loss: nan, Acc: 0.0986
+Round 23 Loss: nan, Acc: 0.0986
+Round 24 Loss: nan, Acc: 0.0986
+Round 25 Loss: nan, Acc: 0.0986
+Round 26 Loss: nan, Acc: 0.0986
+Round 27 Loss: nan, Acc: 0.0986
+Round 28 Loss: nan, Acc: 0.0986
+Round 29 Loss: nan, Acc: 0.0986
+Round 30 Loss: nan, Acc: 0.0986
+Round 31 Loss: nan, Acc: 0.0986
+Round 32 Loss: nan, Acc: 0.0986
+Round 33 Loss: nan, Acc: 0.0986
+Round 34 Loss: nan, Acc: 0.0986
+Round 35 Loss: nan, Acc: 0.0986
+Round 36 Loss: nan, Acc: 0.0986
+Round 37 Loss: nan, Acc: 0.0986
+Round 38 Loss: nan, Acc: 0.0986
+Round 39 Loss: nan, Acc: 0.0986
+Round 40 Loss: nan, Acc: 0.0986
+Round 41 Loss: nan, Acc: 0.0986
+Round 42 Loss: nan, Acc: 0.0986
+Round 43 Loss: nan, Acc: 0.0986
+Round 44 Loss: nan, Acc: 0.0986
+Round 45 Loss: nan, Acc: 0.0986
+Round 46 Loss: nan, Acc: 0.0986
+Round 47 Loss: nan, Acc: 0.0986
+Round 48 Loss: nan, Acc: 0.0986
+Round 49 Loss: nan, Acc: 0.0986
+Round 50 Loss: nan, Acc: 0.0986
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'serial', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir1', 'save_path': './res', 'dp': {'eps': 5, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-serial-dir1-2
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir1.npy
+Loading partition from ./temp/imagenette-c10-dir1.npy
+Data splitted
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: nan, Acc: 0.0986
+Round 9 Loss: nan, Acc: 0.0986
+Round 10 Loss: nan, Acc: 0.0986
+Round 11 Loss: nan, Acc: 0.0986
+Round 12 Loss: nan, Acc: 0.0986
+Round 13 Loss: nan, Acc: 0.0986
+Round 14 Loss: nan, Acc: 0.0986
+Round 15 Loss: nan, Acc: 0.0986
+Round 16 Loss: nan, Acc: 0.0986
+Round 17 Loss: nan, Acc: 0.0986
+Round 18 Loss: nan, Acc: 0.0986
+Round 19 Loss: nan, Acc: 0.0986
+Round 20 Loss: nan, Acc: 0.0986
+Round 21 Loss: nan, Acc: 0.0986
+Round 22 Loss: nan, Acc: 0.0986
+Round 23 Loss: nan, Acc: 0.0986
+Round 24 Loss: nan, Acc: 0.0986
+Round 25 Loss: nan, Acc: 0.0986
+Round 26 Loss: nan, Acc: 0.0986
+Round 27 Loss: nan, Acc: 0.0986
+Round 28 Loss: nan, Acc: 0.0986
+Round 29 Loss: nan, Acc: 0.0986
+Round 30 Loss: nan, Acc: 0.0986
+Round 31 Loss: nan, Acc: 0.0986
+Round 32 Loss: nan, Acc: 0.0986
+Round 33 Loss: nan, Acc: 0.0986
+Round 34 Loss: nan, Acc: 0.0986
+Round 35 Loss: nan, Acc: 0.0986
+Round 36 Loss: nan, Acc: 0.0986
+Round 37 Loss: nan, Acc: 0.0986
+Round 38 Loss: nan, Acc: 0.0986
+Round 39 Loss: nan, Acc: 0.0986
+Round 40 Loss: nan, Acc: 0.0986
+Round 41 Loss: nan, Acc: 0.0986
+Round 42 Loss: nan, Acc: 0.0986
+Round 43 Loss: nan, Acc: 0.0986
+Round 44 Loss: nan, Acc: 0.0986
+Round 45 Loss: nan, Acc: 0.0986
+Round 46 Loss: nan, Acc: 0.0986
+Round 47 Loss: nan, Acc: 0.0986
+Round 48 Loss: nan, Acc: 0.0986
+Round 49 Loss: nan, Acc: 0.0986
+Round 50 Loss: nan, Acc: 0.0986
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'serial', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir1', 'save_path': './res', 'dp': {'eps': 5, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-serial-dir1-3
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir1.npy
+Loading partition from ./temp/imagenette-c10-dir1.npy
+Data splitted
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: nan, Acc: 0.0986
+Round 9 Loss: nan, Acc: 0.0986
+Round 10 Loss: nan, Acc: 0.0986
+Round 11 Loss: nan, Acc: 0.0986
+Round 12 Loss: nan, Acc: 0.0986
+Round 13 Loss: nan, Acc: 0.0986
+Round 14 Loss: nan, Acc: 0.0986
+Round 15 Loss: nan, Acc: 0.0986
+Round 16 Loss: nan, Acc: 0.0986
+Round 17 Loss: nan, Acc: 0.0986
+Round 18 Loss: nan, Acc: 0.0986
+Round 19 Loss: nan, Acc: 0.0986
+Round 20 Loss: nan, Acc: 0.0986
+Round 21 Loss: nan, Acc: 0.0986
+Round 22 Loss: nan, Acc: 0.0986
+Round 23 Loss: nan, Acc: 0.0986
+Round 24 Loss: nan, Acc: 0.0986
+Round 25 Loss: nan, Acc: 0.0986
+Round 26 Loss: nan, Acc: 0.0986
+Round 27 Loss: nan, Acc: 0.0986
+Round 28 Loss: nan, Acc: 0.0986
+Round 29 Loss: nan, Acc: 0.0986
+Round 30 Loss: nan, Acc: 0.0986
+Round 31 Loss: nan, Acc: 0.0986
+Round 32 Loss: nan, Acc: 0.0986
+Round 33 Loss: nan, Acc: 0.0986
+Round 34 Loss: nan, Acc: 0.0986
+Round 35 Loss: nan, Acc: 0.0986
+Round 36 Loss: nan, Acc: 0.0986
+Round 37 Loss: nan, Acc: 0.0986
+Round 38 Loss: nan, Acc: 0.0986
+Round 39 Loss: nan, Acc: 0.0986
+Round 40 Loss: nan, Acc: 0.0986
+Round 41 Loss: nan, Acc: 0.0986
+Round 42 Loss: nan, Acc: 0.0986
+Round 43 Loss: nan, Acc: 0.0986
+Round 44 Loss: nan, Acc: 0.0986
+Round 45 Loss: nan, Acc: 0.0986
+Round 46 Loss: nan, Acc: 0.0986
+Round 47 Loss: nan, Acc: 0.0986
+Round 48 Loss: nan, Acc: 0.0986
+Round 49 Loss: nan, Acc: 0.0986
+Round 50 Loss: nan, Acc: 0.0986
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'serial', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir1', 'save_path': './res', 'dp': {'eps': 5, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-serial-dir1-4
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir1.npy
+Loading partition from ./temp/imagenette-c10-dir1.npy
+Data splitted
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: nan, Acc: 0.0986
+Round 9 Loss: nan, Acc: 0.0986
+Round 10 Loss: nan, Acc: 0.0986
+Round 11 Loss: nan, Acc: 0.0986
+Round 12 Loss: nan, Acc: 0.0986
+Round 13 Loss: nan, Acc: 0.0986
+Round 14 Loss: nan, Acc: 0.0986
+Round 15 Loss: nan, Acc: 0.0986
+Round 16 Loss: nan, Acc: 0.0986
+Round 17 Loss: nan, Acc: 0.0986
+Round 18 Loss: nan, Acc: 0.0986
+Round 19 Loss: nan, Acc: 0.0986
+Round 20 Loss: nan, Acc: 0.0986
+Round 21 Loss: nan, Acc: 0.0986
+Round 22 Loss: nan, Acc: 0.0986
+Round 23 Loss: nan, Acc: 0.0986
+Round 24 Loss: nan, Acc: 0.0986
+Round 25 Loss: nan, Acc: 0.0986
+Round 26 Loss: nan, Acc: 0.0986
+Round 27 Loss: nan, Acc: 0.0986
+Round 28 Loss: nan, Acc: 0.0986
+Round 29 Loss: nan, Acc: 0.0986
+Round 30 Loss: nan, Acc: 0.0986
+Round 31 Loss: nan, Acc: 0.0986
+Round 32 Loss: nan, Acc: 0.0986
+Round 33 Loss: nan, Acc: 0.0986
+Round 34 Loss: nan, Acc: 0.0986
+Round 35 Loss: nan, Acc: 0.0986
+Round 36 Loss: nan, Acc: 0.0986
+Round 37 Loss: nan, Acc: 0.0986
+Round 38 Loss: nan, Acc: 0.0986
+Round 39 Loss: nan, Acc: 0.0986
+Round 40 Loss: nan, Acc: 0.0986
+Round 41 Loss: nan, Acc: 0.0986
+Round 42 Loss: nan, Acc: 0.0986
+Round 43 Loss: nan, Acc: 0.0986
+Round 44 Loss: nan, Acc: 0.0986
+Round 45 Loss: nan, Acc: 0.0986
+Round 46 Loss: nan, Acc: 0.0986
+Round 47 Loss: nan, Acc: 0.0986
+Round 48 Loss: nan, Acc: 0.0986
+Round 49 Loss: nan, Acc: 0.0986
+Round 50 Loss: nan, Acc: 0.0986
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'serial', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir0.5', 'save_path': './res', 'dp': {'eps': 5, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-serial-dir0.5-0
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir0.5.npy
+Loading partition from ./temp/imagenette-c10-dir0.5.npy
+Data splitted
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: nan, Acc: 0.0986
+Round 9 Loss: nan, Acc: 0.0986
+Round 10 Loss: nan, Acc: 0.0986
+Round 11 Loss: nan, Acc: 0.0986
+Round 12 Loss: nan, Acc: 0.0986
+Round 13 Loss: nan, Acc: 0.0986
+Round 14 Loss: nan, Acc: 0.0986
+Round 15 Loss: nan, Acc: 0.0986
+Round 16 Loss: nan, Acc: 0.0986
+Round 17 Loss: nan, Acc: 0.0986
+Round 18 Loss: nan, Acc: 0.0986
+Round 19 Loss: nan, Acc: 0.0986
+Round 20 Loss: nan, Acc: 0.0986
+Round 21 Loss: nan, Acc: 0.0986
+Round 22 Loss: nan, Acc: 0.0986
+Round 23 Loss: nan, Acc: 0.0986
+Round 24 Loss: nan, Acc: 0.0986
+Round 25 Loss: nan, Acc: 0.0986
+Round 26 Loss: nan, Acc: 0.0986
+Round 27 Loss: nan, Acc: 0.0986
+Round 28 Loss: nan, Acc: 0.0986
+Round 29 Loss: nan, Acc: 0.0986
+Round 30 Loss: nan, Acc: 0.0986
+Round 31 Loss: nan, Acc: 0.0986
+Round 32 Loss: nan, Acc: 0.0986
+Round 33 Loss: nan, Acc: 0.0986
+Round 34 Loss: nan, Acc: 0.0986
+Round 35 Loss: nan, Acc: 0.0986
+Round 36 Loss: nan, Acc: 0.0986
+Round 37 Loss: nan, Acc: 0.0986
+Round 38 Loss: nan, Acc: 0.0986
+Round 39 Loss: nan, Acc: 0.0986
+Round 40 Loss: nan, Acc: 0.0986
+Round 41 Loss: nan, Acc: 0.0986
+Round 42 Loss: nan, Acc: 0.0986
+Round 43 Loss: nan, Acc: 0.0986
+Round 44 Loss: nan, Acc: 0.0986
+Round 45 Loss: nan, Acc: 0.0986
+Round 46 Loss: nan, Acc: 0.0986
+Round 47 Loss: nan, Acc: 0.0986
+Round 48 Loss: nan, Acc: 0.0986
+Round 49 Loss: nan, Acc: 0.0986
+Round 50 Loss: nan, Acc: 0.0986
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'serial', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir0.5', 'save_path': './res', 'dp': {'eps': 5, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-serial-dir0.5-1
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir0.5.npy
+Loading partition from ./temp/imagenette-c10-dir0.5.npy
+Data splitted
+Start Training
+Round 1 Loss: nan, Acc: 0.0986
+Round 2 Loss: nan, Acc: 0.0986
+Round 3 Loss: nan, Acc: 0.0986
+Round 4 Loss: nan, Acc: 0.0986
+Round 5 Loss: nan, Acc: 0.0986
+Round 6 Loss: nan, Acc: 0.0986
+Round 7 Loss: nan, Acc: 0.0986
+Round 8 Loss: nan, Acc: 0.0986
+Round 9 Loss: nan, Acc: 0.0986
+Round 10 Loss: nan, Acc: 0.0986
+Round 11 Loss: nan, Acc: 0.0986
+Round 12 Loss: nan, Acc: 0.0986

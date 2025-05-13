@@ -1,0 +1,886 @@
+None
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'ckksfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'iid', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-ckksfedavg-iid-0
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-iid.npy
+Loading partition from ./temp/imagenette-c10-iid.npy
+Data splitted
+ckksfedavg
+Start Training
+Round 1 Loss: 2.5655, Acc: 0.1717
+Round 2 Loss: 2.4745, Acc: 0.1582
+Round 3 Loss: 1.8511, Acc: 0.3654
+Round 4 Loss: 1.6203, Acc: 0.4532
+Round 5 Loss: 1.4537, Acc: 0.5157
+Round 6 Loss: 1.3803, Acc: 0.5518
+Round 7 Loss: 1.2443, Acc: 0.5934
+Round 8 Loss: 1.2078, Acc: 0.6102
+Round 9 Loss: 1.2018, Acc: 0.6163
+Round 10 Loss: 1.0586, Acc: 0.6614
+Round 11 Loss: 1.0394, Acc: 0.6670
+Round 12 Loss: 1.0212, Acc: 0.6746
+Round 13 Loss: 0.9742, Acc: 0.6815
+Round 14 Loss: 0.9255, Acc: 0.7001
+Round 15 Loss: 0.9441, Acc: 0.6955
+Round 16 Loss: 0.8999, Acc: 0.7017
+Round 17 Loss: 0.8765, Acc: 0.7108
+Round 18 Loss: 0.8527, Acc: 0.7136
+Round 19 Loss: 0.8277, Acc: 0.7353
+Round 20 Loss: 0.8165, Acc: 0.7378
+Round 21 Loss: 0.8523, Acc: 0.7276
+Round 22 Loss: 0.8418, Acc: 0.7302
+Round 23 Loss: 0.8101, Acc: 0.7417
+Round 24 Loss: 0.7673, Acc: 0.7478
+Round 25 Loss: 0.7885, Acc: 0.7511
+Round 26 Loss: 0.7591, Acc: 0.7564
+Round 27 Loss: 0.7446, Acc: 0.7575
+Round 28 Loss: 0.7636, Acc: 0.7529
+Round 29 Loss: 0.7172, Acc: 0.7720
+Round 30 Loss: 0.7280, Acc: 0.7646
+Round 31 Loss: 0.7124, Acc: 0.7671
+Round 32 Loss: 0.7194, Acc: 0.7656
+Round 33 Loss: 0.7003, Acc: 0.7694
+Round 34 Loss: 0.7109, Acc: 0.7748
+Round 35 Loss: 0.6856, Acc: 0.7794
+Round 36 Loss: 0.6873, Acc: 0.7778
+Round 37 Loss: 0.6602, Acc: 0.7839
+Round 38 Loss: 0.6183, Acc: 0.7972
+Round 39 Loss: 0.6779, Acc: 0.7845
+Round 40 Loss: 0.6780, Acc: 0.7806
+Round 41 Loss: 0.6530, Acc: 0.7911
+Round 42 Loss: 0.6395, Acc: 0.7949
+Round 43 Loss: 0.6430, Acc: 0.7969
+Round 44 Loss: 0.6321, Acc: 0.7977
+Round 45 Loss: 0.6394, Acc: 0.7964
+Round 46 Loss: 0.6199, Acc: 0.8028
+Round 47 Loss: 0.6201, Acc: 0.7975
+Round 48 Loss: 0.6196, Acc: 0.8023
+Round 49 Loss: 0.6022, Acc: 0.8094
+Round 50 Loss: 0.6164, Acc: 0.8115
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'ckksfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'iid', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-ckksfedavg-iid-1
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-iid.npy
+Loading partition from ./temp/imagenette-c10-iid.npy
+Data splitted
+ckksfedavg
+Start Training
+Round 1 Loss: 2.9464, Acc: 0.1029
+Round 2 Loss: 2.5502, Acc: 0.1778
+Round 3 Loss: 1.7147, Acc: 0.4082
+Round 4 Loss: 1.6553, Acc: 0.4499
+Round 5 Loss: 1.5143, Acc: 0.5027
+Round 6 Loss: 1.4175, Acc: 0.5297
+Round 7 Loss: 1.3448, Acc: 0.5524
+Round 8 Loss: 1.1812, Acc: 0.6130
+Round 9 Loss: 1.1410, Acc: 0.6257
+Round 10 Loss: 1.0964, Acc: 0.6369
+Round 11 Loss: 1.0554, Acc: 0.6619
+Round 12 Loss: 1.0601, Acc: 0.6581
+Round 13 Loss: 0.9584, Acc: 0.6882
+Round 14 Loss: 0.9754, Acc: 0.6739
+Round 15 Loss: 0.9408, Acc: 0.6978
+Round 16 Loss: 0.9763, Acc: 0.6780
+Round 17 Loss: 0.8888, Acc: 0.7101
+Round 18 Loss: 0.8418, Acc: 0.7292
+Round 19 Loss: 0.8297, Acc: 0.7338
+Round 20 Loss: 0.8316, Acc: 0.7271
+Round 21 Loss: 0.8069, Acc: 0.7414
+Round 22 Loss: 0.7923, Acc: 0.7470
+Round 23 Loss: 0.8055, Acc: 0.7389
+Round 24 Loss: 0.7849, Acc: 0.7508
+Round 25 Loss: 0.7721, Acc: 0.7531
+Round 26 Loss: 0.7215, Acc: 0.7625
+Round 27 Loss: 0.7533, Acc: 0.7564
+Round 28 Loss: 0.7266, Acc: 0.7702
+Round 29 Loss: 0.6870, Acc: 0.7801
+Round 30 Loss: 0.7509, Acc: 0.7511
+Round 31 Loss: 0.7343, Acc: 0.7666
+Round 32 Loss: 0.6879, Acc: 0.7766
+Round 33 Loss: 0.6854, Acc: 0.7791
+Round 34 Loss: 0.6613, Acc: 0.7834
+Round 35 Loss: 0.6667, Acc: 0.7750
+Round 36 Loss: 0.7148, Acc: 0.7735
+Round 37 Loss: 0.6772, Acc: 0.7873
+Round 38 Loss: 0.6637, Acc: 0.7875
+Round 39 Loss: 0.6872, Acc: 0.7786
+Round 40 Loss: 0.6453, Acc: 0.7908
+Round 41 Loss: 0.6339, Acc: 0.7959
+Round 42 Loss: 0.6689, Acc: 0.7868
+Round 43 Loss: 0.6192, Acc: 0.8000
+Round 44 Loss: 0.6522, Acc: 0.7952
+Round 45 Loss: 0.6277, Acc: 0.8013
+Round 46 Loss: 0.5966, Acc: 0.8150
+Round 47 Loss: 0.6133, Acc: 0.8051
+Round 48 Loss: 0.6136, Acc: 0.7957
+Round 49 Loss: 0.6254, Acc: 0.7995
+Round 50 Loss: 0.6197, Acc: 0.8069
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'ckksfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'iid', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-ckksfedavg-iid-2
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-iid.npy
+Loading partition from ./temp/imagenette-c10-iid.npy
+Data splitted
+ckksfedavg
+Start Training
+Round 1 Loss: 2.9304, Acc: 0.1047
+Round 2 Loss: 2.4284, Acc: 0.1766
+Round 3 Loss: 1.8408, Acc: 0.3580
+Round 4 Loss: 1.6372, Acc: 0.4520
+Round 5 Loss: 1.6136, Acc: 0.4660
+Round 6 Loss: 1.4651, Acc: 0.5203
+Round 7 Loss: 1.3834, Acc: 0.5526
+Round 8 Loss: 1.2282, Acc: 0.6005
+Round 9 Loss: 1.2183, Acc: 0.6000
+Round 10 Loss: 1.0905, Acc: 0.6346
+Round 11 Loss: 1.0488, Acc: 0.6550
+Round 12 Loss: 1.0527, Acc: 0.6525
+Round 13 Loss: 0.9684, Acc: 0.6813
+Round 14 Loss: 0.9599, Acc: 0.6899
+Round 15 Loss: 0.9890, Acc: 0.6815
+Round 16 Loss: 0.9249, Acc: 0.7027
+Round 17 Loss: 0.8923, Acc: 0.7139
+Round 18 Loss: 0.8781, Acc: 0.7146
+Round 19 Loss: 0.8606, Acc: 0.7259
+Round 20 Loss: 0.8207, Acc: 0.7327
+Round 21 Loss: 0.8335, Acc: 0.7335
+Round 22 Loss: 0.8179, Acc: 0.7345
+Round 23 Loss: 0.7801, Acc: 0.7475
+Round 24 Loss: 0.7841, Acc: 0.7524
+Round 25 Loss: 0.7548, Acc: 0.7557
+Round 26 Loss: 0.7465, Acc: 0.7666
+Round 27 Loss: 0.7592, Acc: 0.7575
+Round 28 Loss: 0.7169, Acc: 0.7654
+Round 29 Loss: 0.7060, Acc: 0.7720
+Round 30 Loss: 0.6922, Acc: 0.7776
+Round 31 Loss: 0.7025, Acc: 0.7794
+Round 32 Loss: 0.6887, Acc: 0.7801
+Round 33 Loss: 0.6887, Acc: 0.7740
+Round 34 Loss: 0.6519, Acc: 0.7870
+Round 35 Loss: 0.6744, Acc: 0.7875
+Round 36 Loss: 0.7010, Acc: 0.7755
+Round 37 Loss: 0.6704, Acc: 0.7893
+Round 38 Loss: 0.6752, Acc: 0.7855
+Round 39 Loss: 0.6338, Acc: 0.7939
+Round 40 Loss: 0.6437, Acc: 0.7972
+Round 41 Loss: 0.6962, Acc: 0.7847
+Round 42 Loss: 0.6402, Acc: 0.7959
+Round 43 Loss: 0.6289, Acc: 0.7992
+Round 44 Loss: 0.6497, Acc: 0.7931
+Round 45 Loss: 0.6180, Acc: 0.7982
+Round 46 Loss: 0.6200, Acc: 0.8013
+Round 47 Loss: 0.5956, Acc: 0.8051
+Round 48 Loss: 0.6069, Acc: 0.8046
+Round 49 Loss: 0.6034, Acc: 0.8122
+Round 50 Loss: 0.6083, Acc: 0.8094
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'ckksfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'iid', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-ckksfedavg-iid-3
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-iid.npy
+Loading partition from ./temp/imagenette-c10-iid.npy
+Data splitted
+ckksfedavg
+Start Training
+Round 1 Loss: 3.0502, Acc: 0.1019
+Round 2 Loss: 2.3493, Acc: 0.2033
+Round 3 Loss: 1.8838, Acc: 0.3590
+Round 4 Loss: 1.6178, Acc: 0.4639
+Round 5 Loss: 1.5098, Acc: 0.5019
+Round 6 Loss: 1.3786, Acc: 0.5414
+Round 7 Loss: 1.2438, Acc: 0.5941
+Round 8 Loss: 1.2267, Acc: 0.5992
+Round 9 Loss: 1.1634, Acc: 0.6132
+Round 10 Loss: 1.1143, Acc: 0.6290
+Round 11 Loss: 1.1370, Acc: 0.6438
+Round 12 Loss: 1.0303, Acc: 0.6629
+Round 13 Loss: 0.9954, Acc: 0.6769
+Round 14 Loss: 0.9647, Acc: 0.6902
+Round 15 Loss: 0.9671, Acc: 0.6846
+Round 16 Loss: 0.9406, Acc: 0.6943
+Round 17 Loss: 0.9044, Acc: 0.7057
+Round 18 Loss: 0.8630, Acc: 0.7200
+Round 19 Loss: 0.8828, Acc: 0.7144
+Round 20 Loss: 0.8276, Acc: 0.7279
+Round 21 Loss: 0.8251, Acc: 0.7264
+Round 22 Loss: 0.8040, Acc: 0.7394
+Round 23 Loss: 0.7811, Acc: 0.7437
+Round 24 Loss: 0.7957, Acc: 0.7417
+Round 25 Loss: 0.7448, Acc: 0.7554
+Round 26 Loss: 0.7577, Acc: 0.7603
+Round 27 Loss: 0.7668, Acc: 0.7468
+Round 28 Loss: 0.7544, Acc: 0.7544
+Round 29 Loss: 0.7355, Acc: 0.7646
+Round 30 Loss: 0.7177, Acc: 0.7633
+Round 31 Loss: 0.7248, Acc: 0.7687
+Round 32 Loss: 0.7171, Acc: 0.7732
+Round 33 Loss: 0.7013, Acc: 0.7689
+Round 34 Loss: 0.6672, Acc: 0.7781
+Round 35 Loss: 0.7015, Acc: 0.7791
+Round 36 Loss: 0.6893, Acc: 0.7806
+Round 37 Loss: 0.7338, Acc: 0.7656
+Round 38 Loss: 0.7198, Acc: 0.7748
+Round 39 Loss: 0.6876, Acc: 0.7809
+Round 40 Loss: 0.6833, Acc: 0.7766
+Round 41 Loss: 0.6635, Acc: 0.7901
+Round 42 Loss: 0.6513, Acc: 0.7926
+Round 43 Loss: 0.6307, Acc: 0.7957
+Round 44 Loss: 0.6626, Acc: 0.7878
+Round 45 Loss: 0.6536, Acc: 0.7939
+Round 46 Loss: 0.6282, Acc: 0.7959
+Round 47 Loss: 0.6158, Acc: 0.8041
+Round 48 Loss: 0.6082, Acc: 0.8087
+Round 49 Loss: 0.6410, Acc: 0.7975
+Round 50 Loss: 0.6114, Acc: 0.8059
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'ckksfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'iid', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-ckksfedavg-iid-4
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-iid.npy
+Loading partition from ./temp/imagenette-c10-iid.npy
+Data splitted
+ckksfedavg
+Start Training
+Round 1 Loss: 2.8640, Acc: 0.1017
+Round 2 Loss: 2.4476, Acc: 0.1582
+Round 3 Loss: 1.8756, Acc: 0.3455
+Round 4 Loss: 1.6337, Acc: 0.4410
+Round 5 Loss: 1.4331, Acc: 0.5218
+Round 6 Loss: 1.4254, Acc: 0.5248
+Round 7 Loss: 1.3825, Acc: 0.5498
+Round 8 Loss: 1.2732, Acc: 0.5794
+Round 9 Loss: 1.3065, Acc: 0.5694
+Round 10 Loss: 1.2022, Acc: 0.6043
+Round 11 Loss: 1.0766, Acc: 0.6466
+Round 12 Loss: 1.0676, Acc: 0.6515
+Round 13 Loss: 1.1671, Acc: 0.6275
+Round 14 Loss: 0.9930, Acc: 0.6716
+Round 15 Loss: 1.0193, Acc: 0.6647
+Round 16 Loss: 0.9078, Acc: 0.7006
+Round 17 Loss: 0.9479, Acc: 0.6854
+Round 18 Loss: 0.8425, Acc: 0.7180
+Round 19 Loss: 0.8547, Acc: 0.7162
+Round 20 Loss: 0.8400, Acc: 0.7287
+Round 21 Loss: 0.8607, Acc: 0.7197
+Round 22 Loss: 0.7813, Acc: 0.7513
+Round 23 Loss: 0.7867, Acc: 0.7465
+Round 24 Loss: 0.8151, Acc: 0.7383
+Round 25 Loss: 0.7949, Acc: 0.7427
+Round 26 Loss: 0.7695, Acc: 0.7526
+Round 27 Loss: 0.7425, Acc: 0.7590
+Round 28 Loss: 0.7879, Acc: 0.7457
+Round 29 Loss: 0.7464, Acc: 0.7615
+Round 30 Loss: 0.7417, Acc: 0.7618
+Round 31 Loss: 0.7080, Acc: 0.7702
+Round 32 Loss: 0.6945, Acc: 0.7732
+Round 33 Loss: 0.6715, Acc: 0.7832
+Round 34 Loss: 0.6699, Acc: 0.7727
+Round 35 Loss: 0.6449, Acc: 0.7896
+Round 36 Loss: 0.6794, Acc: 0.7809
+Round 37 Loss: 0.6865, Acc: 0.7801
+Round 38 Loss: 0.6676, Acc: 0.7819
+Round 39 Loss: 0.6362, Acc: 0.7939
+Round 40 Loss: 0.6603, Acc: 0.7995
+Round 41 Loss: 0.6594, Acc: 0.7868
+Round 42 Loss: 0.6820, Acc: 0.7893
+Round 43 Loss: 0.6458, Acc: 0.7926
+Round 44 Loss: 0.6182, Acc: 0.7985
+Round 45 Loss: 0.6351, Acc: 0.7980
+Round 46 Loss: 0.6407, Acc: 0.8038
+Round 47 Loss: 0.6301, Acc: 0.7982
+Round 48 Loss: 0.5954, Acc: 0.8094
+Round 49 Loss: 0.6252, Acc: 0.7975
+Round 50 Loss: 0.6470, Acc: 0.7936
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'ckksfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir1', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-ckksfedavg-dir1-0
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir1.npy
+Loading partition from ./temp/imagenette-c10-dir1.npy
+Data splitted
+ckksfedavg
+Start Training
+Round 1 Loss: 2.5978, Acc: 0.0958
+Round 2 Loss: 2.4982, Acc: 0.1740
+Round 3 Loss: 1.9396, Acc: 0.3310
+Round 4 Loss: 1.7772, Acc: 0.3870
+Round 5 Loss: 1.5828, Acc: 0.4573
+Round 6 Loss: 1.4348, Acc: 0.5182
+Round 7 Loss: 1.4013, Acc: 0.5302
+Round 8 Loss: 1.3510, Acc: 0.5493
+Round 9 Loss: 1.2700, Acc: 0.5870
+Round 10 Loss: 1.1608, Acc: 0.6227
+Round 11 Loss: 1.2846, Acc: 0.5870
+Round 12 Loss: 1.1532, Acc: 0.6275
+Round 13 Loss: 1.1850, Acc: 0.6211
+Round 14 Loss: 1.1118, Acc: 0.6392
+Round 15 Loss: 1.0470, Acc: 0.6553
+Round 16 Loss: 1.0208, Acc: 0.6729
+Round 17 Loss: 0.9745, Acc: 0.6887
+Round 18 Loss: 1.0142, Acc: 0.6711
+Round 19 Loss: 1.0036, Acc: 0.6769
+Round 20 Loss: 0.9410, Acc: 0.7045
+Round 21 Loss: 0.9470, Acc: 0.6887
+Round 22 Loss: 0.9283, Acc: 0.7065
+Round 23 Loss: 0.8989, Acc: 0.7037
+Round 24 Loss: 0.8605, Acc: 0.7317
+Round 25 Loss: 0.8478, Acc: 0.7248
+Round 26 Loss: 0.8573, Acc: 0.7241
+Round 27 Loss: 0.8288, Acc: 0.7310
+Round 28 Loss: 0.8569, Acc: 0.7248
+Round 29 Loss: 0.7850, Acc: 0.7511
+Round 30 Loss: 0.8230, Acc: 0.7325
+Round 31 Loss: 0.7540, Acc: 0.7534
+Round 32 Loss: 0.7807, Acc: 0.7518
+Round 33 Loss: 0.8395, Acc: 0.7320
+Round 34 Loss: 0.7738, Acc: 0.7539
+Round 35 Loss: 0.7599, Acc: 0.7585
+Round 36 Loss: 0.7412, Acc: 0.7643
+Round 37 Loss: 0.7432, Acc: 0.7597
+Round 38 Loss: 0.7031, Acc: 0.7763
+Round 39 Loss: 0.7408, Acc: 0.7592
+Round 40 Loss: 0.7217, Acc: 0.7674
+Round 41 Loss: 0.7241, Acc: 0.7725
+Round 42 Loss: 0.7019, Acc: 0.7794
+Round 43 Loss: 0.6840, Acc: 0.7727
+Round 44 Loss: 0.6840, Acc: 0.7796
+Round 45 Loss: 0.7003, Acc: 0.7809
+Round 46 Loss: 0.6924, Acc: 0.7794
+Round 47 Loss: 0.6716, Acc: 0.7847
+Round 48 Loss: 0.6718, Acc: 0.7870
+Round 49 Loss: 0.6569, Acc: 0.7875
+Round 50 Loss: 0.6495, Acc: 0.7969
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'ckksfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir1', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-ckksfedavg-dir1-1
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir1.npy
+Loading partition from ./temp/imagenette-c10-dir1.npy
+Data splitted
+ckksfedavg
+Start Training
+Round 1 Loss: 2.6731, Acc: 0.1223
+Round 2 Loss: 2.4556, Acc: 0.1557
+Round 3 Loss: 2.0944, Acc: 0.2775
+Round 4 Loss: 1.8692, Acc: 0.3620
+Round 5 Loss: 1.5803, Acc: 0.4586
+Round 6 Loss: 1.4907, Acc: 0.5006
+Round 7 Loss: 1.4316, Acc: 0.5325
+Round 8 Loss: 1.2629, Acc: 0.5850
+Round 9 Loss: 1.2904, Acc: 0.5727
+Round 10 Loss: 1.2292, Acc: 0.5926
+Round 11 Loss: 1.1753, Acc: 0.6150
+Round 12 Loss: 1.1182, Acc: 0.6392
+Round 13 Loss: 1.0542, Acc: 0.6586
+Round 14 Loss: 1.0144, Acc: 0.6731
+Round 15 Loss: 1.0541, Acc: 0.6619
+Round 16 Loss: 0.9718, Acc: 0.6843
+Round 17 Loss: 0.9763, Acc: 0.6833
+Round 18 Loss: 0.9376, Acc: 0.6991
+Round 19 Loss: 0.9459, Acc: 0.6958
+Round 20 Loss: 0.9049, Acc: 0.7113
+Round 21 Loss: 0.9076, Acc: 0.7080
+Round 22 Loss: 0.8613, Acc: 0.7159
+Round 23 Loss: 0.9044, Acc: 0.7090
+Round 24 Loss: 0.8286, Acc: 0.7350
+Round 25 Loss: 0.8440, Acc: 0.7307
+Round 26 Loss: 0.8343, Acc: 0.7310
+Round 27 Loss: 0.8265, Acc: 0.7348
+Round 28 Loss: 0.8137, Acc: 0.7455
+Round 29 Loss: 0.7897, Acc: 0.7452
+Round 30 Loss: 0.7690, Acc: 0.7511
+Round 31 Loss: 0.7933, Acc: 0.7391
+Round 32 Loss: 0.7508, Acc: 0.7557
+Round 33 Loss: 0.7720, Acc: 0.7434
+Round 34 Loss: 0.7562, Acc: 0.7569
+Round 35 Loss: 0.7466, Acc: 0.7610
+Round 36 Loss: 0.7538, Acc: 0.7575
+Round 37 Loss: 0.7402, Acc: 0.7633
+Round 38 Loss: 0.7545, Acc: 0.7575
+Round 39 Loss: 0.7090, Acc: 0.7664
+Round 40 Loss: 0.7083, Acc: 0.7715
+Round 41 Loss: 0.6815, Acc: 0.7794
+Round 42 Loss: 0.7265, Acc: 0.7748
+Round 43 Loss: 0.6960, Acc: 0.7753
+Round 44 Loss: 0.7261, Acc: 0.7730
+Round 45 Loss: 0.6943, Acc: 0.7789
+Round 46 Loss: 0.6770, Acc: 0.7855
+Round 47 Loss: 0.6727, Acc: 0.7875
+Round 48 Loss: 0.6812, Acc: 0.7829
+Round 49 Loss: 0.6529, Acc: 0.7921
+Round 50 Loss: 0.6733, Acc: 0.7908
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'ckksfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir1', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-ckksfedavg-dir1-2
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir1.npy
+Loading partition from ./temp/imagenette-c10-dir1.npy
+Data splitted
+ckksfedavg
+Start Training
+Round 1 Loss: 2.6027, Acc: 0.1417
+Round 2 Loss: 2.3990, Acc: 0.1654
+Round 3 Loss: 2.0789, Acc: 0.2739
+Round 4 Loss: 1.8562, Acc: 0.3684
+Round 5 Loss: 1.7578, Acc: 0.4061
+Round 6 Loss: 1.5800, Acc: 0.4767
+Round 7 Loss: 1.5852, Acc: 0.4953
+Round 8 Loss: 1.4158, Acc: 0.5350
+Round 9 Loss: 1.2334, Acc: 0.5893
+Round 10 Loss: 1.2863, Acc: 0.5901
+Round 11 Loss: 1.1773, Acc: 0.6201
+Round 12 Loss: 1.1861, Acc: 0.6239
+Round 13 Loss: 1.1188, Acc: 0.6425
+Round 14 Loss: 1.2086, Acc: 0.6066
+Round 15 Loss: 1.0077, Acc: 0.6721
+Round 16 Loss: 0.9903, Acc: 0.6780
+Round 17 Loss: 0.9585, Acc: 0.6851
+Round 18 Loss: 0.9473, Acc: 0.6910
+Round 19 Loss: 0.9424, Acc: 0.6994
+Round 20 Loss: 0.9107, Acc: 0.7047
+Round 21 Loss: 0.9010, Acc: 0.7108
+Round 22 Loss: 0.8703, Acc: 0.7146
+Round 23 Loss: 0.8901, Acc: 0.7057
+Round 24 Loss: 0.8637, Acc: 0.7241
+Round 25 Loss: 0.8425, Acc: 0.7248
+Round 26 Loss: 0.8475, Acc: 0.7248
+Round 27 Loss: 0.8151, Acc: 0.7289
+Round 28 Loss: 0.8113, Acc: 0.7366
+Round 29 Loss: 0.7995, Acc: 0.7353
+Round 30 Loss: 0.8047, Acc: 0.7417
+Round 31 Loss: 0.7600, Acc: 0.7554
+Round 32 Loss: 0.7740, Acc: 0.7526
+Round 33 Loss: 0.7626, Acc: 0.7603
+Round 34 Loss: 0.7585, Acc: 0.7569
+Round 35 Loss: 0.7338, Acc: 0.7666
+Round 36 Loss: 0.7752, Acc: 0.7531
+Round 37 Loss: 0.7342, Acc: 0.7699
+Round 38 Loss: 0.7518, Acc: 0.7590
+Round 39 Loss: 0.7093, Acc: 0.7674
+Round 40 Loss: 0.7126, Acc: 0.7687
+Round 41 Loss: 0.7123, Acc: 0.7692
+Round 42 Loss: 0.6872, Acc: 0.7794
+Round 43 Loss: 0.7069, Acc: 0.7725
+Round 44 Loss: 0.6781, Acc: 0.7794
+Round 45 Loss: 0.6888, Acc: 0.7755
+Round 46 Loss: 0.7081, Acc: 0.7763
+Round 47 Loss: 0.6526, Acc: 0.7911
+Round 48 Loss: 0.6689, Acc: 0.7834
+Round 49 Loss: 0.6641, Acc: 0.7832
+Round 50 Loss: 0.6544, Acc: 0.7893
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'ckksfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir1', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-ckksfedavg-dir1-3
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir1.npy
+Loading partition from ./temp/imagenette-c10-dir1.npy
+Data splitted
+ckksfedavg
+Start Training
+Round 1 Loss: 2.5183, Acc: 0.1103
+Round 2 Loss: 2.3609, Acc: 0.1786
+Round 3 Loss: 1.9846, Acc: 0.3124
+Round 4 Loss: 1.6762, Acc: 0.4219
+Round 5 Loss: 1.5728, Acc: 0.4617
+Round 6 Loss: 1.4229, Acc: 0.5220
+Round 7 Loss: 1.3093, Acc: 0.5656
+Round 8 Loss: 1.2765, Acc: 0.5852
+Round 9 Loss: 1.1771, Acc: 0.6161
+Round 10 Loss: 1.2070, Acc: 0.5990
+Round 11 Loss: 1.0975, Acc: 0.6377
+Round 12 Loss: 1.0936, Acc: 0.6443
+Round 13 Loss: 1.0586, Acc: 0.6538
+Round 14 Loss: 1.0130, Acc: 0.6757
+Round 15 Loss: 0.9979, Acc: 0.6706
+Round 16 Loss: 0.9602, Acc: 0.6874
+Round 17 Loss: 0.9422, Acc: 0.6981
+Round 18 Loss: 0.9462, Acc: 0.7014
+Round 19 Loss: 0.9608, Acc: 0.6876
+Round 20 Loss: 0.9446, Acc: 0.6983
+Round 21 Loss: 0.8968, Acc: 0.7078
+Round 22 Loss: 0.8704, Acc: 0.7187
+Round 23 Loss: 0.8813, Acc: 0.7093
+Round 24 Loss: 0.8287, Acc: 0.7310
+Round 25 Loss: 0.9274, Acc: 0.7024
+Round 26 Loss: 0.8320, Acc: 0.7350
+Round 27 Loss: 0.8220, Acc: 0.7340
+Round 28 Loss: 0.8162, Acc: 0.7386
+Round 29 Loss: 0.7854, Acc: 0.7511
+Round 30 Loss: 0.8127, Acc: 0.7447
+Round 31 Loss: 0.7770, Acc: 0.7567
+Round 32 Loss: 0.7436, Acc: 0.7684
+Round 33 Loss: 0.7772, Acc: 0.7432
+Round 34 Loss: 0.7696, Acc: 0.7554
+Round 35 Loss: 0.7666, Acc: 0.7524
+Round 36 Loss: 0.7484, Acc: 0.7646
+Round 37 Loss: 0.7681, Acc: 0.7529
+Round 38 Loss: 0.7470, Acc: 0.7623
+Round 39 Loss: 0.7306, Acc: 0.7694
+Round 40 Loss: 0.7072, Acc: 0.7758
+Round 41 Loss: 0.7129, Acc: 0.7743
+Round 42 Loss: 0.7088, Acc: 0.7712
+Round 43 Loss: 0.6977, Acc: 0.7827
+Round 44 Loss: 0.7402, Acc: 0.7676
+Round 45 Loss: 0.7071, Acc: 0.7761
+Round 46 Loss: 0.7474, Acc: 0.7694
+Round 47 Loss: 0.7208, Acc: 0.7664
+Round 48 Loss: 0.6560, Acc: 0.7870
+Round 49 Loss: 0.6960, Acc: 0.7799
+Round 50 Loss: 0.6517, Acc: 0.7946
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'ckksfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir1', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-ckksfedavg-dir1-4
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir1.npy
+Loading partition from ./temp/imagenette-c10-dir1.npy
+Data splitted
+ckksfedavg
+Start Training
+Round 1 Loss: 2.6007, Acc: 0.1116
+Round 2 Loss: 2.4411, Acc: 0.1750
+Round 3 Loss: 1.9769, Acc: 0.2910
+Round 4 Loss: 1.7885, Acc: 0.4033
+Round 5 Loss: 1.6072, Acc: 0.4624
+Round 6 Loss: 1.5099, Acc: 0.4932
+Round 7 Loss: 1.3834, Acc: 0.5424
+Round 8 Loss: 1.3440, Acc: 0.5623
+Round 9 Loss: 1.3213, Acc: 0.5608
+Round 10 Loss: 1.3061, Acc: 0.5837
+Round 11 Loss: 1.2004, Acc: 0.6104
+Round 12 Loss: 1.2071, Acc: 0.6115
+Round 13 Loss: 1.1244, Acc: 0.6446
+Round 14 Loss: 1.0040, Acc: 0.6782
+Round 15 Loss: 1.0305, Acc: 0.6657
+Round 16 Loss: 1.1080, Acc: 0.6476
+Round 17 Loss: 1.0353, Acc: 0.6586
+Round 18 Loss: 0.9467, Acc: 0.6948
+Round 19 Loss: 0.9389, Acc: 0.6971
+Round 20 Loss: 0.9774, Acc: 0.6838
+Round 21 Loss: 0.9238, Acc: 0.7083
+Round 22 Loss: 0.8827, Acc: 0.7159
+Round 23 Loss: 0.8701, Acc: 0.7169
+Round 24 Loss: 0.8169, Acc: 0.7383
+Round 25 Loss: 0.8444, Acc: 0.7294
+Round 26 Loss: 0.8118, Acc: 0.7401
+Round 27 Loss: 0.8605, Acc: 0.7175
+Round 28 Loss: 0.7804, Acc: 0.7513
+Round 29 Loss: 0.8053, Acc: 0.7424
+Round 30 Loss: 0.7991, Acc: 0.7475
+Round 31 Loss: 0.7992, Acc: 0.7419
+Round 32 Loss: 0.7624, Acc: 0.7562
+Round 33 Loss: 0.7524, Acc: 0.7587
+Round 34 Loss: 0.7935, Acc: 0.7544
+Round 35 Loss: 0.7594, Acc: 0.7526
+Round 36 Loss: 0.7348, Acc: 0.7687
+Round 37 Loss: 0.7264, Acc: 0.7712
+Round 38 Loss: 0.7366, Acc: 0.7643
+Round 39 Loss: 0.7319, Acc: 0.7625
+Round 40 Loss: 0.7235, Acc: 0.7666
+Round 41 Loss: 0.6779, Acc: 0.7829
+Round 42 Loss: 0.6687, Acc: 0.7873
+Round 43 Loss: 0.6971, Acc: 0.7794
+Round 44 Loss: 0.7180, Acc: 0.7720
+Round 45 Loss: 0.7082, Acc: 0.7689
+Round 46 Loss: 0.7005, Acc: 0.7745
+Round 47 Loss: 0.7093, Acc: 0.7727
+Round 48 Loss: 0.6830, Acc: 0.7781
+Round 49 Loss: 0.6663, Acc: 0.7890
+Round 50 Loss: 0.6816, Acc: 0.7839
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'ckksfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir0.5', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-ckksfedavg-dir0.5-0
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir0.5.npy
+Loading partition from ./temp/imagenette-c10-dir0.5.npy
+Data splitted
+ckksfedavg
+Start Training
+Round 1 Loss: 2.7733, Acc: 0.1414
+Round 2 Loss: 2.6811, Acc: 0.1834
+Round 3 Loss: 2.3266, Acc: 0.2403
+Round 4 Loss: 2.0052, Acc: 0.3310
+Round 5 Loss: 1.6359, Acc: 0.4464
+Round 6 Loss: 1.7493, Acc: 0.4308
+Round 7 Loss: 1.4964, Acc: 0.4963
+Round 8 Loss: 1.5080, Acc: 0.5070
+Round 9 Loss: 1.4084, Acc: 0.5417
+Round 10 Loss: 1.3325, Acc: 0.5633
+Round 11 Loss: 1.2962, Acc: 0.5730
+Round 12 Loss: 1.2395, Acc: 0.5911
+Round 13 Loss: 1.2254, Acc: 0.5939
+Round 14 Loss: 1.1377, Acc: 0.6331
+Round 15 Loss: 1.0927, Acc: 0.6415
+Round 16 Loss: 1.1106, Acc: 0.6431
+Round 17 Loss: 1.1031, Acc: 0.6387
+Round 18 Loss: 1.0756, Acc: 0.6476
+Round 19 Loss: 1.0774, Acc: 0.6532
+Round 20 Loss: 1.0288, Acc: 0.6581
+Round 21 Loss: 0.9787, Acc: 0.6800
+Round 22 Loss: 0.9689, Acc: 0.6820
+Round 23 Loss: 0.9160, Acc: 0.6999
+Round 24 Loss: 0.9035, Acc: 0.7103
+Round 25 Loss: 0.8990, Acc: 0.7055
+Round 26 Loss: 0.9418, Acc: 0.6955
+Round 27 Loss: 0.8721, Acc: 0.7085
+Round 28 Loss: 0.8493, Acc: 0.7197
+Round 29 Loss: 0.8619, Acc: 0.7282
+Round 30 Loss: 0.9013, Acc: 0.7085
+Round 31 Loss: 0.7786, Acc: 0.7475
+Round 32 Loss: 0.8513, Acc: 0.7343
+Round 33 Loss: 0.8731, Acc: 0.7269
+Round 34 Loss: 0.8073, Acc: 0.7394
+Round 35 Loss: 0.8147, Acc: 0.7389
+Round 36 Loss: 0.7579, Acc: 0.7544
+Round 37 Loss: 0.7899, Acc: 0.7468
+Round 38 Loss: 0.7641, Acc: 0.7539
+Round 39 Loss: 0.7946, Acc: 0.7383
+Round 40 Loss: 0.7584, Acc: 0.7597
+Round 41 Loss: 0.7701, Acc: 0.7592
+Round 42 Loss: 0.7615, Acc: 0.7610
+Round 43 Loss: 0.7325, Acc: 0.7615
+Round 44 Loss: 0.7078, Acc: 0.7717
+Round 45 Loss: 0.7200, Acc: 0.7648
+Round 46 Loss: 0.7179, Acc: 0.7704
+Round 47 Loss: 0.7363, Acc: 0.7664
+Round 48 Loss: 0.7401, Acc: 0.7590
+Round 49 Loss: 0.7115, Acc: 0.7725
+Round 50 Loss: 0.7404, Acc: 0.7648
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'ckksfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir0.5', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-ckksfedavg-dir0.5-1
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir0.5.npy
+Loading partition from ./temp/imagenette-c10-dir0.5.npy
+Data splitted
+ckksfedavg
+Start Training
+Round 1 Loss: 2.7551, Acc: 0.1037
+Round 2 Loss: 2.5519, Acc: 0.1664
+Round 3 Loss: 2.2591, Acc: 0.2443
+Round 4 Loss: 1.8469, Acc: 0.3743
+Round 5 Loss: 1.7013, Acc: 0.4211
+Round 6 Loss: 1.6437, Acc: 0.4571
+Round 7 Loss: 1.4954, Acc: 0.5032
+Round 8 Loss: 1.4814, Acc: 0.5045
+Round 9 Loss: 1.4120, Acc: 0.5307
+Round 10 Loss: 1.3780, Acc: 0.5386
+Round 11 Loss: 1.2836, Acc: 0.5750
+Round 12 Loss: 1.2480, Acc: 0.5814
+Round 13 Loss: 1.2590, Acc: 0.6000
+Round 14 Loss: 1.1195, Acc: 0.6331
+Round 15 Loss: 1.1282, Acc: 0.6265
+Round 16 Loss: 1.0916, Acc: 0.6410
+Round 17 Loss: 1.0538, Acc: 0.6540
+Round 18 Loss: 1.0170, Acc: 0.6688
+Round 19 Loss: 1.0674, Acc: 0.6510
+Round 20 Loss: 1.0645, Acc: 0.6662
+Round 21 Loss: 0.9585, Acc: 0.6841
+Round 22 Loss: 0.9932, Acc: 0.6780
+Round 23 Loss: 0.9216, Acc: 0.7001
+Round 24 Loss: 0.9235, Acc: 0.6899
+Round 25 Loss: 0.9356, Acc: 0.6996
+Round 26 Loss: 0.8869, Acc: 0.7157
+Round 27 Loss: 0.8855, Acc: 0.7065
+Round 28 Loss: 0.9660, Acc: 0.6892
+Round 29 Loss: 0.8664, Acc: 0.7259
+Round 30 Loss: 0.8190, Acc: 0.7391
+Round 31 Loss: 0.8323, Acc: 0.7345
+Round 32 Loss: 0.8335, Acc: 0.7259
+Round 33 Loss: 0.8105, Acc: 0.7381
+Round 34 Loss: 0.8000, Acc: 0.7452
+Round 35 Loss: 0.7775, Acc: 0.7447
+Round 36 Loss: 0.7751, Acc: 0.7470
+Round 37 Loss: 0.7632, Acc: 0.7557
+Round 38 Loss: 0.7362, Acc: 0.7592
+Round 39 Loss: 0.7366, Acc: 0.7636
+Round 40 Loss: 0.7812, Acc: 0.7488
+Round 41 Loss: 0.7457, Acc: 0.7544
+Round 42 Loss: 0.7451, Acc: 0.7562
+Round 43 Loss: 0.7430, Acc: 0.7575
+Round 44 Loss: 0.7404, Acc: 0.7608
+Round 45 Loss: 0.7140, Acc: 0.7664
+Round 46 Loss: 0.7317, Acc: 0.7661
+Round 47 Loss: 0.7141, Acc: 0.7717
+Round 48 Loss: 0.7030, Acc: 0.7735
+Round 49 Loss: 0.6853, Acc: 0.7761
+Round 50 Loss: 0.6979, Acc: 0.7722
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'ckksfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir0.5', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-ckksfedavg-dir0.5-2
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir0.5.npy
+Loading partition from ./temp/imagenette-c10-dir0.5.npy
+Data splitted
+ckksfedavg
+Start Training
+Round 1 Loss: 2.6715, Acc: 0.0953
+Round 2 Loss: 2.7994, Acc: 0.1177
+Round 3 Loss: 2.2421, Acc: 0.2385
+Round 4 Loss: 1.9875, Acc: 0.3460
+Round 5 Loss: 1.7575, Acc: 0.4130
+Round 6 Loss: 1.6348, Acc: 0.4596
+Round 7 Loss: 1.5571, Acc: 0.4828
+Round 8 Loss: 1.5993, Acc: 0.4706
+Round 9 Loss: 1.3886, Acc: 0.5358
+Round 10 Loss: 1.3696, Acc: 0.5480
+Round 11 Loss: 1.3266, Acc: 0.5592
+Round 12 Loss: 1.2957, Acc: 0.5682
+Round 13 Loss: 1.1813, Acc: 0.6054
+Round 14 Loss: 1.1427, Acc: 0.6171
+Round 15 Loss: 1.0981, Acc: 0.6352
+Round 16 Loss: 1.0625, Acc: 0.6482
+Round 17 Loss: 1.0612, Acc: 0.6392
+Round 18 Loss: 1.0282, Acc: 0.6591
+Round 19 Loss: 0.9993, Acc: 0.6777
+Round 20 Loss: 0.9914, Acc: 0.6726
+Round 21 Loss: 1.0265, Acc: 0.6729
+Round 22 Loss: 1.0151, Acc: 0.6696
+Round 23 Loss: 0.9333, Acc: 0.6938
+Round 24 Loss: 0.8906, Acc: 0.7032
+Round 25 Loss: 0.9084, Acc: 0.6989
+Round 26 Loss: 0.8653, Acc: 0.7113
+Round 27 Loss: 0.8766, Acc: 0.7118
+Round 28 Loss: 0.8536, Acc: 0.7175
+Round 29 Loss: 0.8292, Acc: 0.7330
+Round 30 Loss: 0.8148, Acc: 0.7355
+Round 31 Loss: 0.8094, Acc: 0.7368
+Round 32 Loss: 0.8107, Acc: 0.7294
+Round 33 Loss: 0.7996, Acc: 0.7383
+Round 34 Loss: 0.8044, Acc: 0.7361
+Round 35 Loss: 0.7773, Acc: 0.7478
+Round 36 Loss: 0.7695, Acc: 0.7508
+Round 37 Loss: 0.7376, Acc: 0.7600
+Round 38 Loss: 0.7413, Acc: 0.7631
+Round 39 Loss: 0.7247, Acc: 0.7633
+Round 40 Loss: 0.7606, Acc: 0.7559
+Round 41 Loss: 0.7304, Acc: 0.7582
+Round 42 Loss: 0.6956, Acc: 0.7717
+Round 43 Loss: 0.7017, Acc: 0.7761
+Round 44 Loss: 0.7072, Acc: 0.7730
+Round 45 Loss: 0.6862, Acc: 0.7773
+Round 46 Loss: 0.7556, Acc: 0.7534
+Round 47 Loss: 0.7061, Acc: 0.7725
+Round 48 Loss: 0.7085, Acc: 0.7656
+Round 49 Loss: 0.7217, Acc: 0.7613
+Round 50 Loss: 0.6989, Acc: 0.7842
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'ckksfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir0.5', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-ckksfedavg-dir0.5-3
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir0.5.npy
+Loading partition from ./temp/imagenette-c10-dir0.5.npy
+Data splitted
+ckksfedavg
+Start Training
+Round 1 Loss: 2.8111, Acc: 0.1029
+Round 2 Loss: 2.5331, Acc: 0.1526
+Round 3 Loss: 2.2901, Acc: 0.2326
+Round 4 Loss: 1.8806, Acc: 0.3712
+Round 5 Loss: 1.7109, Acc: 0.4306
+Round 6 Loss: 1.7283, Acc: 0.4387
+Round 7 Loss: 1.5306, Acc: 0.4999
+Round 8 Loss: 1.4430, Acc: 0.5271
+Round 9 Loss: 1.3855, Acc: 0.5577
+Round 10 Loss: 1.3430, Acc: 0.5664
+Round 11 Loss: 1.2925, Acc: 0.5732
+Round 12 Loss: 1.2443, Acc: 0.5946
+Round 13 Loss: 1.1866, Acc: 0.6110
+Round 14 Loss: 1.0950, Acc: 0.6418
+Round 15 Loss: 1.0972, Acc: 0.6413
+Round 16 Loss: 1.1010, Acc: 0.6362
+Round 17 Loss: 1.1071, Acc: 0.6301
+Round 18 Loss: 1.0833, Acc: 0.6479
+Round 19 Loss: 1.0390, Acc: 0.6589
+Round 20 Loss: 0.9973, Acc: 0.6657
+Round 21 Loss: 0.9637, Acc: 0.6874
+Round 22 Loss: 1.0305, Acc: 0.6611
+Round 23 Loss: 0.9230, Acc: 0.7019
+Round 24 Loss: 0.9156, Acc: 0.6932
+Round 25 Loss: 0.9648, Acc: 0.6777
+Round 26 Loss: 0.9294, Acc: 0.6986
+Round 27 Loss: 0.8779, Acc: 0.7088
+Round 28 Loss: 0.9133, Acc: 0.7111
+Round 29 Loss: 0.8397, Acc: 0.7335
+Round 30 Loss: 0.8593, Acc: 0.7241
+Round 31 Loss: 0.8816, Acc: 0.7175
+Round 32 Loss: 0.8342, Acc: 0.7231
+Round 33 Loss: 0.7822, Acc: 0.7411
+Round 34 Loss: 0.7915, Acc: 0.7411
+Round 35 Loss: 0.8227, Acc: 0.7366
+Round 36 Loss: 0.7860, Acc: 0.7404
+Round 37 Loss: 0.7865, Acc: 0.7460
+Round 38 Loss: 0.8175, Acc: 0.7376
+Round 39 Loss: 0.7557, Acc: 0.7590
+Round 40 Loss: 0.7537, Acc: 0.7557
+Round 41 Loss: 0.7668, Acc: 0.7587
+Round 42 Loss: 0.7474, Acc: 0.7567
+Round 43 Loss: 0.7113, Acc: 0.7679
+Round 44 Loss: 0.7509, Acc: 0.7597
+Round 45 Loss: 0.7518, Acc: 0.7631
+Round 46 Loss: 0.7265, Acc: 0.7654
+Round 47 Loss: 0.7137, Acc: 0.7766
+Round 48 Loss: 0.6948, Acc: 0.7786
+Round 49 Loss: 0.7425, Acc: 0.7628
+Round 50 Loss: 0.7569, Acc: 0.7529
+{'data_name': 'imagenette', 'model_name': 'resnet18', 'algorithm': 'ckksfedavg', 'n_client': 10, 'n_round': 50, 'n_epoch': 3, 'device': 'cuda', 'lr': 0.01, 'he_rate': 0.1, 'repeat': 5, 'split': 'dir0.5', 'save_path': './res', 'dp': {'eps': 1, 'delta': 1e-05, 'decay': 0.9, 'clip_thr': 1}, 'dynamic': {'enabled': False}, 'db': 'db/data.db', 'strategy': 'max'}
+Running experiment resnet18-0.1-ckksfedavg-dir0.5-4
+Data fetched
+Model fetched
+path: ./temp/imagenette-c10-dir0.5.npy
+Loading partition from ./temp/imagenette-c10-dir0.5.npy
+Data splitted
+ckksfedavg
+Start Training
+Round 1 Loss: 2.6211, Acc: 0.1113
+Round 2 Loss: 2.7399, Acc: 0.1763
+Round 3 Loss: 2.3495, Acc: 0.2262
+Round 4 Loss: 2.0333, Acc: 0.3302
+Round 5 Loss: 1.7933, Acc: 0.3906
+Round 6 Loss: 1.7389, Acc: 0.4247
+Round 7 Loss: 1.4992, Acc: 0.4976
+Round 8 Loss: 1.4558, Acc: 0.5149
+Round 9 Loss: 1.3997, Acc: 0.5274
+Round 10 Loss: 1.3029, Acc: 0.5720
+Round 11 Loss: 1.2805, Acc: 0.5786
+Round 12 Loss: 1.2197, Acc: 0.6003
+Round 13 Loss: 1.2205, Acc: 0.5952
+Round 14 Loss: 1.1434, Acc: 0.6257
+Round 15 Loss: 1.0945, Acc: 0.6380
+Round 16 Loss: 1.1572, Acc: 0.6344
+Round 17 Loss: 1.0669, Acc: 0.6482
+Round 18 Loss: 1.0100, Acc: 0.6693
+Round 19 Loss: 0.9947, Acc: 0.6685
+Round 20 Loss: 1.0130, Acc: 0.6729
+Round 21 Loss: 0.9774, Acc: 0.6813
+Round 22 Loss: 0.9238, Acc: 0.7014
+Round 23 Loss: 0.9094, Acc: 0.6879
+Round 24 Loss: 0.9547, Acc: 0.6978
+Round 25 Loss: 0.9647, Acc: 0.6897
+Round 26 Loss: 0.9184, Acc: 0.6963
+Round 27 Loss: 0.9151, Acc: 0.7034
+Round 28 Loss: 0.8739, Acc: 0.7096
+Round 29 Loss: 0.8834, Acc: 0.7157
+Round 30 Loss: 0.8723, Acc: 0.7220
+Round 31 Loss: 0.8513, Acc: 0.7317
+Round 32 Loss: 0.8328, Acc: 0.7320
+Round 33 Loss: 0.8445, Acc: 0.7307
+Round 34 Loss: 0.8323, Acc: 0.7325
+Round 35 Loss: 0.7968, Acc: 0.7399
+Round 36 Loss: 0.7945, Acc: 0.7411
+Round 37 Loss: 0.8162, Acc: 0.7355
+Round 38 Loss: 0.7565, Acc: 0.7493
+Round 39 Loss: 0.7426, Acc: 0.7585
+Round 40 Loss: 0.7481, Acc: 0.7582
+Round 41 Loss: 0.7352, Acc: 0.7603
+Round 42 Loss: 0.7322, Acc: 0.7585
+Round 43 Loss: 0.7529, Acc: 0.7541
+Round 44 Loss: 0.7433, Acc: 0.7664
+Round 45 Loss: 0.7200, Acc: 0.7702
+Round 46 Loss: 0.7085, Acc: 0.7651
+Round 47 Loss: 0.7210, Acc: 0.7648
+Round 48 Loss: 0.7353, Acc: 0.7615
+Round 49 Loss: 0.7145, Acc: 0.7641
+Round 50 Loss: 0.7007, Acc: 0.7666
