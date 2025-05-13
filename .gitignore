@@ -1,5 +1,5 @@
-log/
-out/
-*/__pycache__
 *.pyc
 res/
+log/
+out/
+__pychache__/
