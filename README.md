@@ -8,4 +8,4 @@ Running with
 ```python
 python run.py -c [config]
 ```
-A template config file is `/conf/default.toml`.
+Some template config files are in directory `conf/`.
